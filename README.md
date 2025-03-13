@@ -36,3 +36,8 @@
 - <b>Git:</b> A distributed version control system that tracks changes in code and allows collaboration.
 
 - <b>GitHub:</b> A cloud-based platform for hosting Git repositories, enabling collaboration, version control, and project management.
+
+<br>
+
+- <b>Semantic tags:</b> provide meaning to the content, improving accessibility and SEO.
+    - header, nav, section, article, aside, footer, main, figure, figcaption
