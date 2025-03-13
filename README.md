@@ -1,12 +1,32 @@
 # Programming Hero Batch 9
 
 ## Interview Questions:
-1. what do you understand by the universal selector
+1. what do you understand by the universal selector?
+It selects all elements on a webpage.
 
-2. differentiate between the use of id selector and class selector
+<br>
 
-3. how can you use css to control image repotition
+2. differentiate between the use of id selector and class selector?
+- ID (#id): Unique, applies to one element.
+- Class (.class): Reusable, applies to multiple elements.
 
-4. are the html tags and elements the same thing
+<br>
 
-5. difference between inline, block, and inline-block elements. is it possible to change an inline element into a block-level element
+3. how can you use css to control image repetition?
+Use background-repeat (e.g., no-repeat, repeat-x, repeat-y).
+
+<br>
+
+4. are the html tags and elements the same thing?
+- Tags: Markup symbols (e.g., <p>, </p>).
+- Elements: Includes tags and content (<p>Hello</p>).
+
+<br>
+
+5. difference between inline, block, and inline-block elements. is it possible to change an inline element into a block-level element?
+- Inline: No new line, width as content (e.g., <span>).
+- Block: Full width, starts on a new line (e.g., <div>).
+- Inline-Block: Behaves like inline but allows setting width/height.
+- Changing Inline to Block: Use display: block; in CSS.
+
+<br>
