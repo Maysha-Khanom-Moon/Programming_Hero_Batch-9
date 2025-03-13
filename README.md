@@ -13,7 +13,7 @@
 <br>
 
 3. how can you use css to control image repetition?
-Use background-repeat (e.g., no-repeat, repeat-x, repeat-y).
+- Use background-repeat (e.g., no-repeat, repeat-x, repeat-y).
 
 <br>
 
