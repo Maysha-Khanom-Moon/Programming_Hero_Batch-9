@@ -2,7 +2,7 @@
 
 ## Interview Questions:
 1. what do you understand by the universal selector?
-It selects all elements on a webpage.
+- It selects all elements on a webpage.
 
 <br>
 
@@ -18,15 +18,15 @@ Use background-repeat (e.g., no-repeat, repeat-x, repeat-y).
 <br>
 
 4. are the html tags and elements the same thing?
-- Tags: Markup symbols (e.g., <p>, </p>).
-- Elements: Includes tags and content (<p>Hello</p>).
+- Tags: Markup symbols (```<p> </p>```)
+- Elements: Includes tags and content (```<p>Hello</p>```)
 
 <br>
 
 5. difference between inline, block, and inline-block elements. is it possible to change an inline element into a block-level element?
-- Inline: No new line, width as content (e.g., <span>).
-- Block: Full width, starts on a new line (e.g., <div>).
+- Inline: No new line, width as content (```<span>```)
+- Block: Full width, starts on a new line (```<div>```).
 - Inline-Block: Behaves like inline but allows setting width/height.
-- Changing Inline to Block: Use display: block; in CSS.
+- Changing Inline to Block: Use ```display: block;``` in CSS.
 
 <br>
