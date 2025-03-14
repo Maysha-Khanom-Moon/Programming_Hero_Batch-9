@@ -25,7 +25,24 @@
 
 5. difference between inline, block, and inline-block elements. is it possible to change an inline element into a block-level element?
 - Inline: No new line, width as content (```<span>```)
+```
+<a> <b> <strong> <i> <em> <u> <span> <img> <br> 
+<input> <label> <mark> 
+<small> <sub> <sup> 
+<code> <time>
+```
+
 - Block: Full width, starts on a new line (```<div>```).
+```
+    <div>
+    <p> 
+    <heading_tags> 
+    <list_tags>
+    <table_tags> 
+    <form> 
+    <section> <article> 
+    <header> <footer>
+```
 - Inline-Block: Behaves like inline but allows setting width/height.
 - Changing Inline to Block: Use ```display: block;``` in CSS.
 
@@ -40,4 +57,4 @@
 <br>
 
 - <b>Semantic tags:</b> provide meaning to the content, improving accessibility and SEO.
-    - header, nav, section, article, aside, footer, main, figure, figcaption
+    - header, nav, section, article, aside, footer, main, em, figure, figcaption
