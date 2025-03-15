@@ -47,14 +47,39 @@
 - Changing Inline to Block: Use ```display: block;``` in CSS.
 
 <br>
+<br>
 
-
-## Basic
-- <b>Git:</b> A distributed version control system that tracks changes in code and allows collaboration.
-
-- <b>GitHub:</b> A cloud-based platform for hosting Git repositories, enabling collaboration, version control, and project management.
+6. What is Git? What are the advantages of using Git?
+- <b>Git</b> is a distributed version control system that tracks changes in source code.
+- Advantages:
+    - Distributed system (works offline).
+    - Branching and merging support.
+    - Fast and efficient.
+    - Secure and reliable.
 
 <br>
 
+7. What do you understand by the term ‘Version Control System’?
+- A Version Control System (VCS) is a tool that tracks changes in files, allowing collaboration, history tracking, and rollback to previous versions.
+
+<br>
+
+8. What’s the difference between Git and GitHub?
+- <b>Git</b> is a version control system that manages code changes locally.
+- <b>GitHub</b> is a cloud-based hosting service for Git repositories, enabling collaboration and remote access.
+
+9. Name a few Git commands with their function
+- git init → Initialize a new repository.
+- git clone ```<repo>``` → Clone a repository.
+- git add ```<file>``` → Stage changes.
+- git commit -m "message" → Save changes.
+- git push → Upload changes to a remote repo.
+- git pull → Fetch and merge changes from remote.
+
+10. Difference between git fetch and git pull
+- Use git fetch if you just want to check updates first.
+- Use git pull if you want to get updates directly.
+
+## Basic
 - <b>Semantic tags:</b> provide meaning to the content, improving accessibility and SEO.
     - header, nav, section, article, aside, footer, main, em, figure, figcaption
