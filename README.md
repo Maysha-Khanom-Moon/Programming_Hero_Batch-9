@@ -24,7 +24,7 @@
 <br>
 
 5. difference between inline, block, and inline-block elements. is it possible to change an inline element into a block-level element?
-- Inline: No new line, width as content (```<span>```)
+- Inline: No new line, width as content (```<span>```). And height doesn't work here.
 ```
 <a> <b> <strong> <i> <em> <u> <span> <img> <br> 
 <input> <label> <mark> 

@@ -1,0 +1,45 @@
+.blog {
+    background-color: aquamarine;
+    border: 20px solid black;
+    /**
+    border-top: 20px solid black;
+    border-bottom: none;
+    **/
+    border-radius: 4px;
+
+    /*
+    margin: 10px; // all-side
+    margin: 5px 10px; // top-bottom right-left
+    margin: 5px 10px 5px; // top right-left bottom
+    */
+    margin: 5px 10px 15px 20px; /* clockwise - top right bottom left */
+
+    
+    /* Padding ---> same as margin. but it just internal */
+    padding: 5px 10px 15px 20px;
+
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color */
+    box-shadow: 5px 5px 10px 4px violet;
+}
+
+#box_model {
+    background-color: black;
+    padding: 10px;
+    border: 20px solid aquamarine;
+    margin: 20px;
+
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+
+    /* multiple font family ---> if one doesn't work then try others */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#fourth {
+
+    /* display --> none, inline, block, inline-block, and many more. */
+    /* display: none;  --> existence none */
+
+    visibility: hidden; /* only content hidded but allocated place still there */
+}
