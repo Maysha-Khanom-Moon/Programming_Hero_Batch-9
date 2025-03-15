@@ -5,23 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Internal css -->
     <style>
-        body {
+        * {
+            background-color: black;
+        }
+
+        li {
+            background-color: rgb(215, 223, 239);
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 2px;
+        }
+
+        p, ul {
             background-color: bisque;
+            width: 500px;
         }
 
         #internal {
             color: rgb(235, 0, 0);
+            font-weight: bold;
+        }
+
+        .selector{
+            background-color: cadetblue;
         }
 
     </style>
 
 </head>
 <body>
-    <h2>CSS</h2>
+    <h2 class="selector">CSS</h2>
     <p>CSS: Cascading Style Sheets</p>
 
-    <h3>Types of CSS: </h3>
+    <h3 class="selector">Types of CSS: </h3>
     <p style="color: blueviolet; background-color: aquamarine;">1. Inline css ---- no reusability</p>
 
     <p id="internal">2. Internal or Embedded</p>
@@ -30,6 +47,14 @@
 
     <br>
 
+    <h2>Selectors: </h2>
+    <ul>
+        <li>Id ----- single element (#id_name)</li>
+        <li>Class ----- multiple elements (.class_name)</li>
+        <li>Global ----- asterisk (*)</li>
+        <li>Grouping ----- style on multiple selector at once (__, __, ...)</li>
+        <li>Attribute ----- follow attribute type (__[type='attribute_name'])</li>
+    </ul>
 
 </body>
 </html>
