@@ -12,6 +12,10 @@ nav > ul > li {
     background-color: aquamarine;
 }
 
+nav ul li:hover {
+    background-color: cornflowerblue;
+}
+
 table {
     border-collapse: collapse;
     margin-bottom: 50px;
