@@ -2,6 +2,7 @@ body {
     background-color: black;
     color: white;
 }
+
 nav > ul > li {
     display: inline;
     padding: 4px 20px;
@@ -9,4 +10,14 @@ nav > ul > li {
     font-weight: bold;
     font-size: large;
     background-color: aquamarine;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+td, th {
+    border: 2px solid white;
+    padding: 5px 10px;
 }
