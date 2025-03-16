@@ -3,10 +3,23 @@ body {
     color: white;
 }
 
-nav > ul > li {
-    display: inline;
+nav {
+    background-color: rgb(84, 87, 80);
+    padding: 2px;
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav ul li {
     padding: 4px 20px;
-    margin-right: 10px;
+    margin: 2px 5px;
     font-weight: bold;
     font-size: large;
     background-color: aquamarine;
@@ -14,6 +27,17 @@ nav > ul > li {
 
 nav ul li:hover {
     background-color: cornflowerblue;
+}
+
+nav li .dropdown {
+    display: none;
+}
+
+nav li:hover > .dropdown {
+    /* display: block; */
+    display: grid;
+    position: absolute;
+    row-gap: 2px;
 }
 
 table {
