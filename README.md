@@ -82,8 +82,16 @@
 
 <br>
 
-## Basic
+## Basic 
 - <b>Semantic tags:</b> provide meaning to the content, improving accessibility and SEO.
     - header, nav, section, article, aside, footer, main, em, figure, figcaption
 
 - <b>Git</b> is a <b>distributed</b> version control system because every developer has a full copy of the entire repository, including its history, allowing them to work independently without relying on a central server
+
+### HTML vs HTML5
+<b>HTML5</b> is an upgraded, feature-rich version of HTML with better multimedia, form controls, and responsiveness. 
+
+![html5](images/html_vs_html5.png)
+
+<b>Flash</b> was a multimedia software platform developed by <b>Adobe</b> for creating animations, interactive content, and web applications. It was widely used for videos, games, and rich media content on websites. Flash relied on a browser plugin (Adobe Flash Player) to run. <br>
+<b>End of Flash:</b> Adobe officially discontinued Flash on December 31, 2020. 🚫
