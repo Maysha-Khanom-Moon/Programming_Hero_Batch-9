@@ -80,6 +80,10 @@
 - Use git fetch if you just want to check updates first.
 - Use git pull if you want to get updates directly.
 
+<br>
+
 ## Basic
 - <b>Semantic tags:</b> provide meaning to the content, improving accessibility and SEO.
     - header, nav, section, article, aside, footer, main, em, figure, figcaption
+
+- <b>Git</b> is a <b>distributed</b> version control system because every developer has a full copy of the entire repository, including its history, allowing them to work independently without relying on a central server
