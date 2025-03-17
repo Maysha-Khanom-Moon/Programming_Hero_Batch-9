@@ -3,6 +3,8 @@
 ## Assignment's Live Link:
 - [A1 - New Year New Mission](https://maysha-khanom-moon.github.io/ph-a1-new-year-new-mission/)
 
+<br>
+
 ## Interview Questions:
 1. what do you understand by the universal selector?
 - It selects all elements on a webpage.

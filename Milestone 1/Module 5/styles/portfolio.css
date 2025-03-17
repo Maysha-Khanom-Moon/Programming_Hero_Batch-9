@@ -166,3 +166,51 @@ main section {
 .experience-description, .experience-sub-title {
     color: #757575;
 }
+
+/* footer styles */
+footer {
+    display: flex;
+    padding: 130px 200px;
+    gap: 117px;
+}
+
+footer .section-title {
+    font-size: 16px;
+    font-style: normal;
+}
+
+.left > .section-title {
+    margin-bottom: 20px;
+}
+
+.left-description {
+    margin-bottom: 30px;
+}
+
+.left > .icons {
+    display: flex;
+    gap: 24px;
+}
+
+.right > .section-title {
+    margin-bottom: 28px;
+}
+
+.right .inputs input {
+    display: block;
+    margin-bottom: 24px;
+    padding: 18px 30px;
+    width: 100%;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.textarea {
+    margin-bottom: 24px;
+    padding: 18px 30px;
+    border: 0px;
+    border-radius: 5px;
+    height: 180px;
+    width: 100%;
+    resize: none;
+}
