@@ -7,15 +7,15 @@
 }
 
 /* shared css */
-.text_primary {
+.text-primary {
     color: #FD6E0A;
 }
 
-.dark_2 {
+.dark-2 {
     color: #474747;
 }
 
-.btn_primary {
+.btn-primary {
     background-color: #FD6E0A;
     color: white;
     font-weight: bold;
@@ -23,6 +23,13 @@
     border-radius: 5px;
     font-size: 20px;
     border: none;
+}
+
+/* header */
+.header {
+    background-image: url('../portfolio_resources/images/developer.png'), url('../portfolio_resources/images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
 }
 
 
@@ -34,7 +41,7 @@ nav {
     margin: 0px 200px;
 }
 
-.nav_title {
+.nav-title {
     font-weight: 800;
     font-size: 45px;
 }
@@ -52,4 +59,26 @@ nav ul li {
 nav li a {
     text-decoration: none;
     font-size: 20px;
+}
+
+
+/* banner styles */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px 0 230px;
+}
+
+.banner-greeting {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner-title {
+    font-weight: bold;
+    font-size: 85px;
+}
+
+.banner-content {
+    max-width: 580px;
 }
