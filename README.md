@@ -1,5 +1,8 @@
 # Programming Hero Batch 9
 
+## Assignment's Live Link:
+- [A1 - New Year New Mission](https://maysha-khanom-moon.github.io/ph-a1-new-year-new-mission/)
+
 ## Interview Questions:
 1. what do you understand by the universal selector?
 - It selects all elements on a webpage.
@@ -89,7 +92,7 @@
 - <b>Git</b> is a <b>distributed</b> version control system because every developer has a full copy of the entire repository, including its history, allowing them to work independently without relying on a central server
 
 ### HTML vs HTML5
-<b>HTML5</b> is an upgraded, feature-rich version of HTML with better multimedia, form controls, and responsiveness. 
+<b>HTML5</b> is an upgraded, feature-rich version of HTML with better multimedia, form controls, and responsiveness. Also <b>better semantics & SEO</b>
 
 ![html5](images/html_vs_html5.png)
 
