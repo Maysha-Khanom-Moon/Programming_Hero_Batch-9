@@ -15,10 +15,23 @@
     color: #474747;
 }
 
+.btn_primary {
+    background-color: #FD6E0A;
+    color: white;
+    font-weight: bold;
+    padding: 18px 35px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+}
+
 
 /* nav styles */
 nav {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 200px;
 }
 
 .nav_title {
@@ -28,6 +41,7 @@ nav {
 
 nav ul {
     display: flex;
+    align-items: center;
 }
 
 nav ul li {
