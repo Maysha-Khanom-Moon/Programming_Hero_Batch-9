@@ -22,9 +22,17 @@
             width: 200px;
         }
 
+        /*
         .ring {
             position: sticky;
             top: 0px;
+        }
+        */
+
+        .ring {
+            position: fixed;
+            top: 200px;
+            left: 50px;
         }
 
         .another {
@@ -67,10 +75,15 @@
         </li>
         <!-- Scroll related -->
         <li>
-            Fixed <br>
-            <small>have to define the position</small>
+            Sticky <br>
+            <small>will lose it's own position. <br> have to define the position and only stay in immediate parent div</small>
         </li>
-        <li>Sticky</li>
+        <li>
+            Fixed <br>
+            <small>will lose it's own position. <br>
+                have to define the position and but stay in every div. actually it consider the root as parent (viewport).</small>
+        </li>
+
     </ol>
 
     <div class="swim-container">
