@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+
+    <style>
+        .image-container {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .image-container div {
+            width: 50%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .image-container {
+                flex-direction: column-reverse;
+            }
+            .image-container div {
+                margin: 10px;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Responsive Website</h2>
+
+    <ol>
+        <li>1. Viewport meta tag</li>
+        <li>2. CSS Relative Unit</li>
+        <li>3. body max width and horizontal center align</li>
+        <li>4. image fluid</li>
+        <li>5. two column flex and use media query with flex direction column</li>
+        <li>6. multi column: grid layout</li>
+        <li>7. menu Responsive: will need JS</li>
+    </ol>
+
+    <div class="image-container">
+        <div class="image">
+            <img src="images/food.avif" alt="">
+        </div>
+        <div class="image">
+            <img src="images/tiger.jpeg" alt="">
+        </div>
+    </div>
+</body>
+</html>
