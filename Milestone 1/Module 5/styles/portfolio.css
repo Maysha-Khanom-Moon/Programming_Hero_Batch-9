@@ -37,7 +37,7 @@
 .header {
     background-image: url('../portfolio_resources/images/developer.png'), url('../portfolio_resources/images/header_bg.png');
     background-repeat: no-repeat;
-    background-position: top left, bottom right;
+    background-position: center left, bottom right;
 }
 
 
@@ -138,6 +138,7 @@ main section {
 }
 
 .skill {
+    margin-top: 50px;
     padding: 30px;
     box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
     border-radius: 5px;
@@ -170,12 +171,13 @@ main section {
 /* footer styles */
 footer {
     display: flex;
-    padding: 130px 200px;
-    gap: 117px;
+    justify-content: space-around;
+    padding: 120px 160px;
+    gap: 40px;
 }
 
 footer .section-title {
-    font-size: 16px;
+    font-size: 35px;
     font-style: normal;
 }
 
@@ -185,6 +187,7 @@ footer .section-title {
 
 .left-description {
     margin-bottom: 30px;
+    width: 550px;
 }
 
 .left > .icons {
@@ -200,7 +203,7 @@ footer .section-title {
     display: block;
     margin-bottom: 24px;
     padding: 18px 30px;
-    width: 100%;
+    width: 450px;
     border: 0px;
     border-radius: 5px;
 }
@@ -210,7 +213,6 @@ footer .section-title {
     padding: 18px 30px;
     border: 0px;
     border-radius: 5px;
-    height: 180px;
-    width: 100%;
+    width: 450px;
     resize: none;
 }
