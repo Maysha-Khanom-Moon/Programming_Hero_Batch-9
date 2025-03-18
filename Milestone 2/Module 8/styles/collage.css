@@ -1,0 +1,43 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+}
+
+main > div {
+    width: 100%;
+    height: 29vh;
+}
+
+.top img {
+    width: 100%;
+    height: 29vh;
+}
+
+.mid {
+    display: flex;
+    column-gap: 5px;
+}
+
+.mid-item {
+    width: 33%;
+}
+
+.mid-item > img {
+    width: 100%;
+    height: 29vh;
+}
+
+.mid-item > div {
+    width: 100%;
+    height: 29vh;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.mid-item > div > img {
+    width: 100%;
+    height: 49%;
+}
