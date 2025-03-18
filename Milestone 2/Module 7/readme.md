@@ -23,3 +23,9 @@
 - vmax & vmin -- very interesting
     - vmin: use the smallest of the viewport width or height
     - vmax: use the largest of the viewport width or height
+
+<br>
+
+## flex vs grid
+- flex ---- unidirectional
+- grid ---- bidirectional
