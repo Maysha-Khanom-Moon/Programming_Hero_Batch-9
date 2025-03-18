@@ -26,8 +26,12 @@
 
 <br>
 
-## flex vs grid
+### flex vs grid
 - flex ---- unidirectional
 - grid ---- bidirectional
 
-<b>css always follows bottom(latest) styles</b>
+css always follows <b>bottom(latest)</b> styles
+
+<br>
+
+<b>Responsiveness:</b> ability to adapt and function well on different devices and screen sizes
