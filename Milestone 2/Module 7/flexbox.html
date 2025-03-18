@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+
+    <style>
+        .container {
+            border: 2px solid salmon;
+            display: flex;
+            /* 
+            justify-content (for flex): works horizontally
+
+            justify-content: (align items to the)
+                flex-start ----->  start of the container (default)
+                flex-end -----> end of the container
+                center -----> horizontally within the container
+
+                space-between -----> no space at the start or end, only (evenly) spaces between items
+
+                space-around -----> spaces items evenly, but with half-sized gaps at the start and end
+
+                space-evenly -----> distributes items so that all spaces (between and outside) are equal
+            */
+            justify-content: space-around;
+
+
+            height: 400px;
+            /* 
+            align-items (for flex): works vertically
+
+            align-items: 
+                stretch (default) ---> fill the container height, unless the item has a fixed height
+
+                flex-start, flex-end, center ---> top, bottom, center. without fixed height/width, it's become inline (just took the content's needed space)
+
+                baseline ---> items align based on their text baseline
+            */
+            align-items: baseline; 
+
+
+            /*
+            flex-direction: controls the main axis
+
+            flex-direction:
+                row (default) ---> horizontally (left to right)
+                row-reverse ---> horizontally but in reverse order (right to left)
+                column ---> vertically (top to bottom)
+                column-reverse ---> vertically but in reverse order (bottom to top)
+            */
+            flex-direction: row-reverse;
+
+
+            /*
+            flex-warp: 
+                nowrap (default): stay on one line and may shrink if necessary
+                wrap: wrap to a new lines if they don't fit
+                wrap-reverse: wrap to new line, but in reverse order (bottom ---> top)
+            */
+            flex-wrap: wrap-reverse; /* zoom in to see the effect */
+        }
+
+        .box {
+            border: 2px dashed tomato;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Layout</h1>
+
+    <div class="container">
+        <div style="margin: 30px; border: 2px solid blue;">
+            <p>
+                hi
+            </p>
+        </div>
+        <div class="box">Box - 1</div>
+        <div class="box">Box - 2</div>
+        <div class="box">Box - 3</div>
+    </div>
+</body>
+</html>
