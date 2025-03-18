@@ -87,6 +87,14 @@
 
 <br>
 
+11. Grid vs Flex
+- <b>What?</b> Grid is for 2D layouts (rows & columns), Flex is for 1D layouts (row or column).
+- <b>When?</b> Use Grid for complex layouts, Flex for simple alignment.
+<b>Why?</b> Grid provides precise control, Flex is more flexible for dynamic content.
+
+12. Media Query
+- A CSS rule to make websites responsive. it adjust styles based on screen size and ensures a good user experience on all devices. 🚀
+
 ## Basic 
 - <b>Semantic tags:</b> provide meaning to the content, improving accessibility and SEO.
     - header, nav, section, article, aside, footer, main, em, figure, figcaption
