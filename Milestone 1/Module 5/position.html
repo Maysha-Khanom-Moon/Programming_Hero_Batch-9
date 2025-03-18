@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+
+    <style>
+        .swim-container {
+            position: relative;
+            border: 2px solid peru;
+        }
+        .box {
+            border: 2px dotted plum;
+            width: 200px;
+        }
+
+        .boy {
+            
+        }
+
+        /* 
+        .ring {
+            allocated place --> keep & fixed
+
+            position: relative;
+            left: 50px;
+            top: 30px;
+        }
+        */
+
+        .ring {
+            position: absolute;
+            top: 40px;
+            left: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <h3>CSS Positions</h3>
+    <ol>
+        <!-- Flow related -->
+        <li>Static</li>
+        <li>
+            Relative <br>
+            <small>keep it's own position and will move based on this.</small>
+        </li>
+
+        <li>
+            Absolute <br>
+            <small>will lose it's own position and will move based on the root (the closest relative parent)</small>
+        </li>
+        <!-- Scroll related -->
+        <li>Fixed</li>
+        <li>Sticky</li>
+    </ol>
+
+    <div class="swim-container">
+        <div class="box boy">
+            <img src="swim/boy.svg" alt="">
+        </div>
+        <div class="box ring">
+            <img src="swim/ring.svg" alt="">
+        </div>
+        <div class="box water">
+            <img src="swim/water.svg" alt="">
+        </div>
+    </div>
+</body>
+</html>
