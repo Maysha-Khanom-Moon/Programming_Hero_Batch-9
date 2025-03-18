@@ -1,0 +1,17 @@
+.common {
+    background-color: bisque;
+    border: 2px solid coral;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.main, footer{
+    display: grid;
+    grid-template-columns: 79px auto;
+    gap: 20px;
+    margin-bottom: 20px;
+}
