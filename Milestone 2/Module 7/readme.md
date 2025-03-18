@@ -29,3 +29,5 @@
 ## flex vs grid
 - flex ---- unidirectional
 - grid ---- bidirectional
+
+<b>css always follows bottom(latest) styles</b>
