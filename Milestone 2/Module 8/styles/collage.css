@@ -41,3 +41,29 @@ main > div {
     width: 100%;
     height: 49%;
 }
+
+.bottom {
+    display: flex;
+    gap: 5px;
+}
+
+.bottom .bottom-item {
+    width: 33%;
+    height: 29vh;
+}
+
+.bottom-item > img {
+    width: 100%;
+    height: 29vh;
+}
+
+.bottom-mid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+}
+
+.bottom-mid img {
+    width: 99%;
+    height: 14.25vh;
+}
