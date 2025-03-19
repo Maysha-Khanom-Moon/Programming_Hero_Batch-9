@@ -6,7 +6,7 @@
 
 3. em -- relative to the font-size of the parent element
 
-4. rem -- relative to font-size of the root element
+4. rem -- relative to font-size of the root element (default value 16px)
 
 5. vw -- equal to 1% of the width of the browser window size
 
