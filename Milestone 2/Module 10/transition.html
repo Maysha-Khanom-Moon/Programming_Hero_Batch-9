@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Transition</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid tomato;
+            background-color: peachpuff;
+
+            /*
+            transition: property name | duration | timing function | delay 
+
+            timing function:
+                ease (default): slow start, speeds up, then slow down
+                linear: same speed
+                ease-in: slow start, then speeds up
+                ease-out: fast start, then speeds down
+                ease-in-out: very slow start, speeds up, then very slow down
+            */
+            transition: width 2s, background-color 2s ease-in-out 0.5s, transform 1s linear;
+        }
+
+        .box:hover {
+            width: 400px;
+            background-color: red;
+            transform: rotate(20deg);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><b>Transform:</b> change the shape. this is a css style property name</li>
+        <li><b>Translate:</b> it is a value of the transform style rule. This means you move either x, or y or both axis</li>
+        <li><b>Transition:</b> how long it will take to do the change</li>
+    </ul>
+
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+</body>
+</html>
