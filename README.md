@@ -3,6 +3,14 @@
 ## Assignment's Live Link:
 - [A1 - New Year New Mission](https://maysha-khanom-moon.github.io/ph-a1-new-year-new-mission/)
 
+- [A2 - Trek Twig](https://maysha-khanom-moon.github.io/ph__a2__trek-twig/)
+
+<br>
+<br>
+
+## Useful Links
+- [Free images and resources collection for website](https://medium.com/design-bootcamp/free-images-and-resources-collection-for-website-c77f2fc46ce5)
+
 <br>
 
 ## Interview Questions:
@@ -109,6 +117,8 @@
 <b>Flash</b> was a multimedia software platform developed by <b>Adobe</b> for creating animations, interactive content, and web applications. It was widely used for videos, games, and rich media content on websites. Flash relied on a browser plugin (Adobe Flash Player) to run. <br>
 <b>End of Flash:</b> Adobe officially discontinued Flash on December 31, 2020. 🚫
 
+### CSS vs CSS3
+<b>CSS3</b> is an upgraded version of CSS with modular improvements, advanced selectors (before only id, class, element), responsive design (@media queries), animations (@keyframes, transition), and modern layout techniques (Flexbox, Grid). It also introduces enhanced styling features like border-radius, box-shadow, and custom fonts (@font-face). These enhancements make web design more efficient, responsive, and visually appealing while reducing reliance on images and JavaScript.
 
 ### 5 things for responsiveness
 1. Break points
