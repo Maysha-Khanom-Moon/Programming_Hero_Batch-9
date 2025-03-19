@@ -30,7 +30,7 @@
 - flex ---- unidirectional
 - grid ---- bidirectional
 
-css always follows <b>bottom(latest)</b> styles
+css always follows: ID > Class > Tag > * and then consider <b>bottom(latest)</b> styles
 
 <br>
 
