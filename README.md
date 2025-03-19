@@ -5,6 +5,21 @@
 
 - [A2 - Trek Twig](https://maysha-khanom-moon.github.io/ph__a2__trek-twig/)
 
+<br>
+
+### Course outline
+0. Milestone 0: Introductory
+1. Milestone 1: Html, css, and github as a beginner
+2. Milestone 2: Responsive web layout
+3. Milestone 3: Css frameworks
+4. Milestone 4: Hello javascript
+5. Milestone 5: Integrate javascript (js in a relation)
+6. Milestone 6: Intermediate javascript, api
+7. Milestone 7: Introduction to simple react
+8. Milestone 8: React router and state management
+9. Milestone 9: React authentication
+10. Milestone 10: Backend and database integrate
+11. Milestone 11: Backend with jwt and axios interceptor
 
 <br>
 
