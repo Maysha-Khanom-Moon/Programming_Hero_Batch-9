@@ -19,14 +19,30 @@
 }
 
 .bg-light {
-    background-color: rgba(255, 144, 14, 0.1);
+    background-color: #ff900e1a;
 }
 
+.primary-btn {
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+
 /* header styles */
+.brand {
+    font-weight: 700;
+    font-size: 3rem;
+}
 
 /* navbar related styles */
 .navbar {
     justify-content: space-between;
+    align-items: center;
 }
 .nav-links {
     list-style: none;
@@ -41,4 +57,29 @@
 .navbar, .banner {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+/* banner related styles */
+.banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .navbar, .nav-links {
+        flex-direction: column;
+    }
 }
