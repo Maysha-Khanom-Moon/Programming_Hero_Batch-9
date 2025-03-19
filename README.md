@@ -108,3 +108,11 @@
 
 <b>Flash</b> was a multimedia software platform developed by <b>Adobe</b> for creating animations, interactive content, and web applications. It was widely used for videos, games, and rich media content on websites. Flash relied on a browser plugin (Adobe Flash Player) to run. <br>
 <b>End of Flash:</b> Adobe officially discontinued Flash on December 31, 2020. 🚫
+
+
+### 5 things for responsiveness
+1. Break points
+2. Media query
+3. style changes
+4. image fluid
+5. relative measuring units and Testing!
