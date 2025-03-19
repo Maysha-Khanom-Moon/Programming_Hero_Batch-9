@@ -1,63 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>G3 Architects</title>
     <link rel="stylesheet" href="styles/style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="work-sans-font">
-    <header class="bg-light">
-        <nav class="navbar display-flex">
-            <h3 class="brand">G3 Architects</h3>
 
-            <ul class="nav-links display-flex">
-                <li class="nav-item"><a href="" class="nav-link text-gray">Home</a></li>
-                <li class="nav-item"><a href="" class="nav-link text-gray">About</a></li>
-                <li class="nav-item"><a href="" class="nav-link text-gray">Contact Us</a></li>
-                <li class="nav-item"><a href="" class="nav-link text-gray">Login</a></li>
+<body>
+    <!-- header start -->
+    <header>
+        <nav>
+            <h3 class="section-title">G3 Architects</h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Login</a></li>
             </ul>
         </nav>
-
         <div class="banner">
             <div class="banner-content">
                 <h1 class="banner-title">Brand New Group of Architects</h1>
-
-                <p class="banner-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, in. Earum cum recusandae itaque tenetur maxime quidem soluta dolores eius. Repellendus quos quaerat doloremque inventore, in suscipit repellat nemo deserunt.</p>
-
+                <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the
+                    majority have suffered alteration in some form, by injected humour, or randomised words which don't
+                    look even</p>
                 <button class="btn-primary">Explore More</button>
             </div>
-            <img class="banner-img" src="resources/images/banner.png" alt="">
+            <img src="resources/images/banner.png" alt="">
         </div>
     </header>
-
+    <!-- header end -->
     <main>
-        <section class="teams display-flex">
+        <!-- teams sections start -->
+        <section class="teams-container">
             <div class="teams-img-container">
-                <img src="resources/images/team1.png" alt="two architect discussing about design">
+                <img src="resources/images/team1.png" alt="">
                 <img src="resources/images/team2.png" alt="">
                 <img src="resources/images/team3.png" alt="">
                 <img src="resources/images/team4.png" alt="">
             </div>
-
-            <div class="our-features">
-                <h3 class="feature-title"><span id="quick-list" class="text-light-gray">Quick list</span> <span id="of-our">of our</span> <span>features</span></h3>
-                <p class="feature-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fuga dolorum dignissimos porro ratione facere, iure nobis aliquid, impedit deleniti repellat tempora eligendi, officiis voluptates?
-                </p>
-
+            <div class="teams-content">
+                <h3 class="teams-title"><span class="quick-list text-light-gray">Quick list</span> <span>of Our</span> <span class="text-features">Features</span></h3>
+                <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
                 <button class="btn-primary">Explore More</button>
             </div>
         </section>
+        <!-- features section -->
+        <section class="features">
+            <div class="feature-content">
+                <h3 class="section-title">Features you will <br> love & enjoy</h3>
+                <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+                <div class="card">
+                    <h4>Desktop & Mobile Version</h4>
+                    <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized...........</p>
+                </div>
+                <div class="card">
+                    <h4>Desktop & Mobile Version</h4>
+                    <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized...........</p>
+                </div>
+                <div class="card">
+                    <h4>Desktop & Mobile Version</h4>
+                    <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized...........</p>
+                </div>
+                <div class="card">
+                    <h4>Desktop & Mobile Version</h4>
+                    <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized...........</p>
+                </div>
+            </div>
+            <div class="feature-img">
+                <img src="resources/images/architect.png" alt="">
+                <div class="ten-years-badge">
+                    <h2>10+ years</h2>
+                    <p>Experience</p>
+                </div>
+            </div>
+        </section>
+        <!-- facts section -->
+        <section class="facts">
+            <h3 class="section-title">Some Facts</h3>
+            <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+            <div class="facts-card-container">
+                <!-- .card*4>img+h2.card-stats+p.card-title.text-light-gray -->
+                <div class="card">
+                    <img src="resources/images/icons/ribon.png" alt="">
+                    <h2 class="card-stats">54</h2>
+                    <p class="card-title text-light-gray">Awards Winnings</p>
+                </div>
+                <div class="card">
+                    <img src="resources/images/icons/projects.png" alt="">
+                    <h2 class="card-stats">1458</h2>
+                    <p class="card-title text-light-gray">Project Finished</p>
+                </div>
+                <div class="card">
+                    <img src="resources/images/icons/customers.png" alt="">
+                    <h2 class="card-stats">590</h2>
+                    <p class="card-title text-light-gray">Clients Worked</p>
+                </div>
+                <div class="card">
+                    <img src="resources/images/icons/email.png" alt="">
+                    <h2 class="card-stats">22578</h2>
+                    <p class="card-title text-light-gray">Email Send</p>
+                </div>
+            </div>
+        </section>
+        <!-- sponsors section -->
+        <section class="sponsors">
+            <h3 class="section-title">Our Sponsors</h3>
+            <p class="text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+            <div class="sponsors-img-container">
+                <img src="resources/images/sponsors/spotify.png" alt="">
+                <img src="resources/images/sponsors/amazon.png" alt="">
+                <img src="resources/images/sponsors/google.png" alt="">
+                <img src="resources/images/sponsors/telerama.png" alt="">
+                <img src="resources/images/sponsors/figma.png" alt="">
+            </div>
+        </section>
     </main>
-
     <footer>
 
     </footer>
 </body>
+
 </html>
