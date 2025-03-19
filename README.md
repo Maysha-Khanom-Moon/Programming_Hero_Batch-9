@@ -1,12 +1,11 @@
 # Programming Hero Batch 9
 
 ## Assignment's Live Link:
-- <a href='https://maysha-khanom-moon.github.io/ph-a1-new-year-new-mission/' target='_blank'>A1 - New Year New Mission</a>
+- [A1 - New Year New Mission](https://maysha-khanom-moon.github.io/ph-a1-new-year-new-mission/)
 
-- <a href='https://maysha-khanom-moon.github.io/ph__a2__trek-twig/' target='_blank'>A2 - Trek Twig</a>
+- [A2 - Trek Twig](https://maysha-khanom-moon.github.io/ph__a2__trek-twig/)
 
 
-<br>
 <br>
 
 ## Useful Links
