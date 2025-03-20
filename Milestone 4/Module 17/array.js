@@ -69,3 +69,17 @@ console.log(mixedArray);
 console.log("\nreverse: ");
 mixedArray.reverse();
 console.log(mixedArray);
+
+// reverse manually (using unshift)
+let rev = [];
+for (const i of mixedArray) {
+    rev.unshift(i);
+}
+console.log(rev);
+
+// reverse indexing
+rev = []
+for(let i = mixedArray.length - 1; i >= 0; i--) {
+    rev.push(mixedArray[i]);
+}
+console.log(rev);
