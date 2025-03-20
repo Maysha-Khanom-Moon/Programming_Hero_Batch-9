@@ -46,10 +46,10 @@ console.log("Split: ", fullAddress2.split(' '));
 
 // join: convert array to string
 const array = ['H', 'E', 'L', 'L', 'O']
-console.log("Join: ", array.join(''));
+console.log("Join: ", array.join(''), '\n');
 
 
-// replace
+// replace: if exist then replace, otherwise no change
 const fullAddress3 = fullAddress2.replace('Bangladesh', 'Bangladesh (Bn)');
 console.log("Replace: ", fullAddress3);
 
@@ -60,7 +60,7 @@ console.log("Includes: ", fullAddress2.includes('Mymensingh')); // true
 
 // indexOf: return index, if not exist return -1
 console.log("IndexOf: ", fullAddress2.indexOf('Mymensingh')); // 8
-console.log("IndexOf: ", fullAddress2.indexOf('Mmensingh')); // -1
+console.log("IndexOf: ", fullAddress2.indexOf('Mmensingh'), '\n'); // -1
 
 
 // reverse (string doesn't have reverse method)
@@ -79,4 +79,17 @@ for (let i = rev.length - 1; i >= 0; i--) {
 console.log("Reverse: ", rev2);
 
 // 3.
-console.log("Reverse: ", country.split('').reverse().join(''));
+console.log("Reverse: ", country.split('').reverse().join(''), '\n');
+
+
+// toUpperCase, toLowerCase
+console.log("UpperCase: ", fullAddress2.toUpperCase());
+console.log("LowerCase: ", fullAddress2.toLowerCase(), '\n');
+
+// trim: remove whitespace
+let str3 = "   Hello World   "
+console.log("Trim: ", str3.trim());
+
+// trimStart, trimEnd
+console.log("TrimStart: ", str3.trimStart());
+console.log("TrimEnd: ", str3.trimEnd(), '\n');
