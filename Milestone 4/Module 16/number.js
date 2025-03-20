@@ -79,3 +79,16 @@ console.log(price.toFixed(2)); // 12.54
 
 var price = 12.546;
 console.log(price.toFixed(2)); // 12.55
+
+// special case
+console.log("\nspecial case: ");
+var first = 0.1;
+var second = 0.2;
+var total = first + second;
+console.log(total); // 0.30000000000000004
+
+/**
+ * JavaScript, like most languages, uses IEEE 754 floating-point arithmetic, which represents numbers in binary. Some decimal numbers, like 0.1 and 0.2, cannot be stored exactly in binary, leading to small precision errors when performing arithmetic.
+ */
+// ✅ Use Math.round() for precision control
+console.log(Math.round(total * 100) / 100); // 0.3
