@@ -37,3 +37,9 @@ console.log(mixedArray.lastIndexOf(12)); // 5
 // indexOf(x, y): return index of x starting search from index-y
 console.log(mixedArray.indexOf(true, 2)); // 2
 console.log(mixedArray.indexOf(true, 3)); // -1
+
+
+// isArray: check array or not
+console.log("\nisArray: ");
+console.log(Array.isArray(mixedArray)); // true
+console.log(Array.isArray('My name is Khan')); // false
