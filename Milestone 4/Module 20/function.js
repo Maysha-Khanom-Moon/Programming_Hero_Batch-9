@@ -16,4 +16,17 @@ let second = function () {
 
 // call
 first();
-console.log(second());
+console.log(second(), '\n');
+
+
+// example
+function sumOfNumbers (array) {
+    console.log(array);
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    return sum;
+}
+const sum = sumOfNumbers([1, 2, 3, 4, 5]);
+console.log(sum);
