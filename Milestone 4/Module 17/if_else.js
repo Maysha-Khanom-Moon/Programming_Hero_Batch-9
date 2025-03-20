@@ -28,3 +28,24 @@ if(biryaniPrice < 100) {
 else {
     console.log('Give me some Rice and Dal');
 }
+
+
+/* -------multiple condition------- */ 
+const salary = 25000;
+const isBCS = true;
+
+// or: ||
+if(salary > 25000 || isBCS) {
+    console.log('eso baba kobul');
+}
+else {
+    console.log('vaag tui mokgul');
+}
+
+// and: &&
+if(salary > 25000 && isBCS) {
+    console.log('pola toh aguner gola');
+}
+else {
+    console.log('ami raji nah');
+}
