@@ -11,4 +11,10 @@ wordArray = [...word];
 console.log(wordArray);
 
 
-//
+// concat: merge array
+const num4 = num1.concat(num2);
+console.log('\nconcat: ');
+console.log(num4);
+
+const num5 = num1.concat(num2, [8, 9, 10]); // multiple arrays
+console.log(num5);
