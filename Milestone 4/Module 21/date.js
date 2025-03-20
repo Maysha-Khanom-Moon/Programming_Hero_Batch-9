@@ -37,3 +37,8 @@ console.log(date.toLocaleString('en-US'), '\n');
 // Date.now() returns the number of milliseconds since unix epoch
 const unixEpoch = Math.floor(Date.now() / 1000);
 console.log(unixEpoch); // seconds
+
+
+// Date.parse()
+const unixEpoch2 = Date.parse('1 Jan 2026') / 1000;
+console.log(unixEpoch2);
