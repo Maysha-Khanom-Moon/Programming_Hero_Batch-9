@@ -58,3 +58,11 @@ console.log('\nslice: ');
 console.log(num1);
 console.log(num1.slice(1));
 console.log(num1.slice(1, 3));
+
+
+// splice: remove a part of an array
+// array.splice(start, deleteCount)
+console.log('\nsplice: ');
+console.log(num1);
+num1.splice(2, 1);
+console.log(num1);
