@@ -44,3 +44,9 @@ console.log(num1);
 console.log(num1.sort((a, b) => a - b)); // ascending
 console.log(num1.sort((a, b) => b - a)); // descending
 
+
+// split: convert string to array
+const num6 = '1,2,3,4,5';
+const num7 = num6.split(',');
+console.log('\nsplit: ');
+console.log(num7);
