@@ -150,4 +150,7 @@
 
 - A <b>function-scoped</b> variable means it is only accessible inside the function where it is declared. 
 
-If declared outside a function, it becomes a <b>global variable</b>. <br>
+If declared outside a function, it becomes a <b>global variable</b>.
+
+### substring vs slice in string
+![string](images/substring_slice.png)
