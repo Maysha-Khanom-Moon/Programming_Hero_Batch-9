@@ -49,3 +49,16 @@ console.log('VALUEs:',VALUEs);
 
 const ENTRIEs = Object.entries(bottle); // pairs
 console.log('Entries:',ENTRIEs, '\n');
+
+
+// ------------- loop -------------
+// for-in: to get keys
+for (const key in bottle) {
+    console.log(key);
+}
+
+// for-of: to get values of keys
+const keys = Object.keys(bottle);
+for (const value of keys) {
+    console.log(value + ': ' + bottle[value]);
+}
