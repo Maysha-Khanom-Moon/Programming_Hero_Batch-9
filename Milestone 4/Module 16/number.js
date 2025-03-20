@@ -52,3 +52,17 @@ var price = 'a125';
 console.log(parseInt(price)); // NaN
 console.log(typeof NaN); // number
 console.log(2 + NaN); // NaN
+
+// isNaN(x)
+console.log("\nisNaN: "); 
+console.log(isNaN(NaN)); // true
+console.log(isNaN(2)); // false
+console.log(isNaN('2')); // false
+console.log(isNaN('a2')); // true
+
+
+// Invalid
+console.log("\nInvalid: ");
+console.log(0.5/0); // Infinity
+console.log(-1/0); // -Infinity
+console.log(0/0); // NaN
