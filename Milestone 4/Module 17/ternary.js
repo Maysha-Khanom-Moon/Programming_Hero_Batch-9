@@ -15,3 +15,10 @@ else {
 
 // ternary
 age >= 18 ? console.log('vote dio') : console.log('Ghumai Thako');
+
+
+// semi-advanced
+let price = 500;
+const isLeader = true;
+price = isLeader === true ? 0 : price + 100;
+console.log(price);
