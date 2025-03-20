@@ -50,3 +50,11 @@ const num6 = '1,2,3,4,5';
 const num7 = num6.split(',');
 console.log('\nsplit: ');
 console.log(num7);
+
+
+// slice: extract a part of an array
+// array.slice(start, upto)
+console.log('\nslice: ');
+console.log(num1);
+console.log(num1.slice(1));
+console.log(num1.slice(1, 3));
