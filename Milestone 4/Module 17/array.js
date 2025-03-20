@@ -70,7 +70,16 @@ console.log("\nreverse: ");
 mixedArray.reverse();
 console.log(mixedArray);
 
-// reverse manually (using unshift)
+
+/**
+ * LOOPING TECHNIQUE
+ * 1. for loop
+ * 2. while loop
+ * 3. do-while
+ * 4. for-of: array loop
+ * 5. for-in: object loop
+ */
+// reverse (using unshift)
 let rev = [];
 for (const i of mixedArray) {
     rev.unshift(i);
