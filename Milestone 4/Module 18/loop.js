@@ -42,3 +42,10 @@ do {
     console.log(i);
     i++;
 } while(i < 5);
+
+// 4.
+console.log('\nfor-of loop: ');
+const mixedArray = [12, 'Alahbad', true, 45.566];
+for(const i of mixedArray) {
+    console.log(i);
+}
