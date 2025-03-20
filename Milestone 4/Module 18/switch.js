@@ -25,4 +25,17 @@ switch (fruit) {
     default:
         console.log("I love all fruits!");
 }
-    
+
+// continue: continue the loop
+// break: break the loop
+console.log('continue:');
+i = 10;
+while (i <= 20) {
+    if(i == 15 || i == 18) {
+        i++;
+        continue;
+    }
+    console.log(i);
+    i++;
+}
+console.log('\n');
