@@ -7,6 +7,18 @@
  * 5. less then or equal: <=
  * 6. not equal: !=
  * 
+ * -----------------------
+ * 7. and: &&
+ * 8. or: ||
+ * 
+ * -----------------------
+ * 9. Logical not: !
+ * --> !false: true
+ * --> !true: false
+ * 
+ * 10. double not: !!
+ * ==> !!false: false
+ * ==> !!true: true
  */
 
 console.log(5 > 10); // false
