@@ -40,5 +40,6 @@ console.log(unixEpoch); // seconds
 
 
 // Date.parse()
+// ms between parsed date and Unix epoch
 const unixEpoch2 = Date.parse('1 Jan 2026') / 1000;
-console.log(unixEpoch2);
+console.log(unixEpoch2); // seconds
