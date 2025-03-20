@@ -27,7 +27,8 @@ console.log(num1.join(' '));
 console.log(wordArray.join(''));
 
 
-// sort: consider items as a string
+// sort: consider items as a string 
+// followed by lexicographical order (ascii values)
 console.log('\nsort: ');
 num1.sort();
 console.log(num1);
@@ -42,3 +43,4 @@ console.log(num1);
 // sort: consider items as a number
 console.log(num1.sort((a, b) => a - b)); // ascending
 console.log(num1.sort((a, b) => b - a)); // descending
+
