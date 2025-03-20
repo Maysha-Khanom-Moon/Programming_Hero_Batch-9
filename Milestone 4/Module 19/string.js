@@ -31,21 +31,52 @@ console.log(fullAddress2, '\n');
 // length
 console.log("Length: ", fullAddress2.length);
 
-// slice
+
+// slice: a part of string
 console.log("Slice: ", fullAddress2.slice(0, 7));
 
-// substring
+
+// substring: a part of string
 console.log("Substring: ", fullAddress2.substring(0, 7));
 
-// split
+
+// split: convert string to array
 console.log("Split: ", fullAddress2.split(' '));
+
+
+// join: convert array to string
+const array = ['H', 'E', 'L', 'L', 'O']
+console.log("Join: ", array.join(''));
+
 
 // replace
 const fullAddress3 = fullAddress2.replace('Bangladesh', 'Bangladesh (Bn)');
 console.log("Replace: ", fullAddress3);
 
-// includes
+
+// includes: check value is exist or not
 console.log("Includes: ", fullAddress2.includes('Mymensingh')); // true
 
-// indexOf
+
+// indexOf: return index, if not exist return -1
 console.log("IndexOf: ", fullAddress2.indexOf('Mymensingh')); // 8
+console.log("IndexOf: ", fullAddress2.indexOf('Mmensingh')); // -1
+
+
+// reverse (string doesn't have reverse method)
+// 1.
+let rev = '';
+for (const i of country) {
+    rev = i + rev;
+}
+console.log("Reverse: ", rev);
+
+// 2. 
+let rev2 = '';
+for (let i = rev.length - 1; i >= 0; i--) {
+    rev2 += rev[i];
+}
+console.log("Reverse: ", rev2);
+
+// 3.
+console.log("Reverse: ", country.split('').reverse().join(''));
