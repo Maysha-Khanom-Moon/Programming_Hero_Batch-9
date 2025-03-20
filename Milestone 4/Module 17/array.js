@@ -15,3 +15,7 @@ console.log(mixedArray);
 mixedArray.pop();
 mixedArray.pop();
 console.log(mixedArray);
+
+// includes: check value is exist or not
+console.log(mixedArray.includes('new value')); // true
+console.log(mixedArray.includes('new value1')); // false
