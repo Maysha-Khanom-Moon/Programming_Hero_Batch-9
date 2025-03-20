@@ -9,7 +9,7 @@
  * 2. operators: +, -, *, /, %, ++, --
  * 
  * 3. Math object contains various functions:
- *    - abs, round, floor, ceil, trunc
+ *    - abs, round(up for 5), floor, ceil, trunc
  *    - pow, sqrt, cbrt
  *    - min, max
  *    - random
@@ -18,54 +18,32 @@
  *    - PI, E
  */
 
-var orangPrice = 10;
+var eggPrice = 10;
+var onionPrice = 20;
 
-//  typeof
-console.log('\n' + orangPrice);
-console.log(typeof orangPrice);
-console.log(typeof(orangPrice));
+// addition: +
+console.log(eggPrice + onionPrice);
 
+// subtraction: -
+console.log(eggPrice - onionPrice);
 
-var priceTag = '12';
-console.log(typeof priceTag);
-console.log(priceTag + 2); // 122
+// multiplication: *    
+console.log(eggPrice * onionPrice);
 
-/**
- * ---------------------------------------------------
- *                 parseInt, parseFloat 
- * ---------------------------------------------------
- * - string to number (left to right)
- * -stop when it get any character other than number (for float consider . also)
- * 
- * - number (yellow)
- * - string (white)
- */
+// division: /
+console.log(eggPrice / onionPrice);
 
-var price = '12.5a.d';
-console.log(parseInt(price)); // 12
+// modulus: %
+console.log(eggPrice % onionPrice);
 
-var price = '125a';
-console.log(parseInt(price)); // 125
-console.log(parseFloat(price)); // 125
+// shorthand
+eggPrice += 3;
+eggPrice -= 3;
+eggPrice *= 3;  
+eggPrice /= 3;
+eggPrice %= 3;
 
-var price = '124.2a'
-console.log(parseFloat(price)) // 124.2
+eggPrice++; // increment 1
+eggPrice--; // decrement 1
 
-
-// round, floor, ceil, trunc: number --> integer
-var price = 12.5;
-console.log('\n' + Math.round(price)); // 13
-console.log(Math.floor(price)); // 12   
-console.log(Math.ceil(price)); // 13
-console.log(Math.trunc(price)); // 12
-
-
-/**
- *  ---- NaN: Not a Number ----
- * - NaN is a value representor, not a data type
- */
-console.log();
-
-var price = 'a125';
-console.log(parseInt(price)); // NaN
-console.log(typeof NaN); // number
+console.log(eggPrice);
