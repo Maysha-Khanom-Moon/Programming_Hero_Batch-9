@@ -93,3 +93,10 @@ console.log("Trim: ", str3.trim());
 // trimStart, trimEnd
 console.log("TrimStart: ", str3.trimStart());
 console.log("TrimEnd: ", str3.trimEnd(), '\n');
+
+
+// charAt vs bracket notation
+// charAt: return character otherwise empty string
+// bracket notation: return character otherwise undefined
+console.log("CharAt: ", fullAddress2.charAt(30));
+console.log("Bracket: ", fullAddress2[30]);
