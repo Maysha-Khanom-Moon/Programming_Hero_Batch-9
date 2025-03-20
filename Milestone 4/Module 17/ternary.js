@@ -22,3 +22,9 @@ let price = 500;
 const isLeader = true;
 price = isLeader === true ? 0 : price + 100;
 console.log(price);
+
+
+// advanced
+price = 1000;
+price = isLeader ? (price > 500 ? price / 2 : 0) : price + 100;
+console.log(price);
