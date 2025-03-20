@@ -66,3 +66,16 @@ console.log("\nInvalid: ");
 console.log(0.5/0); // Infinity
 console.log(-1/0); // -Infinity
 console.log(0/0); // NaN
+
+
+// toFixed()
+// it always return string
+console.log("\ntoFixed: ");
+var price = 12.5;
+console.log(price.toFixed(2)); // 12.50
+
+var price = 12.545;
+console.log(price.toFixed(2)); // 12.54
+
+var price = 12.546;
+console.log(price.toFixed(2)); // 12.55
