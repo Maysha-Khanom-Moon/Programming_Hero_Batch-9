@@ -16,15 +16,15 @@ let second = function () {
 
 // 3. arrow function
 let third = (name) => {
-    console.log("Hello " + name + "\n");
-    
+    console.log("Hello " + name);
 }
+let fourth = name => console.log("Hello " + name + "\n");
 
 // call
 first();
 console.log(second());
 third('Brenden');
-
+fourth('Eich');
 
 // example
 function sumOfNumbers (array) {
