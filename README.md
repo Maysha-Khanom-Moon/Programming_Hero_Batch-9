@@ -141,3 +141,13 @@
 3. style changes
 4. image fluid
 5. relative measuring units and Testing!
+
+### var vs let vs const
+![difference](images/var_let_const.png)
+
+- A <b>block</b> in JavaScript is a set of statements <b>enclosed in curly braces {}</b>. (if, for, while, and functions)
+<br>
+
+- A <b>function-scoped</b> variable means it is only accessible inside the function where it is declared. 
+
+If declared outside a function, it becomes a <b>global variable</b>. <br>
