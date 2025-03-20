@@ -43,3 +43,29 @@ console.log(mixedArray.indexOf(true, 3)); // -1
 console.log("\nisArray: ");
 console.log(Array.isArray(mixedArray)); // true
 console.log(Array.isArray('My name is Khan')); // false
+
+
+// shift: remove first value
+console.log("\nshift: ");
+console.log(mixedArray.shift()); // 12
+console.log(mixedArray);
+
+
+// unshift: add new value at the start
+console.log("\nunshift: ");
+mixedArray.unshift('new value');
+console.log(mixedArray);
+
+mixedArray.unshift(true, false);
+console.log(mixedArray);
+
+
+mixedArray.shift();
+mixedArray.shift();
+console.log(mixedArray);
+
+
+// reverse: reverse the array   
+console.log("\nreverse: ");
+mixedArray.reverse();
+console.log(mixedArray);
