@@ -66,3 +66,10 @@ console.log('\nsplice: ');
 console.log(num1);
 num1.splice(2, 1);
 console.log(num1);
+
+
+// filter: extract a part of an array
+// array.filter(callback function)
+console.log('\nfilter: ');
+console.log(num1);
+console.log(num1.filter(x => x < 5));
