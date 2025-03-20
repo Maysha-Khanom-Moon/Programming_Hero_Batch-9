@@ -34,3 +34,13 @@ const per2 = new Object();
 // 3.
 const per3 = Object.create({}); 
 // to use this way: need a prototype object or null(means no prototype). But can't be empty
+
+
+// ------------- keys and values -------------
+const KEYs = Object.keys(bottle);
+const VALUEs = Object.values(bottle);
+console.log('KEYs:',KEYs);
+console.log('VALUEs:',VALUEs);
+
+const ENTRIEs = Object.entries(bottle); // pairs
+console.log('Entries:',ENTRIEs, '\n');
