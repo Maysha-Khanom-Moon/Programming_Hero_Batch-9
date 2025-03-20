@@ -16,3 +16,18 @@ console.log(date.getFullYear());
 console.log(date.getMonth());
 console.log(date.getDate());
 console.log(date.getDay());
+
+// set
+const date1 = new Date();
+console.log(date1);
+date1.setFullYear(2022);
+console.log(date1, '\n');
+
+
+/**
+ * ## toLocaleString()
+ * - GB: day, month, year  ------- Great Britain
+ * - US: month, day, year  ------- United States
+ */
+console.log(date.toLocaleString('en-GB'));
+console.log(date.toLocaleString('en-US'));
