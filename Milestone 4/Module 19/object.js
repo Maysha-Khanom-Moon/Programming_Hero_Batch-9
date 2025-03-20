@@ -20,9 +20,14 @@ const bottle = {
     isClean: false
 }
 
-// accessing value
-console.log(bottle.brand);
-console.log(bottle['brand'], '\n');
+// ------------- accessing value -------------
+// 1.
+console.log(bottle.brand); // dot notation
+// 2. 
+console.log(bottle['brand']); // bracket notation
+// 3.
+const keyName = 'brand'; // key-name store at variable
+console.log(bottle[keyName], '\n');
 
 
 // ------------- Declaring Object -------------
