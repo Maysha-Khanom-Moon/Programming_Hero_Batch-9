@@ -1,5 +1,5 @@
 /**
- * TERNARY --> three parts
+ * TERNARY OPERATOR --> three parts
  * 
  *  condition ? // when true : // when false;
  */
