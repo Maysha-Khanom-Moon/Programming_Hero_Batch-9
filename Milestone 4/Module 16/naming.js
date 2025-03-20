@@ -18,3 +18,5 @@
  * 
  *  - js is case sensitive language
  */
+
+// -------- js flows: left to right --------
