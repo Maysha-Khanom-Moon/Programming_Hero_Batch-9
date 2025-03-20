@@ -29,3 +29,27 @@ const pi = 3.1415; // value can't be changed
 
 name = 'mkm'; // change the value
 console.log(name);
+
+
+
+/**
+ *  ## Data Types
+ */
+
+// string
+var name = "Maysha Khanom Moon";
+console.log('\n'+name);
+
+// boolean
+var isRich = true;
+console.log(isRich);
+
+// number
+var money = 5000;
+console.log(money);
+
+// to check the data-type
+console.log(typeof(name));
+console.log(typeof(isRich));
+console.log(typeof(money));
+console.log(typeof(pi));
