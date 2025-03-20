@@ -30,4 +30,10 @@ console.log(date1, '\n');
  * - US: month, day, year  ------- United States
  */
 console.log(date.toLocaleString('en-GB'));
-console.log(date.toLocaleString('en-US'));
+console.log(date.toLocaleString('en-US'), '\n');
+
+
+// Unix epoch: 1 Jan 1970
+// Date.now() returns the number of milliseconds since unix epoch
+const unixEpoch = Math.floor(Date.now() / 1000);
+console.log(unixEpoch); // seconds
