@@ -42,4 +42,11 @@ console.log(unixEpoch); // seconds
 // Date.parse()
 // ms between parsed date and Unix epoch
 const unixEpoch2 = Date.parse('1 Jan 2026') / 1000;
-console.log(unixEpoch2); // seconds
+console.log(unixEpoch2, '\n'); // seconds
+
+
+// Leap year
+function isLeapYear(year) {
+    return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+}
+console.log(isLeapYear(new Date().getFullYear()));
