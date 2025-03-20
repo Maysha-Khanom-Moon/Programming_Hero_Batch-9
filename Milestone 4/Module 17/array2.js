@@ -18,3 +18,27 @@ console.log(num4);
 
 const num5 = num1.concat(num2, [8, 9, 10]); // multiple arrays
 console.log(num5);
+
+
+// join: convert array to string
+console.log('\njoin: ');
+console.log(num1.join('-'));
+console.log(num1.join(' '));
+console.log(wordArray.join(''));
+
+
+// sort: consider items as a string
+console.log('\nsort: ');
+num1.sort();
+console.log(num1);
+
+/**
+ * comparator function(=>): compare two value and decide the order
+ * array.sort((a, b) => someExpression);
+ * 
+ * - someExpression <= 0: no change in order
+ * - someExpression > 0: swap
+ */
+// sort: consider items as a number
+console.log(num1.sort((a, b) => a - b)); // ascending
+console.log(num1.sort((a, b) => b - a)); // descending
