@@ -14,9 +14,16 @@ let second = function () {
     return 2;
 }
 
+// 3. arrow function
+let third = (name) => {
+    console.log("Hello " + name + "\n");
+    
+}
+
 // call
 first();
-console.log(second(), '\n');
+console.log(second());
+third('Brenden');
 
 
 // example
