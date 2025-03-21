@@ -30,7 +30,14 @@
 - flex ---- unidirectional
 - grid ---- bidirectional
 
-css always follows: ID > Class > Tag > * and then consider <b>bottom(latest)</b> styles
+### order of specificity: 
+1. Inline styles
+2. ```!important``` rules
+3. ID selector
+4. Class selectors, attribute selectors, pseudo-classes
+5. Element (tag) selectors
+6. Universal selector (*)
+7. Order of appearance (bottom --> latest)
 
 <br>
 
