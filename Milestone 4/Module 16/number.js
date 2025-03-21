@@ -16,7 +16,7 @@ console.log(priceTag + 2); // 122
  *                 parseInt, parseFloat 
  * ---------------------------------------------------
  * - string to number (left to right)
- * -stop when it get any character other than number (for float consider . also)
+ * - stop when it get any character other than number (for float consider . also)
  * 
  * - number (yellow)
  * - string (white)
