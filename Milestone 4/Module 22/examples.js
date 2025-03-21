@@ -12,7 +12,7 @@ function cartTotal(products) {
         sum += i.price * i.quantity;
     return sum;
 }
-console.log('Total: ' + cartTotal(products) + '\n');
+console.log('\n' + 'Total: ' + cartTotal(products));
 
 
 // cheapest one
@@ -26,11 +26,10 @@ const mobiles = [
 ]
 
 function getCheapest(phones) {
-    phones = Object.keys(phones);
     let phone = phones[0];
     for (const i of phones)
         if(phone.price > i.price)
-            phone = phones[i];
-    return phone;
+            phone = i;
+    return phone.name;
 }
 console.log('Cheapest one: ' + getCheapest(mobiles) + '\n');
