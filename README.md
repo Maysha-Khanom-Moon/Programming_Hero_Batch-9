@@ -154,3 +154,6 @@ If declared outside a function, it becomes a <b>global variable</b>.
 
 ### substring vs slice in string
 ![string](images/substring_slice.png)
+
+### primitive vs non-primitive data types
+![data types](images/primitive_non-primitive.png)
