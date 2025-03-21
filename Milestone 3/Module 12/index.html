@@ -13,19 +13,23 @@
     <style>
         .bebas-neue {
             font-family: "Bebas Neue", sans-serif;
-            font-weight: 400;
+            font-weight: bold;
             font-style: normal;
+            line-height: normal;
         }
         .roboto {
             font-family: "Roboto", sans-serif;
             font-optical-sizing: auto;
             font-weight: 500;
             font-style: normal;
+            line-height: 26px;
         }
         
         .primary-btn {
-            background-color: linear-gradient(180deg, #A4BC46 0%, #85A019 100%);
+            background: linear-gradient(180deg, #A4BC46 0%, #85A019 100%);
             border-radius: 10px;
+            width: 170px;
+            height: 60px;
             padding: 18px 33px;;
             color: white;
             font-size: 16px;
@@ -33,12 +37,16 @@
             font-weight: 500;
             line-height: 24px;
         }
+        .primary-btn > img {
+            width: 24px;
+            height: 24px;
+        }
     </style>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header class="mb-12 pt-10 px-32 bg-[#FFFBF0]">
+    <header class="mb-12 pb-16 pt-10 px-32 bg-[#FFFBF0]">
         <!-- navbar -->
         <nav class="flex justify-between">
             <div>
@@ -54,8 +62,17 @@
             </div>
         </nav>
 
-        <div class="banner">
+        <!-- banner -->
+        <div class="flex justify-between mt-4">
+            <div class="text-bebas-neue text-7xl font-bold flex flex-col justify-center gap-2">
+                <h2 class="text-[#FABE4C]">BE THE PENGUINS<br><span class="text-[#363958]">OF WINTER</span></h2>
+                <p class="text-[#3C3C3C] text-roboto text-base font-normal">Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry.</p>
 
+                <button class="primary-btn flex items-center gap-1"><img src="resources/icons/shopping-cart 1.png" alt="">BUY NOW</button>
+            </div>
+            <div>
+                <img class="mr-12" src="resources/images/model.png" alt="">
+            </div>
         </div>
     </header>
 
