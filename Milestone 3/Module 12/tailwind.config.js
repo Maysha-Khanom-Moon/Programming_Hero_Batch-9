@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#1E40AF", // Example primary color (Tailwind blue-800)
+        primary: "linear-gradient(180deg, #A4BC46 0%, #85A019 100%)",
+        secondary: "#363958",
       },
     },
   },
