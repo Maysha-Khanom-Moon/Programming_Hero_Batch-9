@@ -36,4 +36,19 @@ function sumOfNumbers (array) {
     return sum;
 }
 const sum = sumOfNumbers([1, 2, 3, 4, 5]);
-console.log(sum);
+console.log(sum, '\n');
+
+// swap
+// 1.
+let a = 10;
+let b = 20;
+let temp = a;
+a = b;
+b = temp;
+console.log(a, b);
+
+// 2. destructing
+let c = 'abc';
+let d = 40;
+[c, d] = [d, c];
+console.log(c, d);
