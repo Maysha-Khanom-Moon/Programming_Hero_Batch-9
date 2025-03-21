@@ -9,7 +9,7 @@
  * }
  * 
  * ==> it's not sequential
- * ==> it's non-primitive. Because, everyone is not same type.
+ * ==> it's non-primitive
 */
 
 // const only prevents reassigning the entire object, but object is mutable
