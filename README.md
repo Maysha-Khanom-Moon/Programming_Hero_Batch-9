@@ -126,11 +126,12 @@
 
 ### HTML vs HTML5
 <b>HTML5</b> is an upgraded, feature-rich version of HTML with better multimedia, form controls, and responsiveness. Also <b>better semantics & SEO</b>
-
 ![html5](images/html_vs_html5.png)
 
 <b>Flash</b> was a multimedia software platform developed by <b>Adobe</b> for creating animations, interactive content, and web applications. It was widely used for videos, games, and rich media content on websites. Flash relied on a browser plugin (Adobe Flash Player) to run. <br>
 <b>End of Flash:</b> Adobe officially discontinued Flash on December 31, 2020. 🚫
+
+<br>
 
 ### CSS vs CSS3
 <b>CSS3</b> is an upgraded version of CSS with modular improvements, advanced selectors (before only id, class, element), responsive design (@media queries), animations (@keyframes, transition), and modern layout techniques (Flexbox, Grid). It also introduces enhanced styling features like border-radius, box-shadow, and custom fonts (@font-face). These enhancements make web design more efficient, responsive, and visually appealing while reducing reliance on images and JavaScript.
@@ -148,14 +149,11 @@
 
 <br>
 
+## JS
 ### var vs let vs const
 ![difference](images/var_let_const.png)
-
-- A <b>block</b> in JavaScript is a set of statements <b>enclosed in curly braces {}</b>. (if, for, while, and functions)
-<br>
-
-- A <b>function-scoped</b> variable means it is only accessible inside the function where it is declared. 
-
+A <b>block</b> in JavaScript is a set of statements <b>enclosed in curly braces {}</b>. (if, for, while, and functions) <br>
+A <b>function-scoped</b> variable means it is only accessible inside the function where it is declared. <br>
 If declared outside a function, it becomes a <b>global variable</b>.
 
 ### substring vs slice in string
