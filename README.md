@@ -1,9 +1,9 @@
 # Programming Hero Batch 9
 
 ## Assignment's Live Link:
-- [A1 - New Year New Mission](https://maysha-khanom-moon.github.io/ph-a1-new-year-new-mission/)
+- [A1 - New Year New Mission](https://maysha-khanom-moon.github.io/ph-a1-new-year-new-mission/) ~ html + css (not responsive)
 
-- [A2 - Trek Twig](https://maysha-khanom-moon.github.io/ph__a2__trek-twig/)
+- [A2 - Trek Twig](https://maysha-khanom-moon.github.io/ph__a2__trek-twig/) ~ html + css (not responsive)
 
 <br>
 
@@ -141,6 +141,12 @@
 3. style changes
 4. image fluid
 5. relative measuring units and Testing!
+
+### tailwind css
+- highly flexible, utility-first css framework
+- it is <b>mobile-first</b> means styles are applied to smaller screens by default.
+
+<br>
 
 ### var vs let vs const
 ![difference](images/var_let_const.png)
