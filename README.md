@@ -1,9 +1,9 @@
 # Programming Hero Batch 9
 
 ## Assignment's Live Link:
-- [A1 - New Year New Mission](https://maysha-khanom-moon.github.io/ph-a1-new-year-new-mission/) ~ html + css (not responsive)
+- [A1 - New Year New Mission](https://maysha-khanom-moon.github.io/ph-a1-new-year-new-mission/) ~ html + vanilla css (not responsive)
 
-- [A2 - Trek Twig](https://maysha-khanom-moon.github.io/ph__a2__trek-twig/) ~ html + css (not responsive)
+- [A2 - Trek Twig](https://maysha-khanom-moon.github.io/ph__a2__trek-twig/) ~ html + vanilla css (not responsive)
 
 <br>
 
@@ -124,7 +124,7 @@
 
 - <b>Git</b> is a <b>distributed</b> version control system because every developer has a full copy of the entire repository, including its history, allowing them to work independently without relying on a central server
 
-### HTML vs HTML5
+### html vs html5
 <b>HTML5</b> is an upgraded, feature-rich version of HTML with better multimedia, form controls, and responsiveness. Also <b>better semantics & SEO</b>
 ![html5](images/html_vs_html5.png)
 
@@ -146,6 +146,11 @@
 ### tailwind css
 - highly flexible, utility-first css framework
 - it is <b>mobile-first</b> means styles are applied to smaller screens by default.
+- it has various component libraries (e.g., Flowbite, DaisyUI, etc).
+
+### library vs framework
+- <b>library:</b> Like a toolbox—you pick and use the tools as needed.
+- <b>framework:</b> Like a blueprint—you build according to the predefined structure.
 
 <br>
 
