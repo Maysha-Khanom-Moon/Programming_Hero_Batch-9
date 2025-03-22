@@ -7,8 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
 
     <style>
         .bebas-neue {
@@ -78,17 +77,18 @@
         }
     </style>
 
+    <!-- tailwind: default format for mobile -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <!-- header -->
-    <header class="mb-12 pb-16 pt-10 px-32 bg-[#FFFBF0]">
+    <header class="mb-12 pb-10 md:pb-16 pt-7 md:pt-10 px-6 md:px-32 bg-[#FFFBF0]">
         <!-- navbar -->
         <nav class="flex justify-between">
             <div>
                 <img class="h-10" src="resources/icons/logo.png " alt="logo">
             </div>
-            <div class="text-[#3C3C3C] text-roboto-regular text-base">
+            <div class="text-[#3C3C3C] text-roboto-regular text-base md:flex hidden md:visible">
                 <ul class="flex items-center gap-14">
                     <li>Home</li>
                     <li>Product</li>
@@ -99,8 +99,8 @@
         </nav>
 
         <!-- banner -->
-        <div class="flex justify-between mt-4">
-            <div class="text-bebas-neue text-7xl font-bold flex flex-col justify-center gap-2">
+        <div class="flex gap-y-12 md:flex-row flex-col justify-between mt-4">
+            <div class="text-bebas-neue text-6xl md:text-7xl font-bold flex flex-col justify-center gap-6 md:gap-2">
                 <h2 class="text-[#FABE4C]">BE THE PENGUINS<br><span class="text-[#363958]">OF WINTER</span></h2>
                 <p class="text-roboto">Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry.</p>
 
