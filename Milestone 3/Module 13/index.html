@@ -5,22 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biker Zone</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      :root {
+        --primary-color: #E76F51;
+      }
+      .bg-primary {
+        background-color: var(--primary-color);
+      }
+      .text-primary {
+        color: var(--primary-color);
+      }
+      .poppins {
+        font-family: "Poppins", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+      }
+      .header {
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .p-1 {
+        color: rgba(0, 0, 0, 0.80);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 26px;
+      }
+      .carousel-item img {
+        width: 440px;
+        height: 353px;
+      }
+    </style>
 </head>
-<body>
+<body class="poppins">
     <!-- header -->
-    <header>
-        <nav>
-            
+    <header class="px-40">
+        <nav class="flex justify-between items-center py-14">
+            <div>
+                <h1 class="header">Bike Dekho</h1>
+            </div>
+
+            <div class="hidden md:flex items-center">
+                <ul class="flex gap-9">
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>News</li>
+                    <li>Contact</li>
+                </ul>
+                <button class="ml-12 bg-primary border-0 px-12 py-4 rounded-md text-white font-bold text-xl">Login</button>
+            </div>
+
+            <div class="md:hidden">
+                <div class="navbar-end">
+                    <div class="dropdown">
+                      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
+                      </div>
+                      <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
         </nav>
 
         <!-- slider -->
-        <div class="carousel w-full">
+        <div class="carousel w-full h-80 md:h-[550px] border-3">
             <div id="slide1" class="carousel-item relative w-full">
-              <img
-                src="resources/images/slider/bike1.png"
-                class="w-full" />
+              <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                <div class="w-3/7">
+                  <h2 class="font-bold text-6xl">Ride-on R15 V4 with Smile</h2>
+                  <p class="p-1">Amet minim mollit non deserunt ullamco 
+                  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                </div>
+                <img src="resources/images/slider/bike1.png"/>
+              </div>
               <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide4" class="btn btn-circle">❮</a>
                 <a href="#slide2" class="btn btn-circle">❯</a>
@@ -28,8 +101,7 @@
             </div>
             <div id="slide2" class="carousel-item relative w-full">
               <img
-                src="resources/images/slider/bike2.png"
-                class="w-full" />
+                src="resources/images/slider/bike2.png"/>
               <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide1" class="btn btn-circle">❮</a>
                 <a href="#slide3" class="btn btn-circle">❯</a>
@@ -37,8 +109,7 @@
             </div>
             <div id="slide3" class="carousel-item relative w-full">
               <img
-                src="resources/images/slider/bike3.png"
-                class="w-full" />
+                src="resources/images/slider/bike3.png"/>
               <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide2" class="btn btn-circle">❮</a>
                 <a href="#slide4" class="btn btn-circle">❯</a>
@@ -46,8 +117,7 @@
             </div>
             <div id="slide4" class="carousel-item relative w-full">
               <img
-                src="resources/images/slider/bike4.png"
-                class="w-full" />
+                src="resources/images/slider/bike4.png"/>
               <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide3" class="btn btn-circle">❮</a>
                 <a href="#slide1" class="btn btn-circle">❯</a>
