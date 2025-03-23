@@ -43,7 +43,10 @@
             console.log(li)
         }
 
-        
+        const allHeadings = document.getElementsByTagName('h1');
+        for (const heading of allHeadings) {
+            console.log(heading.innerHTML);
+        }
 
         const student = {
             name: 'ABUL',
