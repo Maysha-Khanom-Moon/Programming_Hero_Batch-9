@@ -44,12 +44,18 @@
         width: 440px;
         height: 353px;
       }
+
+      @media screen and (max-width: 768px) {
+        .carousel-item img {
+          width: 300px;
+        }
+      }
     </style>
 </head>
 <body class="poppins">
     <!-- header -->
-    <header class="px-40">
-        <nav class="flex justify-between items-center py-14">
+    <header class="mx-10 md:mx-40 mb-48">
+        <nav class="flex justify-between items-center py-8 md:py-14">
             <div>
                 <h1 class="header">Bike Dekho</h1>
             </div>
@@ -64,88 +70,89 @@
                 <button class="ml-12 bg-primary border-0 px-12 py-4 rounded-md text-white font-bold text-xl">Login</button>
             </div>
 
-            <div class="md:hidden">
-                <div class="navbar-end">
-                    <div class="dropdown">
-                      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
-                      </div>
-                      <ul
-                        tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a>Home</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>News</a></li>
-                        <li><a>Contact</a></li>
-                      </ul>
-                    </div>
-                  </div>
+            <div class="flex md:hidden navbar-end">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                  <li><a>Home</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>News</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
             </div>
         </nav>
 
         <!-- slider -->
-        <div class="carousel w-full h-80 md:h-[550px] bg-[#E76F511A] rounded-md">
-            <div id="slide1" class="carousel-item relative w-full">
-              <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-                <div class="w-3/7">
-                  <h2 class="font-bold text-6xl">Ride-on R15 V4 with Smile</h2>
-                  <p class="p-1 py-5 pr-24">Amet minim mollit non deserunt ullamco 
-                  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                  <button class="bg-primary border-0 px-12 py-4 rounded-md text-white font-bold text-xl">Purchase</button>
-                </div>
-                <img src="resources/images/slider/bike1.png"/>
+        <div class="carousel py-10 md:py-24 bg-[#E76F511A] rounded-md">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:h-auto">
+              <div class="w-6/7 md:w-3/7">
+                <h2 class="font-bold text-3xl md:text-6xl">Ride-on R15 V4 with Smile</h2>
+                <p class="p-1 py-3 md:py-5 pr-8 md:pr-24">Amet minim mollit non deserunt ullamco 
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <button class="bg-primary border-0 px-6 md:px-12 py-2 md:py-4 rounded-md text-white font-bold text-md md:text-xl">Purchase</button>
               </div>
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide4" class="btn btn-circle">❮</a>
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
+              <img src="resources/images/slider/bike1.png"/>
             </div>
-            <div id="slide2" class="carousel-item relative w-full">
-              <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-                <div class="w-3/7">
-                  <h2 class="font-bold text-6xl">Ride-on R15 V4 with Smile</h2>
-                  <p class="p-1 py-5 pr-24">Amet minim mollit non deserunt ullamco 
-                  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                  <button class="bg-primary border-0 px-12 py-4 rounded-md text-white font-bold text-xl">Purchase</button>
-                </div>
-                <img src="resources/images/slider/bike2.png"/>
-              </div>
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide1" class="btn btn-circle">❮</a>
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div>
-            <div id="slide3" class="carousel-item relative w-full">
-              <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-                <div class="w-3/7">
-                  <h2 class="font-bold text-6xl">Ride-on R15 V4 with Smile</h2>
-                  <p class="p-1 py-5 pr-24">Amet minim mollit non deserunt ullamco 
-                  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                  <button class="bg-primary border-0 px-12 py-4 rounded-md text-white font-bold text-xl">Purchase</button>
-                </div>
-                <img src="resources/images/slider/bike3.png"/>
-              </div>
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide2" class="btn btn-circle">❮</a>
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-            </div>
-            <div id="slide4" class="carousel-item relative w-full">
-              <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-                <div class="w-3/7">
-                  <h2 class="font-bold text-6xl">Ride-on R15 V4 with Smile</h2>
-                  <p class="p-1 py-5 pr-24">Amet minim mollit non deserunt ullamco 
-                  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                  <button class="bg-primary border-0 px-12 py-4 rounded-md text-white font-bold text-xl">Purchase</button>
-                </div>
-                <img src="resources/images/slider/bike4.png"/>
-              </div>
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide3" class="btn btn-circle">❮</a>
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div>
+
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:h-auto">
+              <div class="w-6/7 md:w-3/7">
+                <h2 class="font-bold text-3xl md:text-6xl">Ride-on R15 V4 with Smile</h2>
+                <p class="p-1 py-3 md:py-5 pr-8 md:pr-24">Amet minim mollit non deserunt ullamco 
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <button class="bg-primary border-0 px-6 md:px-12 py-2 md:py-4 rounded-md text-white font-bold text-md md:text-xl">Purchase</button>
+              </div>
+              <img src="resources/images/slider/bike2.png"/>
+            </div>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:h-auto">
+              <div class="w-6/7 md:w-3/7">
+                <h2 class="font-bold text-3xl md:text-6xl">Ride-on R15 V4 with Smile</h2>
+                <p class="p-1 py-3 md:py-5 pr-8 md:pr-24">Amet minim mollit non deserunt ullamco 
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <button class="bg-primary border-0 px-6 md:px-12 py-2 md:py-4 rounded-md text-white font-bold text-md md:text-xl">Purchase</button>
+              </div>
+              <img src="resources/images/slider/bike3.png"/>
+            </div>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:h-auto">
+              <div class="w-6/7 md:w-3/7">
+                <h2 class="font-bold text-3xl md:text-6xl">Ride-on R15 V4 with Smile</h2>
+                <p class="p-1 py-3 md:py-5 pr-8 md:pr-24">Amet minim mollit non deserunt ullamco 
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <button class="bg-primary border-0 px-6 md:px-12 py-2 md:py-4 rounded-md text-white font-bold text-md md:text-xl">Purchase</button>
+              </div>
+              <img src="resources/images/slider/bike4.png"/>
+            </div>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
 
     </header>
 </body>
