@@ -52,16 +52,16 @@ console.log('Entries:',ENTRIEs, '\n');
 
 
 // ------------- loop -------------
-// for-in: to get keys
+// for-in: to get keys to access the value
 for (const key in bottle) {
-    console.log(key);
+    console.log(key + ': ' + bottle[key]);
 }
 
-// for-of: to get values of keys
-const keys = Object.keys(bottle);
-for (const value of keys) {
-    console.log(value + ': ' + bottle[value]);
-}
+// for-of: iterates over the values
+// but an object is not iterable
+// for (const value of bottle) {
+//     console.log(value);
+// }
 console.log();
 
 
