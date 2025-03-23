@@ -173,3 +173,8 @@ If declared outside a function, it becomes a <b>global variable</b>.
 
 ### DOM manipulation
 - DOM (Document Object Model) Manipulation refers to the process of dynamically changing the content, structure, and style of a webpage using JavaScript. The DOM represents an <b>HTML document as a tree structure</b> where each element is a node, allowing JavaScript to interact with and modify it in real-time
+- html document represent as an object (tree structure) --> this object name is document
+
+### Array vs Array-like object
+- <b>array:</b> a data structure that stores multiple values of the same type in a contiguous memory location and provides built-in methods for manipulation.
+- <b>array-like object:</b> an object that has indexed elements and a length property but lacks array methods like .map(), .push(), or .filter()
