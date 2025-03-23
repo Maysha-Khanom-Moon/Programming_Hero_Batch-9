@@ -29,8 +29,21 @@
 
     <script src="js/dom.js"></script>
     <script>
-        const liCollection = document.getElementsByTagName('li');
+        const liCollection = document.getElementsByTagName('li'); // array-like object
         console.log(liCollection);
+
+        /*
+        # for-of: iterate over an array
+            - we know object is not iterable
+            - but 'liCollection' is an array-like object
+            - that's why it iterable
+        */
+        console.log("division")
+        for (const li of liCollection) {
+            console.log(li)
+        }
+
+        
 
         const student = {
             name: 'ABUL',
