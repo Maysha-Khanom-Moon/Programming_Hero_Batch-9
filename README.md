@@ -168,3 +168,8 @@ If declared outside a function, it becomes a <b>global variable</b>.
 
 ### primitive vs non-primitive data types
 ![data types](images/primitive_non-primitive.png)
+
+<br>
+
+### DOM manipulation
+- DOM (Document Object Model) Manipulation refers to the process of dynamically changing the content, structure, and style of a webpage using JavaScript. The DOM represents an <b>HTML document as a tree structure</b> where each element is a node, allowing JavaScript to interact with and modify it in real-time
