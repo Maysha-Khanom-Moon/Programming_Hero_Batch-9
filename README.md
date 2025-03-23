@@ -5,6 +5,8 @@
 
 - [A2 - Trek Twig](https://maysha-khanom-moon.github.io/ph__a2__trek-twig/) ~ html + vanilla css (not responsive)
 
+- [A3 - Hockey](https://maysha-khanom-moon.github.io/ph__a3__hockey/) ~ html + tailwind css + daisyui (responsive)
+
 <br>
 
 ### Course outline
