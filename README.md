@@ -138,6 +138,15 @@
 ### CSS vs CSS3
 <b>CSS3</b> is an upgraded version of CSS with modular improvements, advanced selectors (before only id, class, element), responsive design (@media queries), animations (@keyframes, transition), and modern layout techniques (Flexbox, Grid). It also introduces enhanced styling features like border-radius, box-shadow, and custom fonts (@font-face). These enhancements make web design more efficient, responsive, and visually appealing while reducing reliance on images and JavaScript.
 
+### order of specificity: 
+1. Inline styles
+2. ```!important``` rules
+3. ID selector
+4. Class selectors, attribute selectors, pseudo-classes
+5. Element (tag) selectors
+6. Universal selector (*)
+7. Order of appearance (bottom --> latest)
+
 ### 5 things for responsiveness
 1. Break points
 2. Media query
