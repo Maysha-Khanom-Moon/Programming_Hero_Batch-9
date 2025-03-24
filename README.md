@@ -181,3 +181,5 @@ If declared outside a function, it becomes a <b>global variable</b>.
 
 ### NodeList vs HTMLCollection
 ![array-like object](images/nodelist_htmlcollection.png)
+- <b>Static NodeList:</b> does not update when the DOM changes. It remains a snapshot of the elements at the time of selection.
+- <b>Live HTMLCollection:</b> automatically updates when the DOM changes (e.g., new elements added or removed)
