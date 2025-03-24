@@ -18,6 +18,11 @@ console.log(title.getAttribute('class'));
 console.log(title.getAttribute('style'));
 console.log('\n');
 
+// setAttribute
+title.setAttribute('class', 'red');
+title.setAttribute('style', 'color: red');
+title.setAttribute('title', 'tooltip set by js')
+
 
 // classList
 let classListOfTitle = title.classList;
