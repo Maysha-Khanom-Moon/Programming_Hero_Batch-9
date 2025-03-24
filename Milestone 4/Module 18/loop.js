@@ -3,8 +3,9 @@
  * 1. for loop
  * 2. while loop
  * 3. do-while
- * 4. for-of: array loop (iterates values)
- * 5. for-in: object loop (iterates keys)
+ * 4. for-of: array loop (iterates values) --> only iterative array
+ * 5. for-in: object loop (iterates keys/ indexes) --> both iterative or non-iterative
+ * 6. forEach: array loop (iterates indexes and values) --> only iterative array
  */
 
 /**
@@ -49,3 +50,15 @@ const mixedArray = [12, 'Alahbad', true, 45.566];
 for(const i of mixedArray) {
     console.log(i);
 }
+
+// 5. 
+console.log('\nfor-in loop: ');
+for (const i in mixedArray) {
+    console.log(i);
+}
+
+// 6.
+console.log('\nforEach loop: ');
+mixedArray.forEach((value, index) => {
+    console.log(index, value);
+})
