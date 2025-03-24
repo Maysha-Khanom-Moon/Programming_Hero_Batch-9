@@ -10,25 +10,57 @@
         li {
             color: royalblue;
         }
+
+        #fruits-title {
+            color: black;
+        }
+
+        .important-places {
+            color: red;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to my DOM</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias distinctio expedita iste culpa ipsa similique vitae rem incidunt architecto dolore nemo mollitia temporibus eaque rerum ipsum, molestias ipsam eum obcaecati?</p>
     </header>
-
     <main>
-        <h1>My Awesome DOM de baba</h1>
-        <ul>
-            <li>Jalali Set</li>
-            <li>Shafayet</li>
-            <li>Bonobash</li>
-            <li>DOM de re baba</li>
-        </ul>
+        <section>
+            <h1>My Awesome DOM de baba</h1>
+            <ul>
+                <li>Jalali Set</li>
+                <li>Shafayet</li>
+                <li>Bonobash</li>
+                <li>DOM de re baba</li>
+            </ul>
+        </section>
+
+        <section>
+            <h1 id="fruits-title">Fruits I like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li>
+            </ul>
+        </section>
+            <h1>Places I like to visit</h1>
+            <ul>
+                <li class="important-places">Soondorban</li>
+                <li class="important-places">Bandorban</li>
+                <li class="important-places">Kataban</li>
+                <li>Shalbon</li>
+            </ul>
+        <section>
+
+        </section>
     </main>
 
     <script src="js/dom.js"></script>
     <script>
+        fruitTitle = document.getElementById('fruits-title');
+        console.log(fruitTitle)
+        
         const liCollection = document.getElementsByTagName('li'); // array-like object
         console.log(liCollection);
 
