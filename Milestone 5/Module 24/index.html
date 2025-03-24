@@ -38,7 +38,7 @@
 
         <section>
             <h1 id="fruits-title">Fruits I like</h1>
-            <ul>
+            <ul class="fruits-container">
                 <li>Apple</li>
                 <li>Banana</li>
                 <li>Carrot</li>
@@ -58,6 +58,19 @@
 
     <script src="js/dom.js"></script>
     <script>
+        // work as css selector
+        // querySelectorAll --> 'NodeList' (array-like object)
+        // querySelector --> only first element
+        const someLi = document.querySelectorAll('.fruits-container li');
+        console.log(someLi);
+
+        const firstLi = document.querySelector('.fruits-container li');
+        console.log(firstLi);
+
+
+        // getElements --> 'HTMLCollection' (array-like object)
+        // getElement --> single element
+
         // if this class doesn't exist then return empty array (array-like object)
         importantPlaces = document.getElementsByClassName('important-places'); // HTMLCollection
         console.log(importantPlaces);
