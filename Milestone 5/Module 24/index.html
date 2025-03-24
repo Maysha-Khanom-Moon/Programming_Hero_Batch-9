@@ -59,14 +59,14 @@
     <script src="js/dom.js"></script>
     <script>
         // if this class doesn't exist then return empty array (array-like object)
-        importantPlaces = document.getElementsByClassName('important-places');
+        importantPlaces = document.getElementsByClassName('important-places'); // HTMLCollection
         console.log(importantPlaces);
 
         // if this id doesn't exist then return null
         fruitTitle = document.getElementById('fruits-title');
         console.log(fruitTitle)
         
-        const liCollection = document.getElementsByTagName('li'); // array-like object
+        const liCollection = document.getElementsByTagName('li'); // HTMLCollection --> array-like object
         console.log(liCollection);
 
         /*
