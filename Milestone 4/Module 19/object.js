@@ -62,8 +62,12 @@ for (const key in bottle) {
 // for (const value of bottle) {
 //     console.log(value);
 // }
-console.log();
 
+// forEach: only works with arrays
+Object.entries(bottle).forEach(([key, value]) => {
+    console.log(key + ': ' + value);
+})
+console.log();
 
 
 // ------------- nested object -------------
