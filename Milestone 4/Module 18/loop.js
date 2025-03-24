@@ -6,6 +6,13 @@
  * 4. for-of: array loop (iterates values) --> only iterative array
  * 5. for-in: object loop (iterates keys/ indexes) --> both iterative or non-iterative
  * 6. forEach: array loop (iterates indexes and values) --> only iterative array
+ * 
+ * 
+ * ### array
+ *    - array.forEach((value, index) => {});
+ * 
+ * ### object
+ *    - Object.entries(object).forEach(([key, value]) => {});
  */
 
 /**
