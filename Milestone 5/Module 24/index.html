@@ -37,7 +37,7 @@
         </section>
 
         <section>
-            <h1 id="fruits-title">Fruits I like</h1>
+            <h1 id="fruits-title" class="fruits-title title-2 color-blue" style="color: blue;">Fruits I like</h1>
             <ul class="fruits-container">
                 <li>Apple</li>
                 <li>Banana</li>
@@ -72,11 +72,11 @@
         // getElement --> single element
 
         // if this class doesn't exist then return empty array (array-like object)
-        importantPlaces = document.getElementsByClassName('important-places'); // HTMLCollection
+        const importantPlaces = document.getElementsByClassName('important-places'); // HTMLCollection
         console.log(importantPlaces);
 
         // if this id doesn't exist then return null
-        fruitTitle = document.getElementById('fruits-title');
+        const fruitTitle = document.getElementById('fruits-title');
         console.log(fruitTitle)
         
         const liCollection = document.getElementsByTagName('li'); // HTMLCollection --> array-like object
