@@ -11,3 +11,23 @@ const li = document.createElement('li');
 li.innerText = 'Dhaka';
 li.style.color = 'black';
 Container.childNodes[3].appendChild(li);
+
+
+const mainContainer = document.querySelector('main');
+const section = document.createElement('section');
+const h1 = document.createElement('h1');
+h1.innerText = 'New Food List';
+section.appendChild(h1);
+
+const ul = document.createElement('ul');
+const li1 = document.createElement('li');
+li1.innerText = 'Biriyani';
+const li2 = document.createElement('li');
+li2.innerText = 'Borhani';
+const li3 = document.createElement('li');
+li3.innerText = 'Salad';
+ul.appendChild(li1);
+ul.appendChild(li2);
+ul.appendChild(li3);
+section.appendChild(ul);
+mainContainer.appendChild(section);
