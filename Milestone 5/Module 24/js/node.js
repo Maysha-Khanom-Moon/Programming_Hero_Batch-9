@@ -31,3 +31,21 @@ ul.appendChild(li2);
 ul.appendChild(li3);
 section.appendChild(ul);
 mainContainer.appendChild(section);
+
+// set innerHTML directly
+const section2 = document.createElement('section');
+section2.innerHTML = 
+`
+    <h1>My Dress section</h1>
+    <ul>
+        <li>T-shirt</li>
+        <li>Lungi</li>
+        <li>Pants</li>
+    </ul>
+`;
+mainContainer.appendChild(section2);
+
+/**
+ * dom.js already executed before this file
+ * That's why those style is not included in this two section
+ */
