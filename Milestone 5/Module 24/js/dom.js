@@ -36,3 +36,19 @@ classListOfTitle.toggle('green'); // if not exist then add, if exist then remove
 classListOfTitle = title.classList; // not needed
 console.log(classListOfTitle);
 console.log('\n');
+
+
+// style
+const sections = document.querySelectorAll('section');
+console.log(sections);
+for (const section of sections) {
+    section.style.border = '2px solid steelblue';
+    section.style.marginBottom = '5px';
+    section.style.borderRadius = '15px';
+    section.style.padding = '7px';
+}
+console.log('\n');
+
+const placesContainer = document.getElementById('places-container');
+placesContainer.style.backgroundColor = 'lightgray';
+placesContainer.setAttribute('class', 'yellow-bg'); // but it will not change because of order-of-specificity
