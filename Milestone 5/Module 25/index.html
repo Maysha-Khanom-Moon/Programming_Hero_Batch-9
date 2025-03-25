@@ -9,27 +9,38 @@
     <h1>DOM er ajke special events</h1>
     <button onclick="console.log('clicked')">Click me</button>
 
-    <!-- 1. -->
-    <button onclick="document.body.style.backgroundColor = 'yellow'">Make Yellow</button>
+    <!-- 1. directly set on the html element -->
+    <button onclick="document.body.style.backgroundColor = 'blue'">Make Blue</button>
 
-    <!-- 2. -->
-    <button onclick="makeRed()">Make Red</button>
+    <!-- 2. add onevent function on html element -->
+    <button onclick="makePurple()">Make Purple</button>
 
     <!-- 3. -->
     <button id="make-green">Make Green</button>
     
+    <!-- 3. another way -->
+    <button id="make-black">Make Black</button>
+
     <script src="js/event.js"></script>
     <script>
         // 2.
-        function makeRed() {
+        function makePurple() {
             document.body.style.backgroundColor = 'red';
         }
 
         // 3.
         const makeGreenButton = document.getElementById('make-green');
+        // function should not called immediately. so, just reference assigned.
         makeGreenButton.onclick = makeGreen;
         function makeGreen() {
             document.body.style.backgroundColor = 'green';
+        }
+
+        // 3. another way
+        const makeBlackButton = document.getElementById('make-black');
+        makeBlackButton.onclick = function makeBlack() {
+            document.body.style.backgroundColor = 'black';
+            document.body.style.color = 'white';
         }
     </script>
 </body>
