@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Event Handler</title>
+</head>
+<body>
+    <h1>Final DOM Event Handlers</h1>
+    <h3 id="handler-status">Default Text</h3>
+    <!-- 1. -->
+    <button onclick="handleOnClick()">Handle event by add onclick function</button>
+
+    <!-- 2. -->
+    <button id="evnet-listener">Handle event by addEventListener</button>
+
+    <script>
+        // option 1
+        function handleOnClick() {
+            document.getElementById('handler-status').innerText = 'Handled by function attached on onclick attribute';
+        }
+
+        // option 2
+        // anonymous function (no name) or callback function
+        const eventListenerButton = document.getElementById('evnet-listener');
+        eventListenerButton.addEventListener('click', function() {
+            document.getElementById('handler-status').innerText = 'Handled by function attached on addEventListener';
+        })
+    </script>
+</body>
+</html>
