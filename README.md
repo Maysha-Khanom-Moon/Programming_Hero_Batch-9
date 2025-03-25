@@ -192,3 +192,9 @@ If declared outside a function, it becomes a <b>global variable</b>.
 ![array-like object](images/nodelist_htmlcollection.png)
 - <b>Static NodeList:</b> does not update when the DOM changes. It remains a snapshot of the elements at the time of selection.
 - <b>Live HTMLCollection:</b> automatically updates when the DOM changes (e.g., new elements added or removed)
+
+### Event & Event Handler
+- <b>event:</b> action of user or browser
+- <b>event handler:</b> function to handle the event --> ( on + event )
+- <b>HTML Attribute ```onclick="makeRed()"```:</b> the function is called immediately when the event occurs
+- <b>JavaScript Assignment ```onclick=makeRed```:</b> the function assigned as an event handler. and the function is executed only when the event occurs.
