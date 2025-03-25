@@ -15,3 +15,14 @@ console.log('This is separate js file');
  *  - drag and drop: dragstart, drop
  *  - media: play, pause
  */
+
+
+/**
+ * --------- keydown vs keypress vs keyup ---------
+ * 
+ * keydown: Fires when the key is pressed, but the letter may not appear in the input field yet.
+ * keypress: Fires when a character key is pressed, but it’s deprecated.
+ * keyup: Fires after the key is released, when the character is already added to the input field.
+ * 
+ * - keypress fires on only character-producing keys (letters, digits, punctuation)
+ */
