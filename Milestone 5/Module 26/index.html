@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="p-12 text-[#111111CC] bg-slate-900 h-[100vh]">
+<body class="p-12 text-[#111111CC] bg-slate-900">
     <header class="px-12 py-5 mb-12 bg-lime-100 rounded-lg">
         <div class="flex justify-between font-medium text-3xl items-center">
             <h1><span class="text-4xl font-bold">Interactive</span><br>Geometry Genius</h1>
@@ -126,40 +126,67 @@
                     <button class="px-[30%] py-5 bg-blue-500 font-bold text-white rounded-md btn">Calculate</button>
                 </div>
             </div>
-            <div class="card bg-pink-100  shadow-md">
+            <!-- Pentagon -->
+            <div class="card bg-blue-300  shadow-md">
                 <figure class="px-10 pt-10">
                   <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"
+                    src="resources/images/pentagon.png"
+                    alt="triangle"
                     class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Card Title</h2>
-                  <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                  <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
+                  <h2 class="card-title font-extrabold">Pentagon</h2>
+                  <p>Area (A) = 0.5 x p x b</p>
+
+                  <div class="flex gap-2">
+                    <div>
+                        <input class="bg-white p-2 border-0 w-4/5 rounded-md" type="text" placeholder="p">
+                        <label for="">cm</label>
+                    </div>
+                    <div>
+                        <input class="bg-white p-2 border-0 w-4/5 rounded-md" type="text" placeholder="b">
+                        <label for="">cm</label>
+                    </div>
                   </div>
                 </div>
+                <div class="flex justify-center mb-10">
+                    <button class="px-[30%] py-5 bg-blue-500 font-bold text-white rounded-md btn">Calculate</button>
+                </div>
             </div>
-            <div class="card bg-pink-100  shadow-md">
+            <!-- Ellipse -->
+            <div class="card bg-blue-300  shadow-md">
                 <figure class="px-10 pt-10">
                   <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"
+                    src="resources/images/ellipse.png"
+                    alt="triangle"
                     class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Card Title</h2>
-                  <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                  <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
+                  <h2 class="card-title font-extrabold">Ellipse</h2>
+                  <p>Area (A) = πab</p>
+
+                  <div class="flex gap-2">
+                    <div>
+                        <input class="bg-white p-2 border-0 w-4/5 rounded-md" type="text" placeholder="a">
+                        <label for="">cm</label>
+                    </div>
+                    <div>
+                        <input class="bg-white p-2 border-0 w-4/5 rounded-md" type="text" placeholder="b">
+                        <label for="">cm</label>
+                    </div>
                   </div>
+                </div>
+                <div class="flex justify-center mb-10">
+                    <button class="px-[30%] py-5 bg-blue-500 font-bold text-white rounded-md btn">Calculate</button>
                 </div>
             </div>
         </div>
 
-        <div class="w-1/4 text-center border-pink-100 p-2 bg-purple-50">
+        <div class="w-1/4 text-center p-2 rounded-sm bg-white">
             <p class="text-xl font-bold underline">Area Calculation</p>
+            <div class="p-2">
+
+            </div>
         </div>
     </main>
 </body>
