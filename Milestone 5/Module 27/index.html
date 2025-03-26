@@ -3,13 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Clash Pro</title>
+    <title>Alpha Class Pro</title>
 
-    <!-- daisyui & tailwind -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisyui and tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-anton {
+            font-family: 'Anton', sans-serif;
+        }
+    </style>
 </head>
 <body>
+    <main class="bg-[#1E1E1E] min-h-screen bg-[url('images/background.png')] bg-no-repeat bg-center flex flex-col items-center">
+        <!-- home screen -->
+        <section id="home-screen" class="text-white">
+            <div class="flex min-h-screen flex-col pt-36 items-center gap-10">
+                <h1 class="text-[120px] font-anton uppercase">Alpha Clash Pro</h1>
+                <p>Unleash Your Keyboard Kun g Fu : Press "Enter" to Play</p>
+                <button class="btn text-2xl font-semibold text-[#010313]" onclick="play('home-screen')">Play Now</button>
+            </div>
+        </section>
     
+        <!-- playground -->
+        <section id="play-ground" class="mt-16 hidden">
+            <div class="flex flex-col gap-8">
+                <!-- screen (daisyui - artboard) -->
+                <div>
+                    <div class="border-[16px] border-[#010313] rounded-2xl artboard artboard-horizontal phone-6 bg-[#ffffffb3] font-poppins">
+                        <div class="flex flex-col justify-center items-center gap-16">
+                            <div class="text-white text-[18px] font-medium bg-[#2F2941] py-2 px-4 rounded-b-xl">
+                                <p>Don't watch keyboard  while playing...</p>
+                            </div>     
+                            <div class="text-[#010313cc] text-8xl font-semibold">
+                                <p id="current-char">Y</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- keyboard (daisyui - kbd) -->
+                <div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="q" class="kbd">q</kbd>
+                        <kbd id="w" class="kbd">w</kbd>
+                        <kbd id="e" class="kbd">e</kbd>
+                        <kbd id="r" class="kbd">r</kbd>
+                        <kbd id="t" class="kbd">t</kbd>
+                        <kbd id="y" class="kbd">y</kbd>
+                        <kbd id="u" class="kbd">u</kbd>
+                        <kbd id="i" class="kbd">i</kbd>
+                        <kbd id="o" class="kbd">o</kbd>
+                        <kbd id="p" class="kbd">p</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="a" class="kbd">a</kbd>
+                        <kbd id="s" class="kbd">s</kbd>
+                        <kbd id="d" class="kbd">d</kbd>
+                        <kbd id="f" class="kbd">f</kbd>
+                        <kbd id="g" class="kbd">g</kbd>
+                        <kbd id="h" class="kbd">h</kbd>
+                        <kbd id="j" class="kbd">j</kbd>
+                        <kbd id="k" class="kbd">k</kbd>
+                        <kbd id="l" class="kbd">l</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="z" class="kbd">z</kbd>
+                        <kbd id="x" class="kbd">x</kbd>
+                        <kbd id="c" class="kbd">c</kbd>
+                        <kbd id="v" class="kbd">v</kbd>
+                        <kbd id="b" class="kbd">b</kbd>
+                        <kbd id="n" class="kbd">n</kbd>
+                        <kbd id="m" class="kbd">m</kbd>
+                        <kbd id="/" class="kbd">/</kbd>
+                      </div>
+                </div>
+
+                <!-- life score -->
+                <div class="flex justify-between w-[1024px]">
+                    <!-- display life -->
+                    <div>
+                        <button class="px-8 py-4 text-white font-inter text-[20px] font-medium btn rounded-3xl border-none bg-[#894189]">
+                            Life 
+                            <img src="icons/heart.png" alt="">
+                            <span id="current-life" class="ml-2">5</span>
+                          </button>
+                    </div>
+
+                    <!-- display score -->
+                    <div>
+                        <button class="px-8 py-4 text-white font-inter text-[20px] font-medium btn rounded-3xl border-none bg-[#894189]">
+                            Score 
+                            <img src="icons/dollar.png" alt="">
+                            <span id="current-score" class="ml-2">0</span>
+                          </button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    
+        <section id="score-board" class="mt-64 hidden">
+            <div class="flex gap-4 flex-col items-center">
+                <div class="font-poppins text-white font-extrabold text-5xl mb-4">
+                    <h1>Score: <span id="score" class="font-semibold">14</span></h1>
+                </div>
+                <div>
+                    <button onclick="play('score-board')" class="font-poppins text-[#010313] font-semibold text-2xl btn">Play Again</button>
+                </div>
+                <div class="font-poppins text-white font-medium text-xl">
+                    <p>Practice will make you Pro</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- scripts -->
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/alpha-clash.js"></script>
 </body>
 </html>
