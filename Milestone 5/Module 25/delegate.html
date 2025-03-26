@@ -16,6 +16,7 @@
             <li class="item">Corrupti, reprehenderit minus?</li>
             <li class="item">Animi, facere veritatis?</li>
         </ul>
+        <button id="btn-add-item">Add Item</button>
     </section>
 
     <!-- 
@@ -26,6 +27,7 @@
     -->
 
     <script>
+        // ----- event listener -----
         const items = document.getElementsByClassName('item');
         for (const item of items) {
             // 1.
@@ -41,6 +43,18 @@
                 event.target.parentNode.removeChild(event.target);
             })
         }
+
+        document.getElementById('btn-add-item').addEventListener('click', function(){
+            const li = document.createElement('li');
+            li.innerText = 'New Item Added';
+            li.classList.add('item')
+            document.getElementById('list-container').appendChild(li);
+        })
+        // it's not working because I just add event handler to existing elements. not in the new elements
+
+
+        // here came the event delegation
+        
     </script>
 </body>
 </html>
