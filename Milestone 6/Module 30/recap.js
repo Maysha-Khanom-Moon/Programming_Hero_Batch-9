@@ -26,7 +26,7 @@ const add3 = (a, b) => a+b
 const doubleTem = (a = 0, b = 0) => [a*2, b*2];
 
 
-// multiline string
+// template literal for multiline string
 const Name = 'Maysha \nKhanom \nMoon';
 const cv = `My name is ${Name}. I am a web developer.`
 
