@@ -39,16 +39,28 @@
             step 1: capturing step (top to bottom)
             step 2: target step
             step 3: bubbling step (bottom to top)
+        
+        ## Event stopPropagation ==> stop the event from bubbling. 
+           - But it does not stop all the other event from capturing this current step
+
+        ## Event stopImmediatePropagation ==> stop the event from bubbling. 
+           - Stop all the other event from capturing this current step
     -->
 
     <script>
         document.getElementById('item-2').addEventListener('click', function (){
             console.log('Item-2 clicked - one');
-            event.stopPropagation();
+            // event.stopPropagation();
+            
         })
         document.getElementById('item-2').addEventListener('click', function (){
             console.log('Item-2 clicked - two');
+            event.stopImmediatePropagation();
         })
+        document.getElementById('item-2').addEventListener('click', function (){
+            console.log('Item-2 clicked - three');
+        })
+
         document.getElementById('list-ul').addEventListener('click', function (){
             console.log('ul clicked');
         })
