@@ -41,17 +41,17 @@
            - step 3: capturing step (top to bottom)
         
         - just add 'true' after handler
+
+        ## stopPropagation
+            - stop further capturing & bubbling
     -->
 
     <script>
         document.getElementById('item-2').addEventListener('click', function (){
             console.log('Item-2 clicked - one');
-            // event.stopPropagation();
-            
-        })
+        }, true)
         document.getElementById('item-2').addEventListener('click', function (){
             console.log('Item-2 clicked - two');
-            event.stopImmediatePropagation();
         }, true)
         document.getElementById('item-2').addEventListener('click', function (){
             console.log('Item-2 clicked - three');
@@ -59,6 +59,7 @@
 
         document.getElementById('list-ul').addEventListener('click', function (){
             console.log('ul clicked');
+            event.stopPropagation(); // stop further capturing
         }, true)
         document.getElementById('list-container').addEventListener('click', function (){
             console.log('section container clicked');
