@@ -7,6 +7,8 @@
 
 - [A3 - Hockey](https://maysha-khanom-moon.github.io/ph__a3__hockey/) ~ html + tailwind css + daisyui (responsive)
 
+- [A5 - Smart Ticketing](https://maysha-khanom-moon.github.io/ph__a5__smart-ticketing/) ~ html + tailwind css + daisyui + js
+
 <br>
 
 ### Course outline
