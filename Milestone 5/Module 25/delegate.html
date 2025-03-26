@@ -27,7 +27,8 @@
     -->
 
     <script>
-        // ----- event listener -----
+        // WITHOUT EVENT DELEGATION
+        /**
         const items = document.getElementsByClassName('item');
         for (const item of items) {
             // 1.
@@ -43,6 +44,7 @@
                 event.target.parentNode.removeChild(event.target);
             })
         }
+        */
 
         document.getElementById('btn-add-item').addEventListener('click', function(){
             const li = document.createElement('li');
@@ -54,7 +56,12 @@
 
 
         // here came the event delegation
-        
+        // we delegate the event handling to parent
+        const listContainer = document.getElementById('list-container');
+        listContainer.addEventListener('click', function(event){
+            console.log(event.target.innerText);
+            event.target.parentNode.removeChild(event.target);
+        })
     </script>
 </body>
 </html>
