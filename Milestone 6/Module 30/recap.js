@@ -44,3 +44,16 @@ const sum = add(...arr); // spreading arguments
 // for-of --> iterates over values (only array)
 // for-in --> iterates over keys
 // forEach --> iterates over alls + shortcut loop for dom
+
+
+// object
+const bottle = {
+    brand: 'apple',
+    price: 45,
+    color: 'white',
+    isClean: false
+}
+console.log(bottle.brand); // 1.
+console.log(bottle['price']); // 2.
+const key = 'color';
+console.log(bottle[key]); // 3.
