@@ -8,6 +8,7 @@
 const b = 'ab'; // NaN
 
 
+// ---------------- FUNCTION ----------------
 // function declaration
 function add (a, b) {
     return a+b;
@@ -20,3 +21,18 @@ const add2 = function (a, b) {
 
 // arrow function
 const add3 = (a, b) => a+b
+
+// default parameter
+const doubleTem = (a = 0, b = 0) => [a*2, b*2];
+
+
+// multiline string
+const Name = 'Maysha \nKhanom \nMoon';
+
+
+// spread operator (...)
+// expand into separate elements
+const arr = [1, 2];
+const arr2 = [...arr]; // copying
+const arr3 = [...arr, 3, 4]; // merging
+const sum = add(...arr); // spreading arguments
