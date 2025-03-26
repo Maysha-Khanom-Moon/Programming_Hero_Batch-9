@@ -10,3 +10,25 @@ const products = {
     ]
 }
 console.log(products.data[1].price);
+
+
+const user = {
+    id: 5001,
+    name: 'Sharigul Raj',
+    address: {
+        street: {
+            first: '54/1 uttor side',
+            second: 'poribag er goli',
+            third: 'no dorai'
+        },
+        city: 'Dhaka'
+    }
+}
+
+// it's chain
+console.log(user.address.street.second);
+
+
+// ## OPTIONAL CHAINING
+// check if a property exists then access it otherwise undefined --> it's an way to avoid error
+console.log(user?.address?.house?.first); // undefined
