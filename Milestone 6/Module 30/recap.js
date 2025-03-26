@@ -19,16 +19,25 @@ const add2 = function (a, b) {
     return a+b;
 }
 
-// arrow function
-const add3 = (a, b) => a+b
+// arrow function with default parameter
+const add3 = (a=0, b=0) => a+b
 
 // default parameter
 const doubleTem = (a = 0, b = 0) => [a*2, b*2];
 
 
+// ## TEMPLATE STRING
 // template literal for multiline string
 const Name = 'Maysha \nKhanom \nMoon';
 const cv = `My name is ${Name}. I am a web developer.`
+
+
+// destructuring
+const person = {
+    name: 'Maysha',
+    age: 20
+}
+const {name, age} = person;
 
 
 // spread operator (...)
@@ -37,6 +46,8 @@ const arr = [1, 2];
 const arr2 = [...arr]; // copying
 const arr3 = [...arr, 3, 4]; // merging
 const sum = add(...arr); // spreading arguments
+console.log('max:', Math.max(...arr));
+
 
 
 // loops
