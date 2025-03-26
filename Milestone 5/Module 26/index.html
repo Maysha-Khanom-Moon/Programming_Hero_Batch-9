@@ -7,6 +7,13 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        #area-container {
+            height: 900px;
+            overflow-y: auto;
+        }
+    </style>
 </head>
 <body class="p-12 text-[#111111CC] bg-slate-900">
     <header class="px-12 py-5 mb-12 bg-lime-100 rounded-lg">
@@ -42,7 +49,7 @@
                   </div>
                 </div>
                 <div class="flex justify-center mb-10">
-                    <button class="px-[33%] py-5 bg-blue-500 font-bold text-white rounded-md btn">Calculate</button>
+                    <button class="px-[33%] py-5 bg-blue-500 font-bold text-white rounded-md btn calculate">Calculate</button>
                 </div>
             </div>
             <!-- rectangle -->
@@ -69,7 +76,7 @@
                   </div>
                 </div>
                 <div class="flex justify-center mb-10">
-                    <button class="px-[33%] py-5 bg-blue-500 font-bold text-white rounded-md btn">Calculate</button>
+                    <button class="px-[33%] py-5 bg-blue-500 font-bold text-white rounded-md btn calculate">Calculate</button>
                 </div>
             </div>
             <!-- parallelogram -->
@@ -96,7 +103,7 @@
                   </div>
                 </div>
                 <div class="flex justify-center mb-10">
-                    <button class="px-[33%] py-5 bg-blue-500 font-bold text-white rounded-md btn">Calculate</button>
+                    <button class="px-[33%] py-5 bg-blue-500 font-bold text-white rounded-md btn calculate">Calculate</button>
                 </div>
             </div>
             <!-- Rhombus -->
@@ -123,7 +130,7 @@
                   </div>
                 </div>
                 <div class="flex justify-center mb-10">
-                    <button class="px-[33%] py-5 bg-blue-500 font-bold text-white rounded-md btn">Calculate</button>
+                    <button class="px-[33%] py-5 bg-blue-500 font-bold text-white rounded-md btn calculate">Calculate</button>
                 </div>
             </div>
             <!-- Pentagon -->
@@ -150,7 +157,7 @@
                   </div>
                 </div>
                 <div class="flex justify-center mb-10">
-                    <button class="px-[33%] py-5 bg-blue-500 font-bold text-white rounded-md btn">Calculate</button>
+                    <button class="px-[33%] py-5 bg-blue-500 font-bold text-white rounded-md btn calculate">Calculate</button>
                 </div>
             </div>
             <!-- Ellipse -->
@@ -184,8 +191,8 @@
 
         <div class="w-1/4 text-center p-2 rounded-sm bg-white">
             <p class="text-xl font-bold underline">Area Calculation</p>
-            <div id="area-container" class="p-2 overflow-y-auto text-left flex flex-col gap-3">
-
+            <div id="area-container" class="p-2 text-left flex flex-col gap-1">
+                
             </div>
         </div>
     </main>

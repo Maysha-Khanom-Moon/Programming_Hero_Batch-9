@@ -28,7 +28,8 @@ document.querySelectorAll('.calculate').forEach(button => {
         
         // area adding
         const p = document.createElement('p');
-        p.innerText = `Area of ${parent} = ${area} ${'\n'} where a = ${i1} and b = ${i2}`;
+        p.innerText = `Area of ${parent}: ${area} ${'\n'} where a = ${i1}, b = ${i2}`;
+        p.setAttribute('class', 'bg-pink-50 p-2 rounded-md border-2')
         areaContainer.appendChild(p);
     });
 });
