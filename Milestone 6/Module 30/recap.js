@@ -28,6 +28,7 @@ const doubleTem = (a = 0, b = 0) => [a*2, b*2];
 
 // multiline string
 const Name = 'Maysha \nKhanom \nMoon';
+const cv = `My name is ${Name}. I am a web developer.`
 
 
 // spread operator (...)
@@ -36,3 +37,10 @@ const arr = [1, 2];
 const arr2 = [...arr]; // copying
 const arr3 = [...arr, 3, 4]; // merging
 const sum = add(...arr); // spreading arguments
+
+
+// loops
+// for, while, do-while --> indexing method
+// for-of --> iterates over values (only array)
+// for-in --> iterates over keys
+// forEach --> iterates over alls + shortcut loop for dom
