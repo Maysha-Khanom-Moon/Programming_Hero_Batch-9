@@ -12,6 +12,7 @@ document.querySelectorAll('.calculate').forEach(button => {
 
         let area;
         
+        // parent selection
         const parent = event.target.parentElement.previousElementSibling.children[0].innerText;
         console.log(parent);
         
@@ -25,6 +26,9 @@ document.querySelectorAll('.calculate').forEach(button => {
         }
         console.log('area: ' + area);
         
-
+        // area adding
+        const p = document.createElement('p');
+        p.innerText = `Area of ${parent} = ${area} ${'\n'} where a = ${i1} and b = ${i2}`;
+        areaContainer.appendChild(p);
     });
 });
