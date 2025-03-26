@@ -21,8 +21,7 @@ document.querySelectorAll('.calculate').forEach(button => {
             break;
             case 'Rectangle' || 'Parallelogram': area = i1 * i2;
             break;
-            case 'Rhombus': area = 0.5 * i1 * i2;
-            default: area = 0.5
+            default: area = 0.5 * i1 * i2;
         }
         console.log('area: ' + area);
         
@@ -30,6 +29,7 @@ document.querySelectorAll('.calculate').forEach(button => {
         const p = document.createElement('p');
         p.innerText = `Area of ${parent}: ${area} ${'\n'} where a = ${i1}, b = ${i2}`;
         p.setAttribute('class', 'bg-pink-50 p-2 rounded-md border-2')
-        areaContainer.appendChild(p);
+        // areaContainer.appendChild(p);
+        areaContainer.insertBefore(p, areaContainer.firstChild)
     });
 });
