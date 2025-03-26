@@ -198,3 +198,15 @@ If declared outside a function, it becomes a <b>global variable</b>.
 - <b>event handler:</b> function to handle the event --> ( on + event )
 - <b>HTML Attribute ```onclick="makeRed()"```:</b> the function is called immediately when the event occurs
 - <b>JavaScript Assignment ```onclick=makeRed```:</b> the function assigned as an event handler. and the function is executed only when the event occurs.
+
+### JavaScript Event Loop
+The <b>event loop</b> is a crucial part of how handles asynchronous operation. since js is <b>single-treaded</b>, it uses an <b>event loop</b> to manage multiple tasks efficiently without blocking the execution of other code.
+1. call stack --> handles function execution
+2. web apis --> manages asynchronous tasks like ```setTimeout(), fetch()```, etc
+3. callback queue / task queue --> stores callbacks waiting to executed
+
+The <b>event loop</b> continuously checks if the call stack is empty. If empty, it moves tasks from the callback queue to call stack
+
+<b>Sequence:</b> synchronous > asynchronous (promise > setTimeout)
+
+- microtasks (promise) runs before macrotasks (setTimeout)
