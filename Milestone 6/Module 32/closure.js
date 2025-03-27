@@ -27,3 +27,12 @@ const inner = outer();
 console.log(inner()); // 1
 console.log(inner()); // 2
 console.log(inner()); // 3
+
+// function factory - custom function
+function multiplier(n) {
+    return (num) => num * n;
+}
+const double = multiplier(2);
+const triple = multiplier(3);
+console.log(double(5)); // 10
+console.log(triple(10)); // 30
