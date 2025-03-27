@@ -36,3 +36,21 @@ const double = multiplier(2);
 const triple = multiplier(3);
 console.log(double(5)); // 10
 console.log(triple(10)); // 30
+
+
+/**
+ * ----- CALLBACK -----
+ * - a function is passed as an argument to another function
+ * - and it executed later
+ */
+function greetMorning(name) {
+    console.log('Good Morning ' + name);
+}
+function greetEvening(name) {
+    console.log('Good Evening ' + name);
+}
+function greet(func, name) {
+    func(name);
+}
+greet(greetMorning, 'Brenden');
+greet(greetEvening, 'Eich');
