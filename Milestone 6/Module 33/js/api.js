@@ -2,6 +2,7 @@
  * --------- JSON ----------
  * - JavaScript Object Notation
  * - data interchange format
+ * - it's a string
  */
 const shop = {
     owner: 'Alia',
@@ -15,6 +16,11 @@ const shop = {
     isOpen: true,
     isNew: false
 }
-const jsonShop = JSON.stringify(shop); // convert object to json
-console.log(shop);
+
+// stringify: convert object to json
+const jsonShop = JSON.stringify(shop);
 console.log(jsonShop);
+
+// parse: convert json to object
+const objShop = JSON.parse(jsonShop);
+console.log(objShop);
