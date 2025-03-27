@@ -8,3 +8,5 @@
 
 <b>Small Flow of DNS Resolution:</b> 
 ![dns flow](../../images/dns_flow.png)
+
+<b>HTTP:</b> hyper text transfer protocol. protocol for fetching resources. https - hyper text transfer protocol secure.
