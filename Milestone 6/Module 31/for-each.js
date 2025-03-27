@@ -26,3 +26,17 @@ console.log(selected);
 
 const findSelected = players.find(n => n % 2 === 0);
 console.log(findSelected);
+
+
+/**
+ * ----------- reduce -----------
+ * - reduce the array to a single value
+ * - accumulates values by callback function
+ * 
+ * array.reduce((accumulator, currentValue, index, array) => {
+ *      // logic
+ *  }, initialValue);
+ *
+ */
+const sum = nums.reduce((a, b) => a+b, 0)
+console.log(sum);
