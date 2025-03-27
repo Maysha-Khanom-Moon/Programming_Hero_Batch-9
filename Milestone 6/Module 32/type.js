@@ -43,3 +43,9 @@
  *      - 1 and '1' are not equal
  *      - 0 and false are not equal
  */
+
+
+/**
+ * null: assigned value and it means nothing
+ * undefined: variable declared but value not defined
+ */
