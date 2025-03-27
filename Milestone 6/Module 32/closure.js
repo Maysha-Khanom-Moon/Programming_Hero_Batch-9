@@ -68,3 +68,22 @@ function sum(a, b) {
     return a + b;    
 }
 console.log(sum(1, 2, 10));
+
+
+/**
+ * - primitive: pass by value
+ * - non-primitive: pass by reference
+ */
+let num1 = 4;
+function add(a) {
+    a = a + 1;
+}
+add(num1); // no change in num1
+console.log(num1);
+
+let obj1 = { name: 'Brenden' };
+function change(obj) {
+    obj.name = 'Eich';
+}
+change(obj1); // change in obj1
+console.log(obj1);
