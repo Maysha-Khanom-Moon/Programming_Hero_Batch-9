@@ -211,4 +211,10 @@ The <b>event loop</b> continuously checks if the call stack is empty. If empty, 
 
 <b>Sequence:</b> synchronous > asynchronous (promise > setTimeout)
 
-- microtasks (promise) runs before macrotasks (setTimeout)
+- micro-tasks (promise) runs before macro-tasks (setTimeout)
+
+<br>
+
+### Syntactic sugar
+- syntax that makes the code easier to read and write
+- class syntax, arrow function, template literal, destructuring, optional chaining (?.)
