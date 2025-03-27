@@ -33,6 +33,8 @@ const cv = `My name is ${Name}. I am a web developer.`
 
 
 // destructuring
+// [..] = array
+// {...} = object
 const person = {
     name: 'Maysha',
     age: 20
