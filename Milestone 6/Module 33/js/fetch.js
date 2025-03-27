@@ -21,7 +21,6 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
  *   - used to handle the promise result when it rejects
  * 
  * 4. .json():
- *   - used to parse the response body as json
- *   - also returns a promise to convert the response to json
+ *   - parse the response body as json (returns a promise)
  *   - why not JSON.parse()? because the response in raw format (bytes or text), not as a js object
  */
