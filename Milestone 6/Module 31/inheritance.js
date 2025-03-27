@@ -28,3 +28,8 @@ const vehicle1 = new Vehicle('mk', '10000000');
 
 const bus1 = new Bus('bus', 320000, 50, 100);
 console.log(bus1);
+
+/**
+ * ------ prototype chain ------
+ * - object inherits properties and methods form other object, through the chain
+ */
