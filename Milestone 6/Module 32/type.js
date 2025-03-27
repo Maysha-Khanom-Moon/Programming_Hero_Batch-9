@@ -29,3 +29,17 @@
  *      - work as reference --> address
  *      - dynamic size
  */
+
+
+/**
+ * ---- == vs === ----
+ * 1. == check only value
+ *      - 1 and true are equal
+ *      - 1 and '1' are equal
+ *      - 0 and false are equal
+ * 
+ * 2. === check value + type
+ *      - 1 and true are not equal
+ *      - 1 and '1' are not equal
+ *      - 0 and false are not equal
+ */
