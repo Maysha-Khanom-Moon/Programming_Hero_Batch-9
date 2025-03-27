@@ -64,10 +64,18 @@ console.log(sixth[1]);
 console.log(sixth, '\n');
 
 
-
 // 8. 
 const eighth = undefined;
 console.log(eighth, '\n');
 
 
 
+/**
+ * ----- type of arrya: object
+ * ----- type of null: object
+ * ----- type of undefined: undefined
+ */
+const ninth = null;
+const data = {result: [], update: null};
+
+console.log(typeof data, typeof data.result);
