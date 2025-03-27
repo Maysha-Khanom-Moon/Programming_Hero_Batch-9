@@ -17,3 +17,13 @@
 3. the browser sends a request to ```192.168.1.1```
 4. the server fetches data from the database
 5. the response is sent back to the user
+
+<br>
+
+<b>API:</b> Application Programming Interface
+- it's a set of rules and protocols.
+- a bridge that allows two application to communicate
+- api is the interface that handles requests (client) and responses (server)
+- methods: ```GET, POST, PUT, and DELETE```
+- data formats: JSON or XML
+- authentication: some apis require authentication ```api keys```
