@@ -218,3 +218,29 @@ The <b>event loop</b> continuously checks if the call stack is empty. If empty, 
 ### Syntactic sugar
 - syntax that makes the code easier to read and write
 - class syntax, arrow function, template literal, destructuring, optional chaining (?.)
+
+### Flow diagram of user request with API
+<pre>
+User Visits www.example.com
+        |
+        v
+DNS Resolves www.example.com to 192.168.1.1
+        |
+        v
+Browser Sends Request to 192.168.1.1
+        |
+        v
+Server Receives Request
+        |
+        v
+Server Makes API Call (Fetches Data)
+        |
+        v
+API Retrieves Data (From DB/External Service)
+        |
+        v
+API Sends Data Back to Server
+        |
+        v
+Server Sends Final Response (HTML/Data) Back to User
+</pre>
