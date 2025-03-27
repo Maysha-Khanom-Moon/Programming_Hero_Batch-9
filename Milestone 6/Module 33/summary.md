@@ -10,3 +10,10 @@
 ![dns flow](../../images/dns_flow.png)
 
 <b>HTTP:</b> hyper text transfer protocol. protocol for fetching resources. https - hyper text transfer protocol secure.
+
+<b>flow-diagram</b> of user request -
+1. user visits ```www.example.com```
+2. dns resolves it to ```192.168.1.1```
+3. the browser sends a request to ```192.168.1.1```
+4. the server fetches data from the database
+5. the response is sent back to the user
