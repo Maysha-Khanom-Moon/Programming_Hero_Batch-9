@@ -54,3 +54,17 @@ function greet(func, name) {
 }
 greet(greetMorning, 'Brenden');
 greet(greetEvening, 'Eich');
+
+
+/**
+ * ----- ARGUMENTS -----
+ * - arguments is an array-like object
+ * - it contains all the arguments passed to the function
+ */
+function sum(a, b) {
+    console.log(arguments);
+    console.log(arguments[2]);
+    console.log([...arguments]);
+    return a + b;    
+}
+console.log(sum(1, 2, 10));
