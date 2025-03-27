@@ -13,3 +13,19 @@
  * 4. undefined
  * 5. null
  */
+
+
+/**
+ * ------------ type ------------
+ * 1. primitive
+ *      - number, string, boolean, null, undefined
+ *      - same data type
+ *      - work as copy --> value
+ *      - fixed size
+ * 
+ * 2. non-primitive
+ *      - array, object
+ *      - various data type
+ *      - work as reference --> address
+ *      - dynamic size
+ */
