@@ -47,3 +47,13 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
  * - update: PUT
  * - delete: DELETE
  */
+
+
+// another way to fetch data
+const fetchData = async () => {
+    const url = 'https://jsonplaceholder.typicode.com/todos/1';
+    const response = await fetch(url);
+    const json = await response.json();
+    console.log(json);
+}
+fetchData();
