@@ -108,7 +108,9 @@ const handleShowDetails = async (id) => {
 const showPhoneDetails = (phone) => {
     // phone image
     const phoneImage = document.getElementById('phone_image');
-    // phoneImage. 
+    phoneImage.innerHTML = `
+        <img src="${phone.image}" alt="phone image">
+    `
 
     // phone name
     const phoneName = document.getElementById('phone_name');
