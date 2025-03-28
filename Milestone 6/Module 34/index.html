@@ -3,12 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone Hunter</title>
+    <title>Phone Hunter API</title>
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+<body class="bg-black px-36 py-10 text-white">
+    <div class="flex flex-col items-center gap-4 mb-16">
+        <h1 class="text-4xl font-bold">Search your phone</h1>
+        <div>
+            <div class="join">
+                <div>
+                  <label class="input validator join-item">
+                    <input class="text-black font-bold" type="text" placeholder="Search your phone" required/>
+                  </label>
+                </div>
+                <button class="btn btn-neutral join-item">Search</button>
+              </div>
+        </div>
+    </div>
+
+    <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- <div class="card bg-white  shadow-md">
+            <figure class="px-10 pt-10">
+              <img id="phone-img"
+                src="../../Milestone 5/Module 26/resources/images/pentagon.png"
+                alt="triangle"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center text-black px-12">
+              <h2 id="phone-name" class="card-title font-extrabold">Iphone 13 Pro Max</h2>
+              <p id="phone-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corrupti quasi qui! Officia non recusandae ducimus repellendus sunt quos provident ad!</p>
+              <h3 class="font-bold">$999</h3>
+            </div>
+            <div class="flex justify-center mb-10">
+                <button class="px-[20%] py-5 bg-black font-bold text-white rounded-md btn calculate">Show Details</button>
+            </div>
+        </div> -->
+    </div>
+    <!-- script -->
+    <script src="js/phone.js"></script>
 </body>
 </html>
