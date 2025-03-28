@@ -41,7 +41,7 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
  */
 
 /**
- * ---- CRUD operations ----
+ * ---- CRUD operations (REST) ----
  * - create: POST
  * - read: GET
  * - update: PUT
