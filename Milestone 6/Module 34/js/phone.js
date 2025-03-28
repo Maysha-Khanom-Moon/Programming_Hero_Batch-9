@@ -49,7 +49,7 @@ const displayPhones = (phones, isShowAll) => {
                 <h3 class="font-bold">${phone.brand}</h3>
             </div>
             <div class="flex justify-center mb-10">
-                <button onclick="handleShowDetails('${phone.slug}')" class="px-[20%] py-5 bg-black font-bold text-white rounded-md btn">Show Details</button>
+                <button onclick="handleShowDetails('${phone.slug}'); show_details_modal.showModal()" class="px-[20%] py-5 bg-black font-bold text-white rounded-md btn">Show Details</button>
             </div>
         `;
 
@@ -101,4 +101,48 @@ const handleShowDetails = async (id) => {
     const data = await res.json();
     const phone = data.data;
     console.log(phone);
+
+    showPhoneDetails(phone);
+}
+
+const showPhoneDetails = (phone) => {
+    // phone image
+    const phoneImage = document.getElementById('phone_image');
+    // phoneImage. 
+
+    // phone name
+    const phoneName = document.getElementById('phone_name');
+    phoneName.innerText = phone.name;
+
+    // phone storage
+    const phoneStorage = document.getElementById('phone_storage');
+    phoneStorage.innerText = phone.mainFeatures.storage;
+
+    // phone display size
+    const phoneDisplaySize = document.getElementById('phone_display_size');
+    phoneDisplaySize.innerText = phone.mainFeatures.displaySize;
+
+    // phone chipset
+    const phoneChipset = document.getElementById('phone_chipset');
+    phoneChipset.innerText = phone.mainFeatures.chipSet;
+
+    // phone memory
+    const phoneMemory = document.getElementById('phone_memory');
+    phoneMemory.innerText = phone.mainFeatures.memory;
+
+    // phone slug
+    const phoneSlug = document.getElementById('phone_slug');
+    phoneSlug.innerText = phone.slug;
+
+    // phone release date
+    const phoneReleaseDate = document.getElementById('phone_release_date');
+    phoneReleaseDate.innerText = phone.releaseDate;
+
+    // phone brand
+    const phoneBrand = document.getElementById('phone_brand');
+    phoneBrand.innerText = phone.brand;
+
+    // phone gps
+    const phoneGps = document.getElementById('phone_gps');
+    phoneGps.innerText = phone.others.GPS;
 }
