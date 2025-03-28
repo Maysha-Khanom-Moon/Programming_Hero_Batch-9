@@ -9,16 +9,16 @@
 </head>
 <body class="bg-black px-36 py-10 text-white">
     <header>
-        <div class="flex flex-col items-center gap-4 mb-16">
-            <h1 class="text-4xl font-bold">Search your phone</h1>
+        <div class="flex flex-col items-center gap-5 mb-16">
+            <h1 class="text-3xl md:text-4xl font-bold">Search your phone</h1>
             <div>
                 <div class="join">
                     <div>
-                      <label class="input validator join-item">
-                        <input id="phone-search" class="text-black font-bold" type="text" placeholder="Search your phone" required/>
+                      <label class="input validator md:w-72 lg:w-96 join-item">
+                        <input id="search-field" class="text-black font-bold" type="text" placeholder="Search your phone" required/>
                       </label>
                     </div>
-                    <button onclick="load()" class="btn btn-neutral join-item">Search</button>
+                    <button onclick="handleSearch()" class="btn btn-neutral join-item bg-rose-500">Search</button>
                   </div>
             </div>
         </div>
