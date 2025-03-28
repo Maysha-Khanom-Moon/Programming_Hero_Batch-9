@@ -7,14 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-black px-36 py-10 text-white">
+<body class="bg-gray-900 px-36 py-10 text-white">
     <header>
         <div class="flex flex-col items-center gap-5 mb-16">
             <h1 class="text-3xl md:text-4xl font-bold">Search your phone</h1>
             <div>
                 <div class="join">
                     <div>
-                      <label class="input validator md:w-72 lg:w-96 join-item">
+                      <label class="focus:outline-rose-500 input validator md:w-72 lg:w-88 join-item">
                         <input id="search-field" class="text-black font-bold" type="text" placeholder="Search your phone" required/>
                       </label>
                     </div>
@@ -33,7 +33,9 @@
     </main>
 
     <footer>
-
+        <div class="flex justify-center mt-2">
+            <button id="show-all" class="btn btn-neutral rounded-md border-white hidden">Show Details</button>
+        </div>
     </footer>
 
     <!-- script -->

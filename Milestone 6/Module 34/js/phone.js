@@ -13,8 +13,18 @@ const displayPhones = phones => {
 
     // 1. get the container
     const phoneContainer = document.getElementById('phone-container');
-    phoneContainer.textContent = '';
+    phoneContainer.textContent = ''; // clear container for new search
     phoneContainer.classList = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'
+
+    // show all button
+    const showAll = document.getElementById('show-all');
+    if (phones.length > 6) {
+        showAll.classList.remove('hidden');
+        phones = phones.slice(0, 6);
+    }
+    else {
+        showAll.classList.add('hidden');
+    }
 
     phones.forEach(phone => {
         console.log(phone);
