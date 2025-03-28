@@ -49,7 +49,7 @@ const displayPhones = (phones, isShowAll) => {
                 <h3 class="font-bold">${phone.brand}</h3>
             </div>
             <div class="flex justify-center mb-10">
-                <button class="px-[20%] py-5 bg-black font-bold text-white rounded-md btn">Show Details</button>
+                <button onclick="handleShowDetails('${phone.slug}')" class="px-[20%] py-5 bg-black font-bold text-white rounded-md btn">Show Details</button>
             </div>
         `;
 
@@ -89,4 +89,16 @@ const toggleSpinner = (isLoading) => {
 // handle show all
 const handleShowAll = () => {
     handleSearch(true);
+}
+
+
+// handle show details
+const handleShowDetails = async (id) => {
+    console.log('click', id);
+
+    // load single phone data
+    const res = await fetch(`https://openapi.programming-hero.com/api/phone/${id}`);
+    const data = await res.json();
+    const phone = data.data;
+    console.log(phone);
 }
