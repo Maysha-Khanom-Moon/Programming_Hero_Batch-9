@@ -24,3 +24,17 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
  *   - parse the response body as json (returns a promise)
  *   - why not JSON.parse()? because the response in raw format (bytes or text), not as a js object
  */
+
+
+/**
+ * ---- options ----
+ * - method: GET, POST, PUT, DELETE
+ * - body: data to be sent
+ * - headers: key-value pairs
+ * 
+ * - GET: retrieve data (default)
+ * - POST: create data
+ * - PUT: if exist, update data otherwise create
+ * - DELETE: delete data
+ * - PATCH: update data
+ */
