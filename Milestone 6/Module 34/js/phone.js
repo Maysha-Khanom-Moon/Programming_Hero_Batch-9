@@ -15,6 +15,7 @@ const displayPhone = (phones) => {
     // show-all
     const showAll = document.getElementById('show-all');
     if (phones.length > 6) {
+        phones = phones.slice(0, 6);
         showAll.classList.remove('hidden');
     }
     else {
@@ -39,10 +40,23 @@ const displayPhone = (phones) => {
               <h3 class="font-bold">${phone.brand}</h3>
             </div>
             <div class="flex justify-center mb-10">
-                <button class="px-[20%] py-5 bg-black font-bold text-white rounded-md btn calculate">Show Details</button>
+                <button onclick="showDetails('${phone.slug}')" class="px-[20%] py-5 bg-black font-bold text-white rounded-md btn calculate">Show Details</button>
             </div>
         </div>
         `;
         phoneContainer.appendChild(phoneDiv);
     })
+}
+
+// show details
+const showDetails = (id) => {
+    console.log(id);
+    const url = `https://openapi.programming-hero.com/api/phone/${id}`;
+    
+    const show = async () => {
+        const res = await fetch(url);
+        const data = await res.json();
+        displayDetails(data.data);
+    }
+    show();
 }
