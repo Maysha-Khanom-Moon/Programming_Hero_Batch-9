@@ -28,13 +28,21 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
 
 /**
  * ---- options ----
- * - method: GET, POST, PUT, DELETE
- * - body: data to be sent
- * - headers: key-value pairs
+ * 1. method: GET, POST, PUT, DELETE
+ * 2. body: data to be sent
+ * 3. headers: key-value pairs
  * 
  * - GET: retrieve data (default)
  * - POST: create data
  * - PUT: if exist, update data otherwise create
- * - DELETE: delete data
  * - PATCH: update data
+ * - DELETE: delete data
+ */
+
+/**
+ * ---- CRUD operations ----
+ * - create: POST
+ * - read: GET
+ * - update: PUT
+ * - delete: DELETE
  */
