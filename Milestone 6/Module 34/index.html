@@ -7,13 +7,29 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-black px-36 py-10 text-white">
     <header>
-        <h2 class="text-6xl">Hunting Phone</h2>
+        <div class="flex flex-col items-center gap-4 mb-16">
+            <h1 class="text-4xl font-bold">Search your phone</h1>
+            <div>
+                <div class="join">
+                    <div>
+                      <label class="input validator join-item">
+                        <input id="phone-search" class="text-black font-bold" type="text" placeholder="Search your phone" required/>
+                      </label>
+                    </div>
+                    <button onclick="load()" class="btn btn-neutral join-item">Search</button>
+                  </div>
+            </div>
+        </div>
     </header>
 
     <main>
+        <section>
+            <div id="phone-container">
 
+            </div>
+        </section>
     </main>
 
     <footer>
