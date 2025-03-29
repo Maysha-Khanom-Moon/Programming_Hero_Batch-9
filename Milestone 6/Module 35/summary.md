@@ -8,3 +8,8 @@
     - garbage collection
     - then developers can focus on logic better
     - improve understandability and maintainability
+
+2. a JIT compiled language
+    - not a purely interpreted language
+    - JUST-IN-TIME compiler converts the entire code into machine code execute them immediately
+
