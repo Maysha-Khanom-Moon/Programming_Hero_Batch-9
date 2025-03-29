@@ -7,7 +7,7 @@ console.log(3);
 
 // setTimeout --> don't execute the function immediately
 setTimeout(doSomething, 1000);
-console.log(5);
+console.log(4);
 setTimeout(doSomething2);
 
 function doSomething() {
@@ -16,3 +16,26 @@ function doSomething() {
 function doSomething2() {
     console.log(6);
 }
+
+/**
+ * ------ PROMISE -------
+ * - pending --> waiting
+ * - resolve --> fulfilled
+ * - reject --> rejected
+ * 
+ */
+
+const myLoader = () => {
+    return new Promise((resolve, reject) => {
+        const success = Math.random()
+        if(success <= 0.5) {
+            resolve('success');
+        }
+        else {
+            reject('failed');
+        }
+    })
+}
+myLoader()
+.then(res => console.log(res))
+.catch(err => console.log(err));
