@@ -37,3 +37,16 @@
 5. a dynamically typed language
     - not need to specify the type
     - determines the type at runtime. Also can re-declare the type
+
+<br>
+
+### Execution context
+- an abstract concept that represents the environment in which js code is evaluated and executed
+1. gec (global execution context)
+    - created when js file starts executing
+    - contains the global ```this``` object (```window``` in browser, ```global``` in node.js)
+    - only one gec exits throughout execution
+2. fec (function execution context)
+    - created whenever a function is invoked
+    - each function call gets its own execution context
+    - multiple FECs can exist simultaneously (stacked in the Call Stack)
