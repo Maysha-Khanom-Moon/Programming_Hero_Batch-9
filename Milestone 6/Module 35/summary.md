@@ -50,3 +50,9 @@
     - created whenever a function is invoked
     - each function call gets its own execution context
     - multiple FECs can exist simultaneously (stacked in the Call Stack)
+
+### js single-threaded
+- only one statement execute at a time
+- only has one call stack
+- runs code line by line
+- must finished executing a piece of code before moving onto the next
