@@ -12,4 +12,11 @@
 2. a JIT compiled language
     - not a purely interpreted language
     - JUST-IN-TIME compiler converts the entire code into machine code execute them immediately
+    - js ----> parsing --AST--> compilation (JIT) --> machine code ----> execution
+    - AST: abstract syntax tree
 
+3. a multi-paradigm language
+- Paradigm: code structure that will determine the style or a way of programming
+    1. procedural
+    2. object-oriented
+    3. functional
