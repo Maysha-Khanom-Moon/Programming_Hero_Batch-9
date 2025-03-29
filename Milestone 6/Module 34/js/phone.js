@@ -146,5 +146,5 @@ const showPhoneDetails = (phone) => {
 
     // phone gps
     const phoneGps = document.getElementById('phone_gps');
-    phoneGps.innerText = phone.others.GPS;
+    phoneGps.innerText = phone.others?.GPS || 'No GPS Available'; // optional chaining
 }
