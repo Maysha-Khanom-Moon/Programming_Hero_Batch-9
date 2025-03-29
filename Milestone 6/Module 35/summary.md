@@ -32,3 +32,8 @@
     - object used as a proto-type (blue print or template) from which get the initial properties for a new object
         - like: array --> push, pop, slice, etc
 
+<br>
+
+5. a dynamically typed language
+    - not need to specify the type
+    - determines the type at runtime. Also can re-declare the type
