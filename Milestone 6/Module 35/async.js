@@ -17,6 +17,7 @@ function doSomething2() {
     console.log(6);
 }
 
+
 /**
  * ------ PROMISE -------
  * - pending --> waiting
@@ -24,7 +25,6 @@ function doSomething2() {
  * - reject --> rejected
  * 
  */
-
 const myLoader = () => {
     return new Promise((resolve, reject) => {
         const success = Math.random()
@@ -39,3 +39,20 @@ const myLoader = () => {
 myLoader()
 .then(res => console.log(res))
 .catch(err => console.log(err));
+
+
+/**
+ * ------ setInterval -------
+ * - execute a function repeatedly
+ * - it returns an interval id
+ * - clearInterval(intervalId) --> stop the interval
+ * 
+ * - if don't want to stop the interval, then no need to store the interval id
+ */
+let i = 0;
+const intervalId = setInterval(() => {
+    if(i === 5) {
+        clearInterval(intervalId);
+    }
+    console.log(i++);
+}, 1000);
