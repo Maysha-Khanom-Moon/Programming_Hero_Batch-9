@@ -71,11 +71,22 @@ const intervalId = setInterval(() => {
  * - try: try to execute the code
  * - catch: catch the error
  * - finally: execute the code always (used to clean up)
+ * - throw: throw the error
  */
+
 function checkAge() {
     const age = document.getElementById('age-input').value;
     try {
-        console.log(ag); // error
+        // console.log(ag); // error
+        if(isNaN(age)) {
+            throw new Error('Please enter a number');
+        }
+        if(age < 18) {
+            throw 'You are not eligible to vote';
+        }
+        else {
+            console.log('You can vote');
+        }
     }
     catch(err) {
         console.log('ERROR:', err);
