@@ -1,5 +1,9 @@
-// synchronous: follow the sequence and wait for other to finish
-// async: don't follow the sequence and don't wait for other
+/**
+ * synchronous: follow the sequence and wait for other to finish
+ * async: don't follow the sequence and don't wait for other
+ * 
+ * ==> execution order: synchronous > async (callback > promise > setTimeout > setInterval)
+ */ 
 
 console.log(1);
 doSomething();
