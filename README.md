@@ -209,7 +209,7 @@ The <b>event loop</b> is a crucial part of how handles asynchronous operation. s
 
 The <b>event loop</b> continuously checks if the call stack is empty. If empty, it moves tasks from the callback queue to call stack
 
-<b>Sequence:</b> synchronous > asynchronous (promise > setTimeout)
+<b>Sequence:</b> synchronous > async (callback > promise > setTimeout > setInterval)
 
 - micro-tasks (promise) runs before macro-tasks (setTimeout)
 
