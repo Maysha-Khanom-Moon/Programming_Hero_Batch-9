@@ -60,3 +60,27 @@ const intervalId = setInterval(() => {
     }
     console.log(i++);
 }, 1000);
+
+
+/**
+ * ------- ERROR HANDLING -------
+ * - try-catch
+ * - try-catch-finally
+ * - throw
+ * 
+ * - try: try to execute the code
+ * - catch: catch the error
+ * - finally: execute the code always (used to clean up)
+ */
+function checkAge() {
+    const age = document.getElementById('age-input').value;
+    try {
+        console.log(ag); // error
+    }
+    catch(err) {
+        console.log('ERROR:', err);
+    }
+    finally {
+        console.log('finally');
+    }
+}
