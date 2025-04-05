@@ -7,7 +7,9 @@
 
 - [A3 - Hockey](https://maysha-khanom-moon.github.io/ph__a3__hockey/) ~ html + tailwind css + daisyui (responsive)
 
-- [A5 - Smart Ticketing](https://maysha-khanom-moon.github.io/ph__a5__smart-ticketing/) ~ html + tailwind css + daisyui + js
+- [A5 - Smart Ticketing](https://maysha-khanom-moon.github.io/ph__a5__smart-ticketing/) ~ html + tailwind css + daisyui + vanilla js (not responsive)
+
+- [A6 - Retro Forum](https://chang-e-retro-forum.netlify.app/) ~ html + tailwind css + daisyui + vanilla js (responsive)
 
 <br>
 
