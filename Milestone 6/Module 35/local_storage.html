@@ -11,7 +11,7 @@
         // Basics
         - it's a web api
         - it's a way to store key-value pairs in the client-side
-        - it's a non-persistent storage
+        - it's a persistent storage
         - both key and value are string
 
         // Methods
@@ -23,8 +23,12 @@
         // Limitations
         - store data as a string
         - every value goes as value.toString()
-        - array: [1, 2, 3] -> "1, 2, 3"
-        - object: {a: 1, b: 2} -> "[object Object]"
+        - array: [1, 2, 3] ==> "1, 2, 3"
+        - object: {a: 1, b: 2} ==> "[object Object]"
+
+        // Solution
+        - JSON.stringify() ==> convert object to json
+        - JSON.parse() ==> convert json to object
     -->
 </body>
 </html>
