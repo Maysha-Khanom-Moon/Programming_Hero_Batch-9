@@ -74,6 +74,17 @@
 
             product.value = '';
             quantity.value = '';
+
+            displayProduct(productName, productQuantity);
+        }
+
+        // display product
+        function displayProduct(name, quantity) {
+            const table = document.getElementById('product-list');
+            const tr = document.createElement('tr');
+            tr.innerHTML = `<td>${name}</td>
+                            <td>${quantity}</td>`;
+            table.appendChild(tr);
         }
     </script>
 </body>
