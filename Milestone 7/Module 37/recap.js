@@ -35,3 +35,12 @@ console.log(product1);
 
 const {id, name, Price} = product1; // object destructuring
 console.log(id, name, Price); // Price undefined
+
+
+/**
+ * ### Falsy:
+ * - false, 0, '', null, undefined, NaN
+ * 
+ * ### Truthy:
+ * - true, any number, any string, any object
+ */
