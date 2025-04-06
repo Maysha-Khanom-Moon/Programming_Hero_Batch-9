@@ -47,8 +47,8 @@ console.log(id, name, Price); // Price undefined
 
 
 /**
- * ### Coercion:
- * - explicit(parse) or implicit conversion of data type to another
+ * ### Coercion: parsing
+ * - explicit or implicit conversion of data type to another
  * - number + '' = string
  * - string + number = string
  */
@@ -57,3 +57,13 @@ console.log(1 + '2'); // '12'
 console.log('2' - 1); // 1
 console.log(2 - '1'); // 1
 console.log(true + 1); // 2
+
+
+// Shortcut And Or
+const isActive = true;
+const showUser = () => console.log('display user');
+const hideUser = () => console.log('hide user');
+isActive ? showUser() : hideUser();
+!isActive && showUser(); // toggle (!)
+isActive && showUser();
+false || hideUser();
