@@ -44,3 +44,16 @@ console.log(id, name, Price); // Price undefined
  * ### Truthy:
  * - true, any number, any string, any object
  */
+
+
+/**
+ * ### Coercion:
+ * - explicit(parse) or implicit conversion of data type to another
+ * - number + '' = string
+ * - string + number = string
+ */
+console.log('1' + 2); // '12'
+console.log(1 + '2'); // '12'
+console.log('2' - 1); // 1
+console.log(2 - '1'); // 1
+console.log(true + 1); // 2
