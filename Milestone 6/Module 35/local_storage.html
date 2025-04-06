@@ -61,6 +61,7 @@
 
     <!-- script -->
     <script>
+        localStorage.setItem('drink', 'coke');
         console.log(localStorage.getItem('drink'));
 
         // add product
@@ -76,6 +77,8 @@
             quantity.value = '';
 
             displayProduct(productName, productQuantity);
+
+            storeAddedProduct(productName, productQuantity);
         }
 
         // display product
@@ -85,6 +88,20 @@
             tr.innerHTML = `<td>${name}</td>
                             <td>${quantity}</td>`;
             table.appendChild(tr);
+        }
+
+        // get added product
+        function getAddedProduct() {
+            const storedCart = localStorage.getItem('cart');
+            // console.log(storedCart);
+
+            return storedCart ? JSON.parse(storedCart) : {};
+        }
+
+        // store added product
+        function storeAddedProduct(name, quantity) {
+            localStorage.setItem(name, quantity);
+            let cart = getAddedProduct();
         }
     </script>
 </body>
