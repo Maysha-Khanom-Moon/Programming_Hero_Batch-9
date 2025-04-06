@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Storage</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px 10px;
+        }
+    </style>
 </head>
 <body>
     <!-- 
@@ -32,9 +43,38 @@
     -->
 
 
+    <!-- shopping cart -->
+    <div style="margin-bottom: 10px;">
+        <input type="text" id="product-name" placeholder="Product">
+        <input type="text" id="product-quantity" placeholder="Quantity">
+        <button onclick="addProduct()" id="product-add">Add Product</button>
+    </div>
+
+    <div>
+        <table id="product-list">
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+            </tr>
+        </table>
+    </div>
+
     <!-- script -->
-     <script>
+    <script>
         console.log(localStorage.getItem('drink'));
-     </script>
+
+        // add product
+        function addProduct() {
+            const product = document.getElementById('product-name');
+            const quantity = document.getElementById('product-quantity');
+            
+            const productName = product.value;
+            const productQuantity = quantity.value;
+            console.log(productName, productQuantity);
+
+            product.value = '';
+            quantity.value = '';
+        }
+    </script>
 </body>
 </html>
