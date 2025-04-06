@@ -101,7 +101,13 @@
         // store added product
         function storeAddedProduct(name, quantity) {
             localStorage.setItem(name, quantity);
+
             let cart = getAddedProduct();
+            // console.log(cart);
+
+            cart[name] = quantity;
+            localStorage.setItem('cart', JSON.stringify(cart));
+            console.log(cart);
         }
     </script>
 </body>
