@@ -13,13 +13,25 @@
  */
 
 // shorthand property
-const name = 'John';
-const age = 30;
+const Name = 'John';
+const Age = 30;
 const person = {
-    name, // shorthand for name: name
-    age,
+    Name, // shorthand for name: name
+    Age,
     greet() { // shorthand for greet: function() { ... }
-        console.log(`Hello ${this.name}`);
+        console.log(`Hello ${this.Name}`);
     }   
 }
 person.greet();
+
+
+// destructuring
+const products = [
+    { id: 1, name: 'Lenovo', price: 65000 },
+    { id: 2, name: 'Dell', price: 45000 }
+]
+const [product1, product2] = products; // array destructuring
+console.log(product1);
+
+const {id, name, Price} = product1; // object destructuring
+console.log(id, name, Price); // Price undefined
