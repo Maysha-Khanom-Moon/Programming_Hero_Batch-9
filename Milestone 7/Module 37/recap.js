@@ -6,8 +6,8 @@
  * - let, const
  * - template literal, arrow function, destructuring
  * - default parameter
- * - spread operator (expand), rest operator (collect)
- * - object literals, shorthand property
+ * - spread operator(expand), rest operator(collect)
+ * - shorthand property of object
  * - classes
  * - promise, modules (import/ export)
  */
@@ -18,7 +18,7 @@ const age = 30;
 const person = {
     name, // shorthand for name: name
     age,
-    greet() {
+    greet() { // shorthand for greet: function() { ... }
         console.log(`Hello ${this.name}`);
     }   
 }
