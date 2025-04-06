@@ -10,3 +10,10 @@
     - a syntax extension that lets you write html inside js
 4. unidirectional data flow
 5. hooks - useState, useEffect, etc
+
+
+### React vs Angular
+- react gives u more freedom and u choose ur tools and libraries - lego blocks
+- angular is opinionated and comes with everything included - u follow its structure <br>
+
+![React vs Angular](../../images/react_angular.png)
