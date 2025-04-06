@@ -12,3 +12,14 @@
  * - promise, modules (import/ export)
  */
 
+// shorthand property
+const name = 'John';
+const age = 30;
+const person = {
+    name, // shorthand for name: name
+    age,
+    greet() {
+        console.log(`Hello ${this.name}`);
+    }   
+}
+person.greet();
