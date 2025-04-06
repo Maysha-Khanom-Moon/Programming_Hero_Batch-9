@@ -107,8 +107,17 @@
 
             cart[name] = quantity;
             localStorage.setItem('cart', JSON.stringify(cart));
-            console.log(cart);
+            // console.log(cart);
         }
+
+        // display added product
+        (() => {
+            const cart = getAddedProduct();
+            // console.log(cart);
+            for (const key in cart) {
+                displayProduct(key, cart[key]);
+            }
+        })();
     </script>
 </body>
 </html>
