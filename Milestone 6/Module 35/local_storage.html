@@ -51,11 +51,14 @@
     </div>
 
     <div>
-        <table id="product-list">
+        <table>
             <tr>
                 <th>Product</th>
                 <th>Quantity</th>
             </tr>
+            <tbody id="product-list">
+
+            </tbody>
         </table>
     </div>
 
@@ -71,30 +74,37 @@
             
             const productName = product.value;
             const productQuantity = quantity.value;
-            console.log(productName, productQuantity);
+            if(productName && productQuantity) {
+                console.log(productName, productQuantity);
 
-            product.value = '';
-            quantity.value = '';
+                product.value = '';
+                quantity.value = '';
 
-            displayProduct(productName, productQuantity);
-
-            storeAddedProduct(productName, productQuantity);
+                storeAddedProduct(productName, productQuantity);
+            }
         }
 
         // display product
-        function displayProduct(name, quantity) {
+        function displayProduct() {
             const table = document.getElementById('product-list');
-            const tr = document.createElement('tr');
-            tr.innerHTML = `<td>${name}</td>
-                            <td>${quantity}</td>`;
-            table.appendChild(tr);
+            table.innerHTML = '';
+
+            const cart = getAddedProduct();
+            for (let product in cart) {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${product}</td>
+                    <td>${cart[product]}</td>
+                `;
+                table.appendChild(tr);
+            }
         }
+        displayProduct();
 
         // get added product
         function getAddedProduct() {
             const storedCart = localStorage.getItem('cart');
             // console.log(storedCart);
-
             return storedCart ? JSON.parse(storedCart) : {};
         }
 
@@ -108,16 +118,9 @@
             cart[name] = quantity;
             localStorage.setItem('cart', JSON.stringify(cart));
             // console.log(cart);
-        }
 
-        // display added product
-        (() => {
-            const cart = getAddedProduct();
-            // console.log(cart);
-            for (const key in cart) {
-                displayProduct(key, cart[key]);
-            }
-        })();
+            displayProduct();
+        }
     </script>
 </body>
 </html>
