@@ -16,7 +16,7 @@ function App() {
       <Person name="Jane" age="25"></Person>
 
       <Device name="Phone" price="1000"></Device>
-      <Device name="Tablet" price="2000"></Device>
+      <Device price="2000"></Device>
 
       <Student></Student>
     </>
@@ -37,10 +37,11 @@ function Person(props) {
 
 /**
  * - destructuring the props object
+ * - instead of props --> auto destructuring by using {}
+ * - we can use default value also
  */
-function Device(props) {
-  const {name, price} = props;
-
+function Device({name='Lenovo', price=1000}) {
+  // const {name, price} = props;
   return (
     <div style={{ border: '1px solid green' }}>
       <h3>{name}</h3>
