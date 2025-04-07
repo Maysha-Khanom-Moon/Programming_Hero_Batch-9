@@ -7,8 +7,17 @@
  */
 export default function Todo({task = 'Task', isDone}) {
     // conditional rendering
+
+    // 1.
+    /*
     if(isDone) {
         return <li>Finished: {task}</li>
     }
     return <li>Work on: {task}</li>
+    */
+
+    // 2.
+    return (
+        <li>{isDone ? 'Finished' : 'Work on'}: {task}</li>
+    )
 }
