@@ -52,3 +52,9 @@ A <b>react component</b> is a js function or class that returns <b>jsx</b> (html
     - tag name can't be dynamic
     - for object / inline-style ==> double curly braces
         - one for dynamic (jsx), and another one for object / style
+
+
+### what are props
+- an object that contains arguments
+- parent component pass info to its child components by giving props
+- we can pass any js value through props, including objects, arrays, functions, etc.
