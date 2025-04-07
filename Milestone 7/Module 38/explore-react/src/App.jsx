@@ -13,7 +13,8 @@ import Todo1 from './Todo'
 import Todo from './Todo'
 
 /* 
- * <> </> ---> fragment tag
+ * - <> ... </> ==> fragment tag
+ *
  * - this is not html, this is jsx (html inside js)
  */
 function App() {
@@ -35,8 +36,8 @@ function App() {
        * - this Todo component is imported from Todo.jsx
       */}
 
-      <Todo task='Learn React'></Todo>
-      <Todo1></Todo1>
+      <Todo task='Learn React' isDone={false}></Todo>
+      <Todo1 isDone={true}></Todo1>
     </>
   )
 }
@@ -60,6 +61,7 @@ function Person(props) {
  */
 function Device({name='Lenovo', price=1000}) {
   // const {name, price} = props;
+  // props immutable but name, price mutable
   return (
     <div style={{ border: '1px solid green' }}>
       <h3>{name}</h3>
