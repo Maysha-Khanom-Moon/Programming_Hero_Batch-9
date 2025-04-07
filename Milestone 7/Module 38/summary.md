@@ -24,4 +24,29 @@ A <b>react component</b> is a js function or class that returns <b>jsx</b> (html
 - always capitalize component names, because react treats lowercase tags as html elements.
 - component flow: parent to child
 - file names are capitalized too (by convention)
-- on + Event (onClick, ...)
+
+
+### The rules of jsx
+1. return a single root element
+    - to return multiple elements, wrap them with a single parent tag
+        - ``` <> </>  -->  fragment tag``` (like div)
+
+    <br>
+    
+    - <b>in js:</b> for implicit return (arrow func), `()` needed for an abject
+        - otherwise js think it's a block of code 
+    - <b>in jsx:</b> for explicit return `return ( ... html ... )` must
+    
+2. close all the tags explicitly
+    - `<img>` must become `</img>`
+
+3. must use camelCase
+    - `class --> className`
+    - `onclick --> onClick`
+    - `tabindex --> tabIndex`
+    - `background-color --> backgroundColor`
+
+4. for dynamic content: `${} --> {}`
+    - tag name can't be dynamic
+    - for object / inline-style ==> double curly braces
+        - one for dynamic (jsx), and another one for object / style
