@@ -33,9 +33,11 @@ A <b>react component</b> is a js function or class that returns <b>jsx</b> (html
 
     <br>
     
-    - <b>in js:</b> for implicit return (arrow func), `()` needed for an abject
+    - <b>in js:</b> `()` not needed
+        - but for implicit return of object `()` needed
         - otherwise js think it's a block of code 
-    - <b>in jsx:</b> for explicit return `return ( ... html ... )` must
+    - <b>in jsx:</b> for explicit return `return ( ... jsx ... )` must
+        - but for single line, no need
     
 2. close all the tags explicitly
     - `<img>` must become `</img>`
