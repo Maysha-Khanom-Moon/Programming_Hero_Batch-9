@@ -17,7 +17,16 @@ export default function Todo({task = 'Task', isDone}) {
     */
 
     // 2.
+    /*
     return (
         <li>{isDone ? 'Finished' : 'Work on'}: {task}</li>
+    )
+    */
+
+    // 3.
+    // false || 'Do it'
+    // true && 'Finish'
+    return (
+        <li>{task} {isDone || ': Do it'}</li>
     )
 }
