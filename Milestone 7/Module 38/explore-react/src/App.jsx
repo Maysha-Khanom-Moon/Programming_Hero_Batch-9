@@ -12,16 +12,22 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
-      <Person></Person>
+      <Person name="John" age="30"></Person>
+      <Person name="Jane" age="25"></Person>
       <Student></Student>
     </>
   )
 }
 
-function Person() {
+/**
+ * - function has a single parameter which is an object
+ * - all arguments are passed as an object
+ * 
+ */
+function Person(props) {
   const person = {
-    name: 'John',
-    age: 30
+    name: props.name,
+    age: props.age
   }
   return <h3>I am {person.name} and my age is {person.age}</h3>
 }
