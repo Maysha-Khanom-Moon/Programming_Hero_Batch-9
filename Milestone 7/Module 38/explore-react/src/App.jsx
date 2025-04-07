@@ -14,6 +14,10 @@ function App() {
       <h1>Vite + React</h1>
       <Person name="John" age="30"></Person>
       <Person name="Jane" age="25"></Person>
+
+      <Device name="Phone" price="1000"></Device>
+      <Device name="Tablet" price="2000"></Device>
+
       <Student></Student>
     </>
   )
@@ -22,7 +26,6 @@ function App() {
 /**
  * - function has a single parameter which is an object
  * - all arguments are passed as an object
- * 
  */
 function Person(props) {
   const person = {
@@ -30,6 +33,20 @@ function Person(props) {
     age: props.age
   }
   return <h3>I am {person.name} and my age is {person.age}</h3>
+}
+
+/**
+ * - destructuring the props object
+ */
+function Device(props) {
+  const {name, price} = props;
+
+  return (
+    <div style={{ border: '1px solid green' }}>
+      <h3>{name}</h3>
+      <p>{price}</p>
+    </div>
+  )
 }
 
 function Student() {
