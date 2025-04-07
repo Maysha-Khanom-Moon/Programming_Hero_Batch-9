@@ -3,10 +3,18 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 
+/**
+ * - import another component from another file
+ * - for default export component, we can use any name
+ * - but for others, we have to use the same name
+ */
+
+import Todo1 from './Todo'
+import Todo from './Todo'
+
 /* 
  * <> </> ---> fragment tag
- * 
- * - this is not html, this is jsx
+ * - this is not html, this is jsx (html inside js)
  */
 function App() {
   return (
@@ -19,6 +27,16 @@ function App() {
       <Device price="2000"></Device>
 
       <Student></Student>
+
+
+      {/**
+       * ------- this is a jsx comment -------
+       * 
+       * - this Todo component is imported from Todo.jsx
+      */}
+
+      <Todo task='Learn React'></Todo>
+      <Todo1></Todo1>
     </>
   )
 }
