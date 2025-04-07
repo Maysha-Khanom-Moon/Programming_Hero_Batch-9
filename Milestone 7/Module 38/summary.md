@@ -17,3 +17,8 @@
 - angular is opinionated and comes with everything included - u follow its structure <br>
 
 ![React vs Angular](../../images/react_angular.png)
+
+
+### Component
+A <b>react component</b> is a js function or class that returns <b>jsx</b> (html-like code) to render part of the UI. Like a <b>custom html tag</b> that builds part of a webpage
+- always capitalize component names, because react treats lowercase tags as html elements.
