@@ -9,21 +9,26 @@ export default function Todo({task = 'Task', isDone}) {
     // conditional rendering
 
     // 1.
-    /*
-    if(isDone) {
-        return <li>Finished: {task}</li>
-    }
-    return <li>Work on: {task}</li>
-    */
+    // if(isDone) {
+    //     return <li>Finished: {task}</li>
+    // }
+    // return <li>Work on: {task}</li>
+
 
     // 2.
-    /*
-    return (
-        <li>{isDone ? 'Finished' : 'Work on'}: {task}</li>
-    )
-    */
+    // return (
+    //     <li>{isDone ? 'Finished' : 'Work on'}: {task}</li>
+    // )
+
 
     // 3.
+    // let listItem = task + ' ' + (isDone ? 'Finished' : 'Work on');
+    // return (
+    //     <li>{listItem}</li>
+    // )
+
+    
+    // 4.
     // false || 'Do it'
     // true && 'Finish'
     return (
