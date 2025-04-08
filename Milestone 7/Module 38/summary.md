@@ -53,6 +53,10 @@ A <b>react component</b> is a js function or class that returns <b>jsx</b> (html
     - for object / inline-style ==> double curly braces
         - one for dynamic (jsx), and another one for object / style
 
+- inside jsx: 
+    - `{} --> for js`
+    - `() --> jsx (html + {js})`
+    - but single line jsx: no ()
 
 ### what are props
 - an object that contains arguments
