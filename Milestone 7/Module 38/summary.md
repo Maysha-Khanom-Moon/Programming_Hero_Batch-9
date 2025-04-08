@@ -48,7 +48,7 @@ A <b>react component</b> is a js function or class that returns <b>jsx</b> (html
     - `tabindex --> tabIndex`
     - `background-color --> backgroundColor`
 
-4. for dynamic content: `${} --> {}`
+4. for dynamic content + js code: `${} --> {}`
     - tag name can't be dynamic
     - for object / inline-style ==> double curly braces
         - one for dynamic (jsx), and another one for object / style
