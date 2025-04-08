@@ -12,12 +12,20 @@ import './App.css'
 import Todo1 from './Todo'
 import Todo from './Todo'
 
+// import multiple components from another file
+import { Actor, Cinema } from './Actor'
+
 /* 
  * - <> ... </> ==> fragment tag
  *
  * - this is not html, this is jsx (html inside js)
  */
 function App() {
+  const actors = [
+    { name: 'Shah Rukh khan', movie: 'Dilwale' },
+    { name: 'Salman khan', movie: 'Sultan' },
+    { name: 'Amir khan', movie: '3 Idiots' },
+  ]
   return (
     <>
       <h1>Vite + React</h1>
@@ -34,10 +42,27 @@ function App() {
        * ------- this is a jsx comment -------
        * 
        * - this Todo component is imported from Todo.jsx
+       * 
+       * - {} used for dynamic or js code inside jsx
+       * - that's why {} also needed for comment
       */}
 
       <Todo task='Learn React' isDone={false}></Todo>
       <Todo1 isDone={true}></Todo1>
+
+      <hr/>
+
+      {/** 
+       * - Rendering list of components using map
+      */}
+      <div style={{backgroundColor:'lightblue', padding:'20px', margin:'10px'}}>
+        {actors.map(actor => (
+          <>
+            <Actor name={actor.name}></Actor>
+            <Cinema name={actor.movie}></Cinema>
+          </>
+        ))}
+      </div>
     </>
   )
 }
