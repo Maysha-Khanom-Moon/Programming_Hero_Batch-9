@@ -1,9 +1,10 @@
 import './App.css'
+import Counter from './Counter'
 
 function App() {
 
   // component: capitalize
-  // in general function: camelCase
+  // in general function or hook: camelCase
 
   // by convention: add 'handle' word before event handler
   function handleClick() {
@@ -15,6 +16,8 @@ function App() {
   return (
     <>
       <h2>React Core Concept 2</h2>
+      <Counter></Counter>
+
       <button onClick={handleClick}>Click Me</button>
       <button onClick={() => alert('button 2 clicked')}>Click Me 2</button>
       {/* don't call immediately */}
