@@ -16,3 +16,13 @@
     
     - call a custom function: `onClick={() => greet('Alice')}`
     - use the event object: `onClick={(e) => console.log(e)}`
+
+
+### useState
+- a react hook that lets u add state to functional components
+- a way to store and update values - like a counter, form input, toggle state, etc
+
+- why useState, not normal function?
+    - `useState` remember the value (`count`) across renders
+    - `setCount` updates the value and triggers a re-render
+- `useState`: persistent, auto re-render, encapsulated, declarative
