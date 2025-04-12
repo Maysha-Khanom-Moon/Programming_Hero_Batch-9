@@ -18,7 +18,12 @@ function App() {
 
   const addToFive = (num) => alert(num + 5);
 
-  // useEffect
+  /**
+   * # useEffect
+   * 1. create a state to hold the data
+   * 2. useEffect with call back and dependency array
+   * 3. use fetch to load data
+   */
   const [friends, setFriends] = useState([]);
 
   useEffect(() => {
