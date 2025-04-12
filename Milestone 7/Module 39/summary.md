@@ -29,6 +29,12 @@
 
 <br>
 
+### Trigger, render and commit
+This process fo requesting and serving UI has three steps:
+1. Triggering a render (delivering the guest's order to the kitchen)
+2. Rendering the component (preparing the order in the kitchen)
+3. Committing to the DOM (placing the order on the table)
+
 
 ## React Hook:
 Hooks are special functions in React that let components remember things and do things.
