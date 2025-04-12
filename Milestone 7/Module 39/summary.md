@@ -37,6 +37,11 @@ Hooks are special functions in React that let components remember things and do 
     - normally, every time its runs, it forgets everything
     - but with <b>hooks</b>, u give it a <b>memory</b> or <b>abilities</b> to remember or doing something when it starts
 
+<br>
+
+Common react hooks:
+- `useState, useEffect, useContext, useRef, useMemo, useCallback`
+
 ### useState
 - a react hook that lets u add state to functional components
 - a way to store and update values - like a counter, form input, toggle state, etc
@@ -45,3 +50,15 @@ Hooks are special functions in React that let components remember things and do 
     - `useState` remember the value (`count`) across renders
     - `setCount` updates the value and triggers a re-render
 - `useState`: persistent, auto re-render, encapsulated, declarative
+
+### useEffect
+- it's used for things that are side effects -- meaning they touch things outside the react
+- like api calls, timers/ intervals, directly dom manipulating, event listeners, cleanups, accessing localStorage, etc.
+
+<br>
+
+`useEffect` = Do this extra work after the UI is ready -- but only when needed
+
+- why useEffect, not normal function?
+    - normal function - run on every render (too much api calls, slow app, and bugs)
+    - `useEffect` - run only when needed
