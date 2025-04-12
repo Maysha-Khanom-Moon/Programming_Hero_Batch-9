@@ -1,7 +1,10 @@
 import './App.css'
+import './Friends.css'
 import Counter from './Counter'
 import Team from './Team';
 import Users from './Users';
+import Friend from './Friend';
+import { useEffect, useState } from 'react';
 
 function App() {
 
@@ -15,9 +18,24 @@ function App() {
 
   const addToFive = (num) => alert(num + 5);
 
+  // useEffect
+  const [friends, setFriends] = useState([]);
+
+  useEffect(() => {
+      fetch('https://jsonplaceholder.typicode.com/users')
+      .then(res => res.json())
+      .then(data => setFriends(data))
+  }, [])
+
   return (
     <>
       <h2>React Core Concept 2</h2>
+
+      <h3>Friends: {friends.length}</h3>
+      {
+        friends.map(friend => <Friend friend={friend}></Friend>)
+      }
+
       <Users></Users>
 
       <Team></Team>
