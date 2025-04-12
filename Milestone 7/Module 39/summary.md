@@ -1,9 +1,10 @@
-### React fundamentals
-1. Component (function)
+### React 6 core concepts
+1. Component (function which return jsx)
 2. jsx --- Babel ---> html
 3. Props
-4. Conditional rendering
-5. Array of object
+4. Event Handler
+5. State
+6. Side-effect (data load)
 
 
 ### Event Handler
