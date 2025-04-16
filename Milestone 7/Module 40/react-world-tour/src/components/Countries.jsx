@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Countries() {
     const [countries, setCountries] = useState([]);
@@ -12,7 +12,7 @@ function Countries() {
 
     return (
         <div>
-            <h3>Countries</h3>
+            <h3>Countries: {countries.length}</h3>
         </div>
     )
 }
