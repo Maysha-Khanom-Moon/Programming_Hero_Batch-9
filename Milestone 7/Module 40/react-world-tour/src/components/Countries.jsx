@@ -16,7 +16,9 @@ function Countries() {
         <div>
             <h3>Countries: {countries.length}</h3>
             {
-                countries.map(country => <Country country={country}></Country>)
+                // key is not an id, but it serves a similar purpose
+                // unique, immutable, not appeared in the html
+                countries.map(country => <Country key={country.cca3} country={country}></Country>)
             }
         </div>
     )
