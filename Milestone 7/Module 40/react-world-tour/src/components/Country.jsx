@@ -8,9 +8,11 @@ export default function Country({country}) {
         color: 'white'
     }
 
+    const {flags} = country;
     return (
         <div style={divStyle}>
             <h3>Country: {country?.name?.common || 'Unknown'}</h3>
+            <img src={flags.png} alt="" />
         </div>
     )
 }
