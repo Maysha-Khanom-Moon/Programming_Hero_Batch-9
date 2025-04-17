@@ -16,6 +16,10 @@ function Countries() {
     }, [])
 
     const handleVisitedCountry = country => {
+        if (visitedCountries.includes(country)) {
+            alert('You already visited this country');
+            return;
+        }
         const newVisitedCountries = [...visitedCountries, country];
         setVisitedCountries(newVisitedCountries);
     }
