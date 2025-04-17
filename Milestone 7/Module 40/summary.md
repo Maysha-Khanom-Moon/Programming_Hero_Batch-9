@@ -22,3 +22,9 @@ For update:
 - surge dist domainname.com
     - otherwise each time it will give new link
     - but if CNAME present then no need to mention domain name
+
+
+### deploy with netlify
+1. npm run build
+2. just drop-down the dist folder
+3. then deploy
