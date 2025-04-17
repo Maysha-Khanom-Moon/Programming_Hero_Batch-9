@@ -27,7 +27,17 @@ function Countries() {
     return (
         <div>
             <h3>Countries: {countries.length}</h3>
+
+            <div>
             <h4>Visited Countries: {visitedCountries.length}</h4>
+
+            <ul style={{width: '15%'}}>
+                {
+                    visitedCountries.map(country => <li key={country.cca3}>{country.name.common}</li>)
+                }
+            </ul>
+            </div>
+
             <div className='country-container'>
                 {
                     // key is not an id, but it serves a similar purpose
