@@ -1,8 +1,7 @@
 import { useState } from "react";
 import './Countries.css'
 
-export default function Country({country}) {
-
+export default function Country({country, handleVisitedCountry}) {
     const divStyle = {
         border: '2px solid tomato',
         margin: '10px',
@@ -14,7 +13,7 @@ export default function Country({country}) {
         alignItems: 'center'
     }
 
-    const [visited, setVisited] = useState(false);
+    const [visited, setVisited] = useState(false); // boolean default value = false
 
     const handleVisited = () => {
         setVisited(!visited);
@@ -23,7 +22,7 @@ export default function Country({country}) {
     const {flags, population, area, cca3} = country;
     return (
         // react automatically re-render components on state change (no need to do it manually)
-        <div className={visited && 'visited'} style={divStyle}>
+        <div className={visited ? 'visited' : 'non-visited'} style={divStyle}>
             <h3>Country: {country?.name?.common || 'Unknown'}</h3>
             <img style={{width: '200px', maxHeight: '120px'}} src={flags.png} alt="" />
 
@@ -34,7 +33,7 @@ export default function Country({country}) {
             </div>
 
             <div style={{width: '90%', display: 'flex', marginBottom: '4px'}}>
-                <button>Mask Visited</button>
+                <button onClick={() => handleVisitedCountry(country)}>Make Visited</button>
             </div>
 
             <div style={{width: '90%', height: '45px', display: 'flex', gap: '10px', alignItems: 'center'}}>

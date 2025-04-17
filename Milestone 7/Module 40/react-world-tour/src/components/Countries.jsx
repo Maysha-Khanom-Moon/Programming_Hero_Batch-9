@@ -4,7 +4,9 @@ import Country from './Country'
 import './Countries.css'
 
 function Countries() {
-    const [countries, setCountries] = useState([]);
+    const [countries, setCountries] = useState([]); // list default value = []
+    
+    const [visitedCountries, setVisitedCountries] = useState([]);
 
     useEffect( () => {
         // side effect code here
@@ -13,14 +15,20 @@ function Countries() {
         .then(data => setCountries(data))
     }, [])
 
+    const handleVisitedCountry = country => {
+        const newVisitedCountries = [...visitedCountries, country];
+        setVisitedCountries(newVisitedCountries);
+    }
+
     return (
         <div>
             <h3>Countries: {countries.length}</h3>
+            <h4>Visited Countries: {visitedCountries.length}</h4>
             <div className='country-container'>
                 {
                     // key is not an id, but it serves a similar purpose
                     // unique, immutable, not appeared in the html
-                    countries.map(country => <Country key={country.cca3} country={country}></Country>)
+                    countries.map(country => <Country key={country.cca3} handleVisitedCountry={handleVisitedCountry} country={country}></Country>)
                 }
             </div>
         </div>
