@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export default function Country({country}) {
 
     const divStyle = {
@@ -9,6 +11,12 @@ export default function Country({country}) {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center'
+    }
+
+    const [visited, setVisited] = useState(false);
+
+    const handleVisited = () => {
+        setVisited(!visited);
     }
 
     const {flags, population, area, cca3} = country;
@@ -23,7 +31,10 @@ export default function Country({country}) {
                 <p><small>Code: {cca3}</small></p>
             </div>
 
-            <button>Visited</button>
+            <div style={{width: '90%', height: '45px', display: 'flex', gap: '10px', alignItems: 'center'}}>
+                <button onClick={handleVisited}>{visited ? 'Visited' : 'going'}</button>
+                <p>{visited && 'I have visited this country'}</p>
+            </div>
         </div>
     )
 }
