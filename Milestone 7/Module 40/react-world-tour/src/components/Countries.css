@@ -3,6 +3,10 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.visited {
+    background-color: gray;
+}
+
 /* Media Queries */
 @media screen and (max-width: 992px) {
     .country-container {

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './Countries.css'
 
 export default function Country({country}) {
 
@@ -21,7 +22,8 @@ export default function Country({country}) {
 
     const {flags, population, area, cca3} = country;
     return (
-        <div style={divStyle}>
+        // react automatically re-render components on state change (no need to do it manually)
+        <div className={visited && 'visited'} style={divStyle}>
             <h3>Country: {country?.name?.common || 'Unknown'}</h3>
             <img style={{width: '200px', maxHeight: '120px'}} src={flags.png} alt="" />
 
@@ -29,6 +31,10 @@ export default function Country({country}) {
                 <p>Population: {population}</p>
                 <p>Area: {area}</p>
                 <p><small>Code: {cca3}</small></p>
+            </div>
+
+            <div style={{width: '90%', display: 'flex', marginBottom: '4px'}}>
+                <button>Mask Visited</button>
             </div>
 
             <div style={{width: '90%', height: '45px', display: 'flex', gap: '10px', alignItems: 'center'}}>
