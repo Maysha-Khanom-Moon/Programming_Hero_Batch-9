@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import Country from './Country'
+import './Countries.css'
 
 function Countries() {
     const [countries, setCountries] = useState([]);
@@ -15,11 +16,13 @@ function Countries() {
     return (
         <div>
             <h3>Countries: {countries.length}</h3>
-            {
-                // key is not an id, but it serves a similar purpose
-                // unique, immutable, not appeared in the html
-                countries.map(country => <Country key={country.cca3} country={country}></Country>)
-            }
+            <div className='country-container'>
+                {
+                    // key is not an id, but it serves a similar purpose
+                    // unique, immutable, not appeared in the html
+                    countries.map(country => <Country key={country.cca3} country={country}></Country>)
+                }
+            </div>
         </div>
     )
 }
