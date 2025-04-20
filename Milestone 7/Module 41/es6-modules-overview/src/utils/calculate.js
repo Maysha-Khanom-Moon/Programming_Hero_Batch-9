@@ -10,4 +10,5 @@ const DivideTheFirstNumberByTheSecondNumber = (first, second) => {
     return first / second;
 }
 
-export default {Add, Multiply, DivideTheFirstNumberByTheSecondNumber};
+// export {Add, Multiply, DivideTheFirstNumberByTheSecondNumber as Divide};
+export {Add, Multiply, DivideTheFirstNumberByTheSecondNumber};

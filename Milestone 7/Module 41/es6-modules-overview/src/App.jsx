@@ -1,33 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Watch from './components/Watch/Watch';
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  // we can generate fake data using json generator or AI
+
+  // in memory object
+  const Watches = [
+    {id: 1, name: 'Rolex', price: 120000},
+    {id: 2, name: 'Casio', price: 45000},
+    {id: 3, name: 'Tissot', price: 60000},
+    {id: 4, name: 'Orient', price: 150000},
+    {id: 5, name: 'Apple', price: 19000},
+    {id: 6, name: 'Seiko', price: 50000},
+    {id: 7, name: 'Omega', price: 200000},
+    {id: 8, name: 'Samson', price: 70000}
+]
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
       <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h2>Watches: </h2>
+      {
+        Watches.map(watch => <Watch key={watch.id} watch={watch}></Watch>)
+      }
     </>
   )
 }
