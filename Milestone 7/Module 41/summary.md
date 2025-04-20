@@ -15,3 +15,7 @@
 7. assets: static resources like images, icons, fonts, and media files
 
 8. styles: css or other styling formats used in design the UI.
+
+
+### local storage vs session storage
+![local storage vs session storage](../../images/localStorage_vs_sessionStorage.png)
