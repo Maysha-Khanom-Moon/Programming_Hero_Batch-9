@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'; // ES6
+
 import * as Calculate from '../../utils/calculate';
 import './Watch.css'
 
@@ -19,3 +21,8 @@ function Watch({watch, handleAddToCart}) {
 }
 
 export default Watch
+
+Watch.propTypes = {
+    watch: PropTypes.object.isRequired,
+    handleAddToCart: PropTypes.func
+}
