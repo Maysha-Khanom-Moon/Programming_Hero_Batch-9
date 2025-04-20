@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css'
 import Watch from './components/Watch/Watch';
+import { getStoredCart, addToLS} from './utils/local_storage';
 
 function App() {
   // we can generate fake data using json generator or AI
@@ -19,7 +20,6 @@ function App() {
   ] 
   */
 
-
   const [Watches, setWatches] = useState([]);
 
   useEffect( () => {
@@ -35,20 +35,21 @@ function App() {
 
   
   // watch count state
-  const [watchCount, setWatchCount] = useState(0);
+  // but after refresh the count will be reset
+  const [watchCount, setWatchCount] = useState(getStoredCart().length);
 
-  const handleAddWatch = () => {
+  const handleAddToCart = (id) => {
     const newWatchCount = watchCount + 1;
     setWatchCount(newWatchCount);
+    addToLS(id);
   }
 
   return (
     <>
-      <h1>Vite + React</h1>
-      <h2>Watches: </h2>
-      <p>Watch Count: {watchCount}</p>
+      <h1 style={{color: 'gray'}}>Watches: </h1>
+      <h3>Added Watch Count: {watchCount}</h3>
       {
-        Watches.map(watch => <Watch key={watch.id} watch={watch} handleAddWatch={handleAddWatch}></Watch>)
+        Watches.map(watch => <Watch key={watch.id} watch={watch} handleAddToCart={handleAddToCart}></Watch>)
       }
     </>
   )
