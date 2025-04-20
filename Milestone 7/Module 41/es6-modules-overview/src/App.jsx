@@ -34,13 +34,21 @@ function App() {
   }, [])
 
   
+  // watch count state
+  const [watchCount, setWatchCount] = useState(0);
+
+  const handleAddWatch = () => {
+    const newWatchCount = watchCount + 1;
+    setWatchCount(newWatchCount);
+  }
 
   return (
     <>
       <h1>Vite + React</h1>
       <h2>Watches: </h2>
+      <p>Watch Count: {watchCount}</p>
       {
-        Watches.map(watch => <Watch key={watch.id} watch={watch}></Watch>)
+        Watches.map(watch => <Watch key={watch.id} watch={watch} handleAddWatch={handleAddWatch}></Watch>)
       }
     </>
   )

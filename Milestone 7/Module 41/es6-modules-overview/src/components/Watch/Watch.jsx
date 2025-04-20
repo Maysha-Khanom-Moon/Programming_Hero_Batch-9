@@ -1,7 +1,7 @@
 import * as Calculate from '../../utils/calculate';
 import './Watch.css'
 
-function Watch({watch}) {
+function Watch({watch, handleAddWatch}) {
 
     const first = 55;
     const second = 199;
@@ -9,11 +9,11 @@ function Watch({watch}) {
     const Multi = Calculate.Multiply(first, second);
     const Div = Calculate.DivideTheFirstNumberByTheSecondNumber(first, second);
 
-
     return (
         <div className='watch'>
             <p>Watch: {watch.model}</p>
             <p>Price: ${watch.price}</p>
+            <button style={{backgroundColor: 'tomato', color: 'white'}} onClick={handleAddWatch}>Add to Cart</button>
         </div>
     )
 }
