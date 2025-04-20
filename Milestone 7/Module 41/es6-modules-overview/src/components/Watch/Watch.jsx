@@ -12,8 +12,8 @@ function Watch({watch}) {
 
     return (
         <div className='watch'>
-            <p>Watch: {watch.name}</p>
-            <p>Price: {watch.price}</p>
+            <p>Watch: {watch.model}</p>
+            <p>Price: ${watch.price}</p>
         </div>
     )
 }

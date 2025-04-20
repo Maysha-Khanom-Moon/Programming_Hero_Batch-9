@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "brand": "Casio",
+      "model": "G-Shock GA2100",
+      "price": 120,
+      "features": ["Shock Resistant", "200M Water Resistant", "LED Light"]
+    },
+    {
+      "id": 2,
+      "brand": "Seiko",
+      "model": "5 Sports SNK809",
+      "price": 95,
+      "features": ["Automatic Movement", "Day-Date", "Water Resistant"]
+    },
+    {
+      "id": 3,
+      "brand": "Timex",
+      "model": "Weekender",
+      "price": 40,
+      "features": ["Indiglo Light", "Interchangeable Straps", "Quartz"]
+    },
+    {
+      "id": 4,
+      "brand": "Rolex",
+      "model": "Submariner",
+      "price": 8000,
+      "features": ["Luxury", "Water Resistant", "Automatic"]
+    },
+    {
+      "id": 5,
+      "brand": "Omega",
+      "model": "Speedmaster Moonwatch",
+      "price": 5200,
+      "features": ["Chronograph", "Manual Wind", "Sapphire Crystal"]
+    },
+    {
+      "id": 6,
+      "brand": "Fossil",
+      "model": "Gen 6 Smartwatch",
+      "price": 300,
+      "features": ["Touchscreen", "Heart Rate Monitor", "GPS"]
+    },
+    {
+      "id": 7,
+      "brand": "Apple",
+      "model": "Watch Series 9",
+      "price": 399,
+      "features": ["Fitness Tracking", "Always-On Display", "ECG App"]
+    },
+    {
+      "id": 8,
+      "brand": "Garmin",
+      "model": "Forerunner 255",
+      "price": 350,
+      "features": ["GPS", "Sleep Tracking", "Music Storage"]
+    },
+    {
+      "id": 9,
+      "brand": "Citizen",
+      "model": "Eco-Drive Chandler",
+      "price": 150,
+      "features": ["Solar Powered", "Military Style", "Water Resistant"]
+    },
+    {
+      "id": 10,
+      "brand": "Tissot",
+      "model": "PRX Powermatic 80",
+      "price": 650,
+      "features": ["Automatic", "80-Hour Power Reserve", "Sapphire Crystal"]
+    }
+  ]
+  
