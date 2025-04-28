@@ -1,10 +1,11 @@
 import './App.css'
+import Header from './components/Header';
 
 function App() {
   return (
-    <>
-      <h1 className='text-5xl'>Vite + React</h1>
-    </>
+    <div className='mx-24 lg:mx-96 mt-12'>
+      <Header></Header>
+    </div>
   )
 }
 
