@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "cover": "https://via.placeholder.com/600x400.png?text=Cover+1",
+      "cover": "https://images.unsplash.com/photo-1705497389552-e376f1340d3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI5fHx8ZW58MHx8fHx8",
       "title": "Understanding the Basics of React",
       "author": "Jane Doe",
       "author_img": "https://randomuser.me/api/portraits/women/1.jpg",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "cover": "https://via.placeholder.com/600x400.png?text=Cover+2",
+      "cover": "https://images.unsplash.com/photo-1587740067173-f32de81e5977?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI2fHx8ZW58MHx8fHx8",
       "title": "Mastering Tailwind CSS",
       "author": "John Smith",
       "author_img": "https://randomuser.me/api/portraits/men/2.jpg",
@@ -21,7 +21,7 @@
     },
     {
       "id": 3,
-      "cover": "https://via.placeholder.com/600x400.png?text=Cover+3",
+      "cover": "https://plus.unsplash.com/premium_photo-1707029388345-704ca63a435d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI0fHx8ZW58MHx8fHx8",
       "title": "Introduction to Node.js",
       "author": "Alice Johnson",
       "author_img": "https://randomuser.me/api/portraits/women/3.jpg",
@@ -31,7 +31,7 @@
     },
     {
       "id": 4,
-      "cover": "https://via.placeholder.com/600x400.png?text=Cover+4",
+      "cover": "https://images.unsplash.com/photo-1610795818704-d69c5192db08?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIzfHx8ZW58MHx8fHx8",
       "title": "Building REST APIs with Express",
       "author": "Bob Williams",
       "author_img": "https://randomuser.me/api/portraits/men/4.jpg",
