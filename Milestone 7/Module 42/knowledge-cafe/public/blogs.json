@@ -6,7 +6,7 @@
       "author": "Jane Doe",
       "author_img": "https://randomuser.me/api/portraits/women/1.jpg",
       "posted_date": "2025-04-20",
-      "reading_time": "5 min read",
+      "reading_time": 5,
       "hashtags": ["#React", "#JavaScript", "#Frontend"]
     },
     {
@@ -16,7 +16,7 @@
       "author": "John Smith",
       "author_img": "https://randomuser.me/api/portraits/men/2.jpg",
       "posted_date": "2025-04-18",
-      "reading_time": "7 min read",
+      "reading_time": 7,
       "hashtags": ["#TailwindCSS", "#CSS", "#WebDesign"]
     },
     {
@@ -26,7 +26,7 @@
       "author": "Alice Johnson",
       "author_img": "https://randomuser.me/api/portraits/women/3.jpg",
       "posted_date": "2025-04-15",
-      "reading_time": "6 min read",
+      "reading_time": 6,
       "hashtags": ["#NodeJS", "#Backend", "#JavaScript"]
     },
     {
@@ -36,7 +36,7 @@
       "author": "Bob Williams",
       "author_img": "https://randomuser.me/api/portraits/men/4.jpg",
       "posted_date": "2025-04-12",
-      "reading_time": "8 min read",
+      "reading_time": 8,
       "hashtags": ["#ExpressJS", "#API", "#BackendDevelopment"]
     }
   ]
