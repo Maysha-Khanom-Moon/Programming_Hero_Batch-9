@@ -1,9 +1,8 @@
-import React from 'react'
 import { useEffect, useState } from 'react'
 
 function Blogs() {
 
-    const [blogs, setBlogs] = React.useState([])
+    const [Blogs, setBlogs] = useState([]);
 
     useEffect(() => {
         fetch('blogs.json')
@@ -14,7 +13,7 @@ function Blogs() {
 
   return (
     <div>
-      
+        <h1>Blogs: {Blogs.length}</h1>
     </div>
   )
 }
