@@ -9,12 +9,17 @@ function App() {
   // lift up the state of the blog list to the App component
   // drill down the blog list: App --> Blogs --> Blog
   const [bookmarks, setBookmarks] = useState([]);
+  const [readingTime, setReadingTime] = useState(0);
 
   const handleBookmark = (blog) => {
     const newBookmarks = [...bookmarks, blog];
     setBookmarks(newBookmarks);
-    console.log(blog);
-    
+    // console.log(blog);
+  }
+
+  const handleReadingTime = (time) => {
+    const newReadingTime = readingTime + time;
+    setReadingTime(newReadingTime);
   }
 
   return (
@@ -23,10 +28,10 @@ function App() {
       
       <div className='flex flex-col lg:flex-row gap-14 lg:gap-6'>
         <div className='w-full lg:w-[60%]'>
-          <Blogs handleBookmark={handleBookmark}></Blogs>
+          <Blogs handleBookmark={handleBookmark} handleReadingTime={handleReadingTime}></Blogs>
         </div>
         <div className='w-full lg:w-[40%]'>
-          <Bookmarks bookmarks={bookmarks}></Bookmarks>
+          <Bookmarks bookmarks={bookmarks} readingTime={readingTime}></Bookmarks>
         </div>
       </div>
     </div>

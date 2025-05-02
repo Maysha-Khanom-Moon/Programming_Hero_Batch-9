@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { FaRegBookmark } from "react-icons/fa6";
 
-function Blog({blog, handleBookmark}) {
+function Blog({blog, handleBookmark, handleReadingTime}) {
     const {cover, title, author, author_img, posted_date, reading_time, hashtags} = blog;
 
     return (
@@ -27,7 +27,7 @@ function Blog({blog, handleBookmark}) {
                     hashtags.map(hashtag => <p>{hashtag}</p>)
                 }
             </div>
-            <button className='text-blue-600 underline hover:text-blue-800 flex justify-start'>Mark as read</button>
+            <button onClick={() => handleReadingTime(blog.reading_time)} className='text-blue-600 underline hover:text-blue-800 flex justify-start'>Mark as read</button>
         </div>
     )
 }

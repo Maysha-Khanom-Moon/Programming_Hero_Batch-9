@@ -3,7 +3,7 @@ import propTypes from 'prop-types'
 import { useEffect, useState } from 'react'
 import Blog from './Blog';
 
-function Blogs({handleBookmark}) {
+function Blogs({handleBookmark, handleReadingTime}) {
 
     const [Blogs, setBlogs] = useState([]);
 
@@ -18,7 +18,7 @@ function Blogs({handleBookmark}) {
     <div>
         <div className='flex flex-col gap-6'>
           {
-            Blogs.map(blog => <Blog key={blog.id} blog={blog} handleBookmark={handleBookmark}></Blog>)
+            Blogs.map(blog => <Blog key={blog.id} blog={blog} handleBookmark={handleBookmark} handleReadingTime={handleReadingTime}></Blog>)
           }
         </div>
     </div>
