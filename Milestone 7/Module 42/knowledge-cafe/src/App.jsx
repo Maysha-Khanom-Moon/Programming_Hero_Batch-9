@@ -1,6 +1,8 @@
 import './App.css'
 import Blogs from './components/Blogs';
 import Header from './components/Header';
+import Bookmarks from './components/bookmarks/Bookmarks';
+
 import { useState } from 'react';
 
 function App() {
@@ -16,15 +18,15 @@ function App() {
   }
 
   return (
-    <div className='mx-24 lg:mx-64 mb-12'>
+    <div className='mx-24 lg:mx-48 mb-12'>
       <Header></Header>
       
-      <div className='flex flex-col lg:flex-row gap-6'>
-        <div className='w-2/3'>
+      <div className='flex flex-col lg:flex-row gap-14 lg:gap-6'>
+        <div className='w-full lg:w-[60%]'>
           <Blogs handleBookmark={handleBookmark}></Blogs>
         </div>
-        <div className='w-1/3'>
-          
+        <div className='w-full lg:w-[40%]'>
+          <Bookmarks bookmarks={bookmarks}></Bookmarks>
         </div>
       </div>
     </div>
