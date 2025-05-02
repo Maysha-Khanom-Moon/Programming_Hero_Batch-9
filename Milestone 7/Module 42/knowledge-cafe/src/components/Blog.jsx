@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { FaRegBookmark } from "react-icons/fa6";
 
 function Blog({blog}) {
     const {cover, title, author, author_img, posted_date, reading_time, hashtags} = blog;
@@ -14,7 +15,10 @@ function Blog({blog}) {
                         <p className='text-[#11111199] font-semibold text-base'>{posted_date}</p>
                     </div>
                 </div>
-                <p className='text-[#11111199]'>{reading_time} min read</p>
+                <div className='flex gap-3 items-center text-[#11111199]'>
+                    <p>{reading_time} min read</p>
+                    <button><FaRegBookmark /></button>
+                </div>
             </div>
             <h1 className='text-4xl font-bold'>{title}</h1>
 
@@ -28,7 +32,7 @@ function Blog({blog}) {
     )
 }
 
-Blog.PropTypes = {
+Blog.propTypes = {
     blog: PropTypes.object.isRequired
 }
 

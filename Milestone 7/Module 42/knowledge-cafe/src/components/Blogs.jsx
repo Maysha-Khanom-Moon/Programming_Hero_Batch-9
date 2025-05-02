@@ -14,9 +14,9 @@ function Blogs() {
 
   return (
     <div>
-        <div className='w-2/3 flex lg:flex-col flex-row gap-6'>
+        <div className='flex flex-col gap-6'>
           {
-              Blogs.map(blog => <Blog key={blog.id} blog={blog}></Blog>)
+            Blogs.map(blog => <Blog key={blog.id} blog={blog}></Blog>)
           }
         </div>
     </div>

@@ -4,9 +4,17 @@ import Header from './components/Header';
 
 function App() {
   return (
-    <div className='mx-24 lg:mx-64 mt-12'>
+    <div className='mx-24 lg:mx-64 mb-12'>
       <Header></Header>
-      <Blogs></Blogs>
+      
+      <div className='flex flex-col lg:flex-row gap-6'>
+        <div className='w-2/3'>
+          <Blogs></Blogs>
+        </div>
+        <div className='w-1/3'>
+          
+        </div>
+      </div>
     </div>
   )
 }
