@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Bookmark from "./Bookmark";
 
 function Bookmarks({bookmarks}) {
@@ -9,12 +10,19 @@ function Bookmarks({bookmarks}) {
 
       <div className="p-8 bg-[#1111110D] rounded-lg">
         <h2 className="text-2xl font-bold text-[#111] mb-4">Bookmarked Blogs: 8</h2>
-        {
+        <div className="flex flex-col gap-6">
+          {
             bookmarks.map((bookmark) => <Bookmark key={bookmark.id} bookmark={bookmark}></Bookmark>)
-        }
+          }
+        </div>
+        
       </div>
     </div>
   )
+}
+
+Bookmarks.propTypes = {
+    bookmarks: PropTypes.array.isRequired
 }
 
 export default Bookmarks
