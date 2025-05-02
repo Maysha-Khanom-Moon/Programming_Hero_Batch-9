@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { FaRegBookmark } from "react-icons/fa6";
 
-function Blog({blog}) {
+function Blog({blog, handleBookmark}) {
     const {cover, title, author, author_img, posted_date, reading_time, hashtags} = blog;
 
     return (
@@ -17,7 +17,7 @@ function Blog({blog}) {
                 </div>
                 <div className='flex gap-3 items-center text-[#11111199]'>
                     <p>{reading_time} min read</p>
-                    <button><FaRegBookmark /></button>
+                    <button onClick={() => handleBookmark()}><FaRegBookmark /></button>
                 </div>
             </div>
             <h1 className='text-4xl font-bold'>{title}</h1>
