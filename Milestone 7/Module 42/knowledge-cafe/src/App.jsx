@@ -1,17 +1,17 @@
 import './App.css'
 import Blogs from './components/Blogs';
 import Header from './components/Header';
-// import { useState } from 'react';
+import { useState } from 'react';
 
 function App() {
   // lift up the state of the blog list to the App component
   // drill down the blog list: App --> Blogs --> Blog
-  // const [bookmarks, setBookmarks] = useState([]);
+  const [bookmarks, setBookmarks] = useState([]);
 
-  const handleBookmark = () => {
-    // const newBookmarks = [...bookmarks, blog];
-    // setBookmarks(newBookmarks);
-    console.log("bookmark adding soon");
+  const handleBookmark = (blog) => {
+    const newBookmarks = [...bookmarks, blog];
+    setBookmarks(newBookmarks);
+    console.log(blog);
     
   }
 

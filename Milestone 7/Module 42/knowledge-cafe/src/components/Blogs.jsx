@@ -25,8 +25,8 @@ function Blogs({handleBookmark}) {
   )
 }
 
-export default Blogs
-
 Blogs.propTypes = {
-    handleBookmark: propTypes.func.isRequired
+  handleBookmark: propTypes.func.isRequired
 }
+
+export default Blogs

@@ -17,7 +17,7 @@ function Blog({blog, handleBookmark}) {
                 </div>
                 <div className='flex gap-3 items-center text-[#11111199]'>
                     <p>{reading_time} min read</p>
-                    <button onClick={() => handleBookmark()}><FaRegBookmark /></button>
+                    <button onClick={() => handleBookmark(blog)}><FaRegBookmark /></button>
                 </div>
             </div>
             <h1 className='text-4xl font-bold'>{title}</h1>
@@ -33,7 +33,8 @@ function Blog({blog, handleBookmark}) {
 }
 
 Blog.propTypes = {
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleBookmark: PropTypes.func.isRequired
 }
 
 export default Blog
