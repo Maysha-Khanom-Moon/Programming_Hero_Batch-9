@@ -12,7 +12,7 @@ function Bookmarks({bookmarks, readingTime}) {
         <h2 className="text-2xl font-bold text-[#111] mb-4">Bookmarked Blogs: {bookmarks.length}</h2>
         <div className="flex flex-col gap-6">
           {
-            bookmarks.map((bookmark) => <Bookmark key={bookmark.id} bookmark={bookmark}></Bookmark>)
+            bookmarks.map((bookmark) => <Bookmark key={bookmark.length} bookmark={bookmark}></Bookmark>)
           }
         </div>
         

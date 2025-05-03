@@ -27,7 +27,7 @@ function Blog({blog, handleBookmark, handleReadingTime}) {
                     hashtags.map(hashtag => <p>{hashtag}</p>)
                 }
             </div>
-            <button onClick={() => handleReadingTime(blog.reading_time)} className='text-blue-600 underline hover:text-blue-800 flex justify-start'>Mark as read</button>
+            <button onClick={() => handleReadingTime(blog)} className='text-blue-600 underline hover:text-blue-800 flex justify-start'>Mark as read</button>
         </div>
     )
 }

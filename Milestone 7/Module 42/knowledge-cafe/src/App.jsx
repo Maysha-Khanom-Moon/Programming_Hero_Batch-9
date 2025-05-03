@@ -17,9 +17,16 @@ function App() {
     // console.log(blog);
   }
 
-  const handleReadingTime = (time) => {
-    const newReadingTime = readingTime + time;
+  const handleReadingTime = (blog) => {
+    const newReadingTime = readingTime + blog.reading_time;
     setReadingTime(newReadingTime);
+
+    handleRemoveBookmark(blog);
+  }
+
+  const handleRemoveBookmark = (blog) => {
+    const newBookmarks = bookmarks.filter((b) => b.id !== blog.id);
+    setBookmarks(newBookmarks);
   }
 
   return (
