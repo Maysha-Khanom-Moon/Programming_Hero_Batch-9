@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function Link({ route }) {
   return (
     <div>
@@ -9,5 +11,9 @@ function Link({ route }) {
     </div>
   );
 }
+
+Link.propTypes = {
+  route: PropTypes.object.isRequired,
+};
 
 export default Link;
