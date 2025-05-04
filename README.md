@@ -1,15 +1,17 @@
 # Programming Hero Batch 9
 
 ## Assignment's Live Link:
-- [A1 - New Year New Mission](https://maysha-khanom-moon.github.io/ph-a1-new-year-new-mission/) ~ html + vanilla css (not responsive)
+- [A1 - New Year New Mission](https://maysha-khanom-moon.github.io/ph-a1-new-year-new-mission/) ~ html | vanilla css | no js (not responsive)
 
-- [A2 - Trek Twig](https://maysha-khanom-moon.github.io/ph__a2__trek-twig/) ~ html + vanilla css (not responsive)
+- [A2 - Trek Twig](https://maysha-khanom-moon.github.io/ph__a2__trek-twig/) ~ html | vanilla css | no js (not responsive)
 
-- [A3 - Hockey](https://maysha-khanom-moon.github.io/ph__a3__hockey/) ~ html + tailwind css + daisyui (responsive)
+- [A3 - Hockey](https://maysha-khanom-moon.github.io/ph__a3__hockey/) ~ html | tailwind css + daisyui | no js (responsive)
 
-- [A5 - Smart Ticketing](https://maysha-khanom-moon.github.io/ph__a5__smart-ticketing/) ~ html + tailwind css + daisyui + vanilla js (not responsive)
+- [A5 - Smart Ticketing](https://maysha-khanom-moon.github.io/ph__a5__smart-ticketing/) ~ html | tailwind css + daisyui | vanilla js (not responsive)
 
-- [A6 - Retro Forum](https://chang-e-retro-forum.netlify.app/) ~ html + tailwind css + daisyui + vanilla js (responsive)
+- [A6 - Retro Forum](https://chang-e-retro-forum.netlify.app/) ~ html | tailwind css + daisyui | vanilla js (responsive)
+
+- [A7 - Chefs Table](https://chefs-table-ab.surge.sh/) ~ react | tailwind css (not responsive)
 
 <br>
 
