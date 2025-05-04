@@ -24,3 +24,17 @@ The **Virtual DOM (VDOM)** is a lightweight JavaScript copy of the real DOM. It 
 - Better user experience
 
 > 💡 React uses the Virtual DOM to batch updates and avoid unnecessary re-renders.
+
+<br>
+
+### CSR
+- The browser loads minimal HTML and fetches content via JavaScript.
+- Pros: Fast interactions after initial load, less server load.
+- Cons: Slower initial load, SEO challenges.
+- example: a pizza kit delivered to your home, and you cook it yourself.
+
+### SSR
+- The server sends a fully rendered HTML page to the browser.
+- Pros: Faster initial load, better SEO.
+- Cons: Slower interactions, higher server load.
+- example: restaurant preparing your full pizza before serving it to your table.
