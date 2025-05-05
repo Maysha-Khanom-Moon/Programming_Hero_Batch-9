@@ -1,4 +1,6 @@
 import { LineChart, Line } from "recharts";
+// if component name become same as library names, we can rename them like this
+// import { LineChart as LChart, Line } from "recharts";
 
 function LineChart1() {
   const data = [
