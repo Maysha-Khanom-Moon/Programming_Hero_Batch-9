@@ -19,3 +19,13 @@
 - ✅ JavaScript-heavy structure (e.g., <div id="root">)
 - ✅ Network tab shows no new HTML requests on navigation
 - ✅ Uses History API (pushState, replaceState)
+
+<br>
+
+### `<Link>` vs `<a>`:
+| Feature                 | `<Link>` (from `react-router-dom`)  | `<a>` (HTML anchor tag)         |
+| ----------------------- | ----------------------------------- | ------------------------------- |
+| **Page Reload**         | ❌ No full page reload               | ✅ Triggers full page reload     |
+| **Client-Side Routing** | ✅ Yes, updates URL via React Router | ❌ No, browser handles routing   |
+| **Speed**               | ⚡ Fast (only updates content)       | 🐢 Slower (reloads entire page) |
+| **Usage**               | Used for internal navigation        | Used for external links         |
