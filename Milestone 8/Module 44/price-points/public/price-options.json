@@ -1,49 +1,57 @@
-{
-  "gym_name": "FlexFit Gym",
-  "currency": "BDT",
-  "pricing_options": [
-    {
-      "id": "basic_monthly",
-      "name": "Basic Monthly",
-      "price": 1500,
-      "duration": "1 month",
-      "features": [
-        "Access to gym equipment",
-        "Locker room access"
-      ]
-    },
-    {
-      "id": "standard_monthly",
-      "name": "Standard Monthly",
-      "price": 2500,
-      "duration": "1 month",
-      "features": [
-        "Access to gym equipment",
-        "Locker room access",
-        "Group fitness classes"
-      ]
-    },
-    {
-      "id": "premium_monthly",
-      "name": "Premium Monthly",
-      "price": 3500,
-      "duration": "1 month",
-      "features": [
-        "All Standard features",
-        "Personal trainer (2 sessions)",
-        "Diet consultation"
-      ]
-    },
-    {
-      "id": "yearly_discounted",
-      "name": "Yearly Membership",
-      "price": 30000,
-      "duration": "12 months",
-      "features": [
-        "All Premium features",
-        "Free gym merchandise",
-        "Priority booking for classes"
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "basic_monthly",
+    "name": "Basic Monthly",
+    "price": 1500,
+    "duration": "1 month",
+    "features": [
+      "Access to gym equipment",
+      "Locker room access",
+      "1 complimentary guest pass",
+      "Free Wi-Fi"
+    ]
+  },
+  {
+    "id": "standard_monthly",
+    "name": "Standard Monthly",
+    "price": 2500,
+    "duration": "1 month",
+    "features": [
+      "Access to gym equipment",
+      "Locker room access",
+      "Group fitness classes",
+      "Unlimited guest passes",
+      "Nutritional tips newsletter",
+      "Steam room access"
+    ]
+  },
+  {
+    "id": "premium_monthly",
+    "name": "Premium Monthly",
+    "price": 3500,
+    "duration": "1 month",
+    "features": [
+      "All Standard features",
+      "2 personal trainer sessions/month",
+      "Body composition analysis",
+      "Access to exclusive premium lounge",
+      "Complimentary protein shake daily",
+      "Custom workout tracking app access"
+    ]
+  },
+  {
+    "id": "yearly_discounted",
+    "name": "Yearly Membership",
+    "price": 30000,
+    "duration": "12 months",
+    "features": [
+      "All Premium features",
+      "Free gym merchandise starter pack",
+      "Priority booking for all classes",
+      "Unlimited personal trainer access (on schedule)",
+      "Early access to new facilities",
+      "Access to members-only events",
+      "Exclusive discounts at partner nutrition stores"
+    ]
+  }
+]

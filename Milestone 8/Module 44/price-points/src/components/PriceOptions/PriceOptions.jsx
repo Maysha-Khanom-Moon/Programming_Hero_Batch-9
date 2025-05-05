@@ -12,12 +12,18 @@ function PriceOptions() {
       }, []);
   
     return (
-    <div>
-      {
-        priceOptions.map((option) => <PriceOptions key={option.id} option={option} />)
-      }
-    </div>
-  )
+      <div>
+        {
+          priceOptions.map((option) => (
+            <PriceOption
+              key={option.id}
+              option={option}
+            ></PriceOption>
+          )
+        )
+        }
+      </div>
+    );
 }
 
 export default PriceOptions
