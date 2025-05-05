@@ -30,3 +30,7 @@
 
 ### React Awesome Components
 A wide variety of <b>ready-to-use, highly customizable UI components</b> built by the React community.
+
+#### Fragment tag
+- `<>  </>`
+- Since React components can only return a single element, Fragments provide a way to return multiple elements without introducing unnecessary markup (parent node).
