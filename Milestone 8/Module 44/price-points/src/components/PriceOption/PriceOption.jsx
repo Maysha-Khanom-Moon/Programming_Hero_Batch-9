@@ -17,6 +17,8 @@ function PriceOption({ option }) {
         )
         }
       </div>
+
+      <button className="bg-neutral-700 hover:bg-blue-800 transition-bg duration-300 text-white py-2 px-4 rounded-lg mt-5">Buy Now</button>
     </div>
   );
 }
