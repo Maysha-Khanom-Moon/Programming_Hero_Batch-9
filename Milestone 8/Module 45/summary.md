@@ -22,7 +22,7 @@
 
 <br>
 
-### `<Link>` vs `<a>`:
+### React `<Link>` vs `<a>` Tag:
 | Feature                 | `<Link>` (from `react-router-dom`)  | `<a>` (HTML anchor tag)         |
 | ----------------------- | ----------------------------------- | ------------------------------- |
 | **Page Reload**         | ❌ No full page reload               | ✅ Triggers full page reload     |
