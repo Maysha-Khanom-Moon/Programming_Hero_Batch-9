@@ -20,9 +20,7 @@
       "Access to gym equipment",
       "Locker room access",
       "Group fitness classes",
-      "Unlimited guest passes",
-      "Nutritional tips newsletter",
-      "Steam room access"
+      "Unlimited guest passes"
     ]
   },
   {
@@ -32,8 +30,6 @@
     "duration": "1 month",
     "features": [
       "All Standard features",
-      "2 personal trainer sessions/month",
-      "Body composition analysis",
       "Access to exclusive premium lounge",
       "Complimentary protein shake daily",
       "Custom workout tracking app access"
@@ -47,10 +43,7 @@
     "features": [
       "All Premium features",
       "Free gym merchandise starter pack",
-      "Priority booking for all classes",
       "Unlimited personal trainer access (on schedule)",
-      "Early access to new facilities",
-      "Access to members-only events",
       "Exclusive discounts at partner nutrition stores"
     ]
   }
