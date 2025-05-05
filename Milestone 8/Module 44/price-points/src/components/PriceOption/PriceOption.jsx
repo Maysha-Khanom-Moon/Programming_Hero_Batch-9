@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import Feature from '../Feature/Feature'
 
 function PriceOption({ option }) {
   return (
@@ -11,9 +12,7 @@ function PriceOption({ option }) {
       <div className='ul  text-left'>
         {
           option.features.map((feature, index) => (
-            <li key={index} className="text-md text-gray-300">
-              {feature}
-            </li>
+            <Feature key={index} feature={feature}></Feature>
           )
         )
         }
