@@ -10,3 +10,12 @@
 | **Examples**               | Gmail, Facebook, Twitter                              | Amazon, eBay, Government websites        |
 
 <br>
+
+### Key points to identify a SPA
+- ✅ No full page reloads during navigation
+- ✅ URL changes without a white screen or full refresh
+- ✅ Fast navigation after initial load
+- ✅ Uses client-side routing (e.g., React Router)
+- ✅ JavaScript-heavy structure (e.g., <div id="root">)
+- ✅ Network tab shows no new HTML requests on navigation
+- ✅ Uses History API (pushState, replaceState)
