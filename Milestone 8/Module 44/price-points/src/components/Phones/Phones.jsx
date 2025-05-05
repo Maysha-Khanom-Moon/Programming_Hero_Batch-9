@@ -1,10 +1,12 @@
 import axios from "axios";
 import { BarChart, Bar, XAxis, YAxis, Tooltip } from "recharts";
 import { useEffect, useState } from "react"
+import { ScaleLoader } from "react-spinners";
 
 function Phones() {
 
     const [phones, setPhones] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         // fetch("https://openapi.programming-hero.com/api/phones?search=iphone")
@@ -27,19 +29,22 @@ function Phones() {
 
                 console.log(phonesWithFakeData);
                 setPhones(phonesWithFakeData);
+                setLoading(false);
             })
             
     }, [])
 
     return (
       <div className="mx-10 mb-20">
+        {loading && <ScaleLoader color="#8884d8" />}
+
         <h2 className="text-4xl font-bold">Phones: {phones.length}</h2>
 
         <BarChart width={600} height={400} data={phones}>
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Bar dataKey="price" fill="#8884d8" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Bar dataKey="price" fill="#8884d8" />
         </BarChart>
       </div>
     );
