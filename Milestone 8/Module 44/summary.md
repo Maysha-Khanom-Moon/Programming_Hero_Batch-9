@@ -25,3 +25,8 @@
 | **Interceptors**           | ✔ Easy request/response intercepts | ❌ Not available                  |
 | **Progress tracking**      | ✔ For uploads/downloads            | ❌ Not supported natively         |
 | **Simplicity**             | ✔ Cleaner syntax for requests      | ⚠ Can be verbose and manual      |
+
+<br>
+
+### React Awesome Components
+A wide variety of <b>ready-to-use, highly customizable UI components</b> built by the React community.
