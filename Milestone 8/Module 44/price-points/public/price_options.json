@@ -1,0 +1,49 @@
+{
+  "gym_name": "FlexFit Gym",
+  "currency": "BDT",
+  "pricing_options": [
+    {
+      "id": "basic_monthly",
+      "name": "Basic Monthly",
+      "price": 1500,
+      "duration": "1 month",
+      "features": [
+        "Access to gym equipment",
+        "Locker room access"
+      ]
+    },
+    {
+      "id": "standard_monthly",
+      "name": "Standard Monthly",
+      "price": 2500,
+      "duration": "1 month",
+      "features": [
+        "Access to gym equipment",
+        "Locker room access",
+        "Group fitness classes"
+      ]
+    },
+    {
+      "id": "premium_monthly",
+      "name": "Premium Monthly",
+      "price": 3500,
+      "duration": "1 month",
+      "features": [
+        "All Standard features",
+        "Personal trainer (2 sessions)",
+        "Diet consultation"
+      ]
+    },
+    {
+      "id": "yearly_discounted",
+      "name": "Yearly Membership",
+      "price": 30000,
+      "duration": "12 months",
+      "features": [
+        "All Premium features",
+        "Free gym merchandise",
+        "Priority booking for classes"
+      ]
+    }
+  ]
+}
