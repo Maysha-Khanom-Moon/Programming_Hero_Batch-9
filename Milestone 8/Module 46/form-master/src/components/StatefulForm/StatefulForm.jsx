@@ -5,10 +5,17 @@ function StatefulForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
 
     const handleSubmit = e => {
         e.preventDefault();
-        console.log(name, email, password);
+        if (password.length < 8) {
+            setError('Password must be at least 8 characters');
+        }
+        else {
+            console.log(name, email, password);
+            setError('');
+        }
     };
 
     const handleNameChange = (e) => {
@@ -33,7 +40,11 @@ function StatefulForm() {
             <br />
             <input onChange={handlePasswordChange} type="password" name="password" placeholder='Password' />
             <br />
-            <button>Submit</button>
+            <input type="submit" value="Submit" />
+
+            {
+                error && <p>{error}</p>
+            }
         </form>
         </div>
     )
