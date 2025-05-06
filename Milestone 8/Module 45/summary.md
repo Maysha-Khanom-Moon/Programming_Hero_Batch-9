@@ -57,6 +57,8 @@
 ### most uses react router hooks
 - createBrowserRouter | RouterProvider | Outlet
 - Link, NavLink
-- useNavigate
+- useNavigate, useNavigation
 - loader | userLoaderData | useParams
 - useLocation
+
+Follow React Router Tutorial😉
