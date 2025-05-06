@@ -51,3 +51,12 @@
 - Avoids manual useLocation checks.
 - Ideal for menus, tabs, sidebars.
 - Cleaner and more declarative active state handling.
+
+<br>
+
+### most uses react router hooks
+- createBrowserRouter | RouterProvider | Outlet
+- Link, NavLink
+- useNavigate
+- loader | userLoaderData | useParams
+- useLocation
