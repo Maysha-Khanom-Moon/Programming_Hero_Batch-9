@@ -17,6 +17,11 @@ function RefForm() {
     console.log(passwordRef.current.value);
   };
 
+  /**
+   * value: can't change
+   * defaultValue: can change.
+   */
+
   return (
     <div>
       <form onSubmit={handleSubmit} action="">
