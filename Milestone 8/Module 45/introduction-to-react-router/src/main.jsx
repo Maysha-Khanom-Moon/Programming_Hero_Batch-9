@@ -7,10 +7,10 @@ import {
 
 import './index.css'
 import Home from './components/Home/Home.jsx';
-import Header from './components/Header/Header';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Users from './components/Users/Users';
+import UserDetails from './components/UserDetails/UserDetails';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +29,12 @@ const router = createBrowserRouter([
         path: '/users',
         loader: () => fetch('https://jsonplaceholder.typicode.com/users'),
         element: <Users />,
+      },
+      {
+        // :userId is a dynamic parameter
+        path: '/users/:userId',
+        loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`),
+        element: <UserDetails />
       }
     ]
   },

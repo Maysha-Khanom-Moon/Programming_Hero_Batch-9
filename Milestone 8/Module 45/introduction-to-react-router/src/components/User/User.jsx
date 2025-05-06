@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom';
 
 function User({user}) {
 
-    const {name, email, phone} = user;
+    const {id, name, email, phone} = user;
 
     const userStyle = {
         border: '1px solid #ccc',
@@ -17,6 +18,7 @@ function User({user}) {
             <h3>{name}</h3>
             <p>Email: {email}</p>
             <p>Phone: {phone}</p>
+            <Link to={`/users/${id}`}>Show Details</Link>
         </div>
     )
 }
