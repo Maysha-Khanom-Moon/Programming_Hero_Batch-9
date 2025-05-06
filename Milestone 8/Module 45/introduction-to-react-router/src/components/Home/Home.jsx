@@ -1,13 +1,18 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, useNavigation } from "react-router-dom"
 import Header from "../Header/Header"
 
 
 function Home() {
+
+  const navigation = useNavigation();
+
   return (
     <div>
         <Header />
         <h1>Home</h1>
-        <Outlet />
+        {
+          navigation.state === 'loading' ? <p>Loading...</p> : <Outlet />
+        }
     </div>
   )
 }
