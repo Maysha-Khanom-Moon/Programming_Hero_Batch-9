@@ -41,3 +41,13 @@
 | **Error Handling**   | Automatically handled by route error boundaries       | You handle errors manually                                |
 | **SSR Support**      | Ideal for SSR and static data loading                 | Not suitable for SSR                                      |
 | **Use Case**         | Route-based, page-level data fetching                 | Dynamic, client-side interactions or non-route components |
+
+
+<br>
+
+### Why NavLink instead of Link:
+- Highlights the active route automatically.
+- Allows custom styling for active links.
+- Avoids manual useLocation checks.
+- Ideal for menus, tabs, sidebars.
+- Cleaner and more declarative active state handling.
