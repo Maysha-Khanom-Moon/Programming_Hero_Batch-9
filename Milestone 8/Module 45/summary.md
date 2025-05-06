@@ -29,3 +29,15 @@
 | **Client-Side Routing** | ✅ Yes, updates URL via React Router | ❌ No, browser handles routing   |
 | **Speed**               | ⚡ Fast (only updates content)       | 🐢 Slower (reloads entire page) |
 | **Usage**               | Used for internal navigation        | Used for external links         |
+
+<br>
+
+### `loader` + `useLoaderData` vs `useEffect`
+| Feature              | `loader` + `useLoaderData`                            | `useEffect`                                               |
+| -------------------- | ----------------------------------------------------- | --------------------------------------------------------- |
+| **Timing**           | Fetches **before render**                             | Fetches **after render**                                  |
+| **Integration**      | Built into React Router routes                        | Manual setup                                              |
+| **Code Cleanliness** | No need for `useState`, `useEffect`, or loading logic | Needs state, effect, and often error/loading handling     |
+| **Error Handling**   | Automatically handled by route error boundaries       | You handle errors manually                                |
+| **SSR Support**      | Ideal for SSR and static data loading                 | Not suitable for SSR                                      |
+| **Use Case**         | Route-based, page-level data fetching                 | Dynamic, client-side interactions or non-route components |
