@@ -26,8 +26,19 @@ function App() {
 
       {/* <HookForm /> */}
 
-      <ReusableForm formTitle={"Sign Up"} handleSubmit={handleSignUpSubmit} />
-      <ReusableForm formTitle={"Profile Update"} submitBtnText={"Update"} handleSubmit={handleProfileUpdateSubmit} />
+      <ReusableForm formTitle={"Sign Up"} handleSubmit={handleSignUpSubmit} >
+        <div>
+          <h2>Sign Up</h2>
+          <p>Please sign up right now</p>
+        </div>
+      </ReusableForm>
+
+      <ReusableForm formTitle={"Profile Update"} submitBtnText={"Update"} handleSubmit={handleProfileUpdateSubmit} >
+        <div>
+          <h2>Update Profile</h2>
+          <p>Always keep your profile updated</p>
+        </div>
+      </ReusableForm>
     </>
   )
 }
