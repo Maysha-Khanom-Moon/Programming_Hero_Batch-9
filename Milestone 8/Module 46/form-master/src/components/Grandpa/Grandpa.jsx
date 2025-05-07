@@ -6,7 +6,8 @@ import './Grandpa.css'
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const AssetContext = createContext('gold');
-// export const MoneyContext = createContext(1000);
+// eslint-disable-next-line react-refresh/only-export-components
+export const MoneyContext = createContext(1000);
 
 function Grandpa() {
 
@@ -14,19 +15,24 @@ function Grandpa() {
   // Grandpa -> Uncle -> Cousin(Kochi) -> Special
 
   const asset = 'diamond';
-  // const [money, setMoney] = useState(1000);
+  const [money, setMoney] = useState(0);
+
+  const totalMoney = 20000;
 
   return (
     <div className="grandpa">
       <h2>Grandpa</h2>
+      <p>Money Left: {totalMoney - money}</p>
 
-      <AssetContext.Provider value = 'gold'>
-        <section className="flex">
-          <Dad asset={asset}></Dad>
-          <Uncle asset={asset}></Uncle>
-          <Aunty></Aunty>
-        </section>
-      </AssetContext.Provider>
+      <MoneyContext.Provider value={[money, setMoney]}>
+        <AssetContext.Provider value="gold">
+          <section className="flex">
+            <Dad asset={asset}></Dad>
+            <Uncle asset={asset}></Uncle>
+            <Aunty></Aunty>
+          </section>
+        </AssetContext.Provider>
+      </MoneyContext.Provider>
     </div>
   );
 }
