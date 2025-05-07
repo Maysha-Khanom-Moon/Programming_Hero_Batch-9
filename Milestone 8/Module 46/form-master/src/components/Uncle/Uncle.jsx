@@ -1,12 +1,12 @@
 import Cousin from "../Cousin/Cousin"
 
 
-function Uncle() {
+function Uncle({asset}) {
     return (
         <div>
             <h2>Uncle</h2>
             <section className="flex">
-                <Cousin name="Kochi" />
+                <Cousin asset={asset} name="Kochi" />
                 <Cousin name="Babu" />
             </section>
         </div>
