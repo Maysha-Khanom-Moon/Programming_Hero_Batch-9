@@ -2,7 +2,7 @@
 
 function Footer() {
   return (
-    <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+    <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10 px-44 flex justify-between items-center flex-wrap gap-10">
       <aside>
         <svg
           width="50"

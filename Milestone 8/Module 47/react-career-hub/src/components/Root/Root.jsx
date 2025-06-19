@@ -5,11 +5,13 @@ import Header from '../Header/Header'
 function Root() {
   return (
     <div>
+      <div className='max-w-6xl mx-auto'>
         <Header />
         <Outlet />
-        <Footer />
+      </div>
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default Root
