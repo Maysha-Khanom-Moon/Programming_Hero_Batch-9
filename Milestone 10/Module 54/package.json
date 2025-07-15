@@ -1,0 +1,18 @@
+{
+  "name": "module-54",
+  "version": "1.0.0",
+  "description": "A server is a computer or system that provides resources, data, services, or programs to other computers (clients) over a network.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
