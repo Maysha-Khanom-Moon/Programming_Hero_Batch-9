@@ -29,7 +29,12 @@ function App() {
       },
       body: JSON.stringify({ name, email })
     })
-    
+    .then(res => res.json())
+    .then(data => {
+      setUsers([...users, data]);
+      form.reset();
+    })
+    .catch(err => console.error('Error adding user:', err));
   }
 
   return (
