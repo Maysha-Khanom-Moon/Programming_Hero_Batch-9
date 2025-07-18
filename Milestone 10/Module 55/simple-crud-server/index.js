@@ -54,6 +54,22 @@ async function run() {
       res.send(result);
     });
 
+    app.put('/users/:id', async (req, res) => {
+      const id = req.params.id;
+      const user = req.body;
+      const filter = {_id: new ObjectId(id)};
+      console.log('Updating user with ID:', id, 'Data:', user);
+
+      const updatedDoc = {$set: {
+        name: user.name,
+        email: user.email
+      }};
+      const options = { upsert: true };
+      const result = await col.updateOne(filter, updatedDoc, options);
+      res.send(result);
+    });
+      
+
     app.delete('/users/:id', async (req, res) => {
       const id = req.params.id;
       console.log('Deleting user with ID:', id);

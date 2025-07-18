@@ -9,10 +9,12 @@
  * 5. adjust the uri
  * 
  * 6. CRUD operations: mongodb.com/docs/drivers/node/current/fundamentals/crud/
- *    - Create: insertOne, insertMany
- *    - Read: find, findOne
- *   - Update: updateOne, updateMany
- *   - Delete: deleteOne, deleteMany
+ *    - Create: insertOne, insertMany --> POST
+ *    - Read: find, findOne --> GET
+ *    - Update: updateOne, updateMany --> PUT/PATCH
+ *    - Delete: deleteOne, deleteMany --> DELETE
+ * 
+ * # PUT replaces the entire document, while PATCH updates only the specified fields.
  * 
  * # Make the functions async to use await to avoid callback hell
  */
