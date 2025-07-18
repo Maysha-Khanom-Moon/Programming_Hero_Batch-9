@@ -28,10 +28,20 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
 
+    const db = client.db("usersDB"); // Use your database name
+    const col = db.collection("users");
+
+    app.get('/users', async (req, res) => {
+      const cursor = col.find();
+      const result = await cursor.toArray();
+      res.send(result);
+    });
 
     app.post('/users', async (req, res) => {
       const user = req.body;
       console.log(user);
+      const result = await col.insertOne(user); // insertMany can be used for multiple users
+      res.send(result);
     });
 
 
