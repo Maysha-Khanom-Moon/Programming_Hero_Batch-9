@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export default function Users() {
 
@@ -31,6 +32,9 @@ export default function Users() {
                     users.map(user => <div style={{ border: "1px solid red", margin: "5px", padding: "0 10px", borderRadius: "5px", display: "flex", justifyContent: "space-between", alignItems: "center"}} key={user._id}>
                         <h3 style={{marginRight: "5px"}}>{user.name}: </h3>
                         <p>{user.email}</p>
+                        <Link to={`/users/${user._id}`} style={{ textDecoration: "none" }}>
+                            <button style={{ padding: "5px 10px", borderRadius: "5px", border: "none", backgroundColor: "tomato", color: "white", cursor: "pointer"}}>Edit</button>
+                        </Link>
                         <button onClick={() => handleDelete(user._id)} style={{ padding: "5px 10px", borderRadius: "5px", border: "none", backgroundColor: "tomato", color: "white", cursor: "pointer", marginLeft: "20px"}}>X</button>
                     </div>)
                 }
